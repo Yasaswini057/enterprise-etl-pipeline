@@ -25,3 +25,21 @@ SQLAlchemy
 Airflow
 Docker
 GitHub
+
+## Project Workflow
+
+1. Extract data from APIs
+2. Transform and clean data
+3. Load data into PostgreSQL
+4. Generate reports and dashboards
+
+## Folder Structure
+
+config/
+extract/
+transform/
+load/
+tests/
+airflow/
+docs/
+docker/

@@ -1,8 +1,10 @@
-# config/settings.py
-
 PROJECT_NAME = "Enterprise ETL Pipeline"
 
 RAW_DATA_PATH = "data/raw/"
 PROCESSED_DATA_PATH = "data/processed/"
 
-DATABASE_URL = "postgresql://username:password@localhost:5432/etl_db"
+LOG_FILE = "logs/pipeline.log"
+
+DATABASE_NAME = "etl_db"
+DATABASE_HOST = "localhost"
+DATABASE_PORT = "5432"
