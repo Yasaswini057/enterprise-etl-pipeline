@@ -1,16 +1,16 @@
 from config.logger import logger
 from config.settings import PROJECT_NAME
+from extract.extractor import run_extraction
 
 
 def extract():
     logger.info("Extraction phase started")
     print("\n[1/3] Starting Extraction Phase...")
-    
-    # Member 2 code will be called here later
-    
+
+    run_extraction()
+
     print("Extraction Phase Completed")
     logger.info("Extraction phase completed")
-
 
 def transform():
     logger.info("Transformation phase started")
