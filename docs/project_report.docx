@@ -1,0 +1,18 @@
+# Project Status
+
+## Completed
+- Repository Setup
+- Folder Structure
+- Configuration Setup
+- Main Pipeline Setup
+- Logging Setup
+
+## In Progress
+- Extraction Module
+- Transformation Module
+- Loading Module
+
+## Pending
+- Airflow Integration
+- Testing
+- Docker Deployment
