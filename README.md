@@ -43,3 +43,4 @@ tests/
 airflow/
 docs/
 docker/
+requirements/
