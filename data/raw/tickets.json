@@ -1,0 +1,20 @@
+[
+  {
+    "ticket_id": "T001",
+    "customer_id": "C001",
+    "issue_type": "Login Problem",
+    "description": "Unable to log in to the application.",
+    "status": "Open",
+    "priority": "High",
+    "created_date": "2026-06-15"
+  },
+  {
+    "ticket_id": "T002",
+    "customer_id": "C002",
+    "issue_type": "Payment Failure",
+    "description": "Payment was deducted but order not placed.",
+    "status": "In Progress",
+    "priority": "Medium",
+    "created_date": "2026-06-16"
+  }
+]

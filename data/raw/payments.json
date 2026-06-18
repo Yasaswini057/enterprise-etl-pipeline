@@ -1,0 +1,20 @@
+[
+  {
+    "payment_id": "P001",
+    "customer_id": "C001",
+    "ticket_id": "T001",
+    "amount": 499.99,
+    "payment_method": "UPI",
+    "payment_status": "Success",
+    "payment_date": "2026-06-15"
+  },
+  {
+    "payment_id": "P002",
+    "customer_id": "C002",
+    "ticket_id": "T002",
+    "amount": 799.50,
+    "payment_method": "Credit Card",
+    "payment_status": "Failed",
+    "payment_date": "2026-06-16"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "customer_id": "C001",
+    "first_name": "Rahul",
+    "last_name": "Sharma",
+    "email": "rahul.sharma@example.com",
+    "phone": "9876543210",
+    "city": "Mumbai",
+    "registration_date": "2026-06-10"
+  },
+  {
+    "customer_id": "C002",
+    "first_name": "Priya",
+    "last_name": "Nair",
+    "email": "priya.nair@example.com",
+    "phone": "9123456780",
+    "city": "Chennai",
+    "registration_date": "2026-06-12"
+  }
+]
