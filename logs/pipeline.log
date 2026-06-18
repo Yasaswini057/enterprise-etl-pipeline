@@ -38,3 +38,11 @@
 2026-06-11 17:16:36,646 - INFO - Loading phase started
 2026-06-11 17:16:36,647 - INFO - Loading phase completed
 2026-06-11 17:16:36,648 - INFO - ETL Pipeline Completed Successfully
+2026-06-18 11:09:58,208 - INFO - ETL Pipeline Started
+2026-06-18 11:09:58,213 - INFO - Extraction phase started
+2026-06-18 11:09:58,226 - INFO - Extraction phase completed
+2026-06-18 11:09:58,226 - INFO - Transformation phase started
+2026-06-18 11:09:58,227 - INFO - Transformation phase completed
+2026-06-18 11:09:58,227 - INFO - Loading phase started
+2026-06-18 11:09:58,237 - INFO - Loading phase completed
+2026-06-18 11:09:58,243 - INFO - ETL Pipeline Completed Successfully
