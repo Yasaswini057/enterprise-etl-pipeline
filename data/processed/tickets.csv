@@ -1,0 +1,3 @@
+ticket_id,customer_id,issue_type,description,status,priority,created_date
+T001,C001,Login Problem,Unable to log in to the application.,Open,High,2026-06-15
+T002,C002,Payment Failure,Payment was deducted but order not placed.,In Progress,Medium,2026-06-16
