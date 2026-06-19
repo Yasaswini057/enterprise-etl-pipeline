@@ -1,0 +1,3 @@
+payment_id,customer_id,ticket_id,amount,payment_method,payment_status,payment_date
+P001,C001,T001,499.99,Upi,Success,2026-06-15
+P002,C002,T002,799.5,Credit Card,Failed,2026-06-16
