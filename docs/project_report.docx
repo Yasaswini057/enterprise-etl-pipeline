@@ -1,11 +1,10 @@
-# Project Status
+# Enterprise ETL Pipeline - Project Status
 
 ## Completed
-- Repository Setup
+- GitHub Repository Setup
 - Folder Structure
-- Configuration Setup
 - Main Pipeline Setup
-- Logging Setup
+- Logging Configuration
 
 ## In Progress
 - Extraction Module
@@ -13,6 +12,7 @@
 - Loading Module
 
 ## Pending
-- Airflow Integration
+- Database Integration
 - Testing
-- Docker Deployment
+- Final Documentation
+- Final Presentation

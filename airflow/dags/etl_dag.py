@@ -35,4 +35,4 @@ with DAG(
         python_callable=load
     )
 
-    extract_task >> transform_task >> load_task
+    
