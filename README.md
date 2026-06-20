@@ -16,7 +16,7 @@ Salesforce / Stripe / Zendesk
    SQLite Database
 
 ## Technologies Used
-- Python
+- Python language
 - Apache Airflow
 - SQLite
 - GitHub
