@@ -1,10 +1,36 @@
 # Enterprise ETL Pipeline
 
-## Objective
-Build an ETL pipeline that extracts data from APIs,
-transforms it, and loads it into PostgreSQL.
+## Project Overview
+This project extracts data from multiple sources, transforms and cleans the data, and loads it into a centralized database.
+
+## ETL Workflow
+
+Salesforce / Stripe / Zendesk
+          ↓
+      Extract
+          ↓
+     Transform
+          ↓
+        Load
+          ↓
+   SQLite Database
+
+## Technologies Used
+- Python language
+- Apache Airflow
+- SQLite
+- GitHub
+
+## Project Structure
+- extract/      -> Extraction Module
+- transform/    -> Transformation Module
+- load/         -> Loading Module
+- airflow/      -> DAG Workflow
+- docs/         -> Documentation
+- logs/         -> Log Files
 
 ## Team Members
+
 
 Member 1 - Integration & Airflow
 Member 2 - Extraction
@@ -78,3 +104,10 @@ Data Transformation module completed and integrated with the ETL workflow. Proce
 - Support integration testing with Member 4 (Database & Loading).
 - Verify processed data compatibility with PostgreSQL schema.
 - Assist in end-to-end ETL pipeline testing.
+
+- Member 1: Team Lead, Airflow, Integration
+- Member 2: Extraction
+- Member 3: Transformation
+- Member 4: Loading & Database
+- Member 5: Testing & Documentation
+
