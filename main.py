@@ -64,6 +64,19 @@ def main():
     print(f"        {PROJECT_NAME}")
     print("=" * 60)
 
+    print("Data Sources:")
+    print(" • Salesforce API")
+    print(" • Stripe API")
+    print(" • Zendesk API")
+
+    print("\nDatabase:")
+    print(" • SQLite")
+
+    print("\nWorkflow:")
+    print(" Extract -> Transform -> Load")
+
+    print("=" * 60)
+
     extract()
     transform()
     load()
