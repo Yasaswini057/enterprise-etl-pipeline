@@ -111,3 +111,28 @@ Data Transformation module completed and integrated with the ETL workflow. Proce
 - Member 4: Loading & Database
 - Member 5: Testing & Documentation
 
+## Project Statistics
+
+- APIs Used: 3
+- JSON Files Generated: 3
+- CSV Files Generated: 3
+- Database: SQLite
+- ETL Stages: 3
+- Logging Enabled
+- Execution Time Displayed
+
+## Workflow
+
+Salesforce API
+Stripe API
+Zendesk API
+        ↓
+    Extraction
+        ↓
+      JSON Files
+        ↓
+   Transformation
+        ↓
+      CSV Files
+        ↓
+ SQLite Database
