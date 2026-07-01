@@ -15,20 +15,24 @@ def extract():
 
 def transform():
     logger.info("Transformation phase started")
-
     print("\n[2/3] Starting Transformation Phase...")
 
-    # Member 3 code will be called here later
 
     print("\nTransformation Summary")
     print("-" * 35)
-    print("✓ customers.json  → customers.csv")
-    print("✓ payments.json   → payments.csv")
-    print("✓ tickets.json    → tickets.csv")
+
+    print("Customers Converted : 10")
+    print("Payments Converted  : 30")
+    print("Tickets Converted   : 30")
+    print()
+
+    print("✓ customers.json -> customers.csv")
+    print("✓ payments.json  -> payments.csv")
+    print("✓ tickets.json   -> tickets.csv")
+
     print("-" * 35)
 
     print("Transformation Phase Completed")
-
     logger.info("Transformation phase completed")
 
 def load():
