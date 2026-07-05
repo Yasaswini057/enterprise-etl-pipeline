@@ -1,6 +1,10 @@
 from config.logger import logger
 from config.settings import PROJECT_NAME
+
 from extract.extractor import run_extraction
+from transform.transformer import run_transformations
+from load.loader import run_loader
+
 import time
 
 
@@ -13,41 +17,29 @@ def extract():
     print("Extraction Phase Completed")
     logger.info("Extraction phase completed")
 
+
 def transform():
     logger.info("Transformation phase started")
     print("\n[2/3] Starting Transformation Phase...")
 
+    customers, payments, tickets = run_transformations()
 
-    print("\nTransformation Summary")
-    print("-" * 35)
+print("Transformation Phase Completed")
 
-    print("Customers Converted : 10")
-    print("Payments Converted  : 30")
-    print("Tickets Converted   : 30")
-    print()
-
-    print("✓ customers.json -> customers.csv")
-    print("✓ payments.json  -> payments.csv")
-    print("✓ tickets.json   -> tickets.csv")
-
-    print("-" * 35)
-
-    print("Transformation Phase Completed")
-    logger.info("Transformation phase completed")
 
 def load():
     logger.info("Loading phase started")
     print("\n[3/3] Starting Loading Phase...")
 
-    # Member 4 code will be called here later
+    customers_loaded, payments_loaded, tickets_loaded = run_loader()
 
     print("\nLoading Summary")
     print("-" * 35)
 
-    print("✓ Connected to SQLite Database")
-    print("✓ Customers Loaded : 10")
-    print("✓ Payments Loaded  : 30")
-    print("✓ Tickets Loaded   : 30")
+    print("✓ Connected to PostgreSQL Database")
+    print(f"✓ Customers Loaded : {customers_loaded}")
+    print(f"✓ Payments Loaded  : {payments_loaded}")
+    print(f"✓ Tickets Loaded   : {tickets_loaded}")
 
     print("-" * 35)
 
@@ -56,7 +48,8 @@ def load():
 
 
 def main():
-    start_time = time.time()      # ← Start timer
+
+    start_time = time.time()
 
     logger.info("ETL Pipeline Started")
 
@@ -70,27 +63,39 @@ def main():
     print(" • Zendesk API")
 
     print("\nDatabase:")
-    print(" • SQLite")
+    print(" • PostgreSQL")
 
     print("\nWorkflow:")
     print(" Extract -> Transform -> Load")
 
     print("=" * 60)
 
-    extract()
-    transform()
-    load()
+    try:
 
-    end_time = time.time()        
+        extract()
+        transform()
+        load()
 
-    execution_time = round(end_time - start_time, 2)   
+        execution_time = round(time.time() - start_time, 2)
 
-    print("\n" + "=" * 60)
-    print("ETL PIPELINE COMPLETED SUCCESSFULLY")
-    print("=" * 60)
-    print(f"Execution Time : {execution_time} seconds")
-    print("=" * 60)
+        print("\n" + "=" * 60)
+        print("ETL PIPELINE COMPLETED SUCCESSFULLY")
+        print("=" * 60)
+        print(f"Execution Time : {execution_time} seconds")
+        print("=" * 60)
 
-    logger.info("ETL Pipeline Completed Successfully")
+        logger.info("ETL Pipeline Completed Successfully")
+
+    except Exception as e:
+
+        logger.exception(f"Pipeline Failed : {e}")
+
+        print("\n" + "=" * 60)
+        print("ETL PIPELINE FAILED")
+        print("=" * 60)
+        print(e)
+        print("=" * 60)
+
+
 if __name__ == "__main__":
     main()
