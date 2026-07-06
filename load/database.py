@@ -20,6 +20,11 @@ DATABASE_URL = (
 )
 
 # Create SQLAlchemy Engine
+print(DB_USER)
+print(DB_HOST)
+print(DB_PORT)
+print(DB_NAME)
+print(DB_PASSWORD)
 engine = create_engine(
     DATABASE_URL,
     echo=False,          # Change to True if you want SQL queries printed

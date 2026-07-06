@@ -342,3 +342,1266 @@ Traceback (most recent call last):
   File "pandas/_libs/hashtable_class_helper.pxi", line 7293, in pandas._libs.hashtable.PyObjectHashTable.factorize
   File "pandas/_libs/hashtable_class_helper.pxi", line 7203, in pandas._libs.hashtable.PyObjectHashTable._unique
 TypeError: unhashable type: 'dict'
+2026-07-06 22:20:52,673 - INFO - ETL Pipeline Started
+2026-07-06 22:20:52,675 - INFO - Extraction phase started
+2026-07-06 22:20:58,945 - INFO - Extraction phase completed
+2026-07-06 22:20:58,945 - INFO - Transformation phase started
+2026-07-06 22:20:59,138 - INFO - Loading phase started
+2026-07-06 22:20:59,204 - ERROR - Database Error: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, phone, city, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(phone__0)s, %(city__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(phone__9)s, %(city__9)s, %(registration_date__9)s)]
+[parameters: {'last_name__0': 'Graham', 'customer_id__0': 'C001', 'registration_date__0': datetime.date(2026, 7, 6), 'phone__0': '1-770-736-8031 x56442', 'city__0': 'Gwenborough', 'email__0': 'Sincere@april.biz', 'first_name__0': 'Leanne', 'last_name__1': 'Howell', 'customer_id__1': 'C002', 'registration_date__1': datetime.date(2026, 7, 6), 'phone__1': '010-692-6593 x09125', 'city__1': 'Wisokyburgh', 'email__1': 'Shanna@melissa.tv', 'first_name__1': 'Ervin', 'last_name__2': 'Bauch', 'customer_id__2': 'C003', 'registration_date__2': datetime.date(2026, 7, 6), 'phone__2': '1-463-123-4447', 'city__2': 'McKenziehaven', 'email__2': 'Nathan@yesenia.net', 'first_name__2': 'Clementine', 'last_name__3': 'Lebsack', 'customer_id__3': 'C004', 'registration_date__3': datetime.date(2026, 7, 6), 'phone__3': '493-170-9623 x156', 'city__3': 'South Elvis', 'email__3': 'Julianne.OConner@kory.org', 'first_name__3': 'Patricia', 'last_name__4': 'Dietrich', 'customer_id__4': 'C005', 'registration_date__4': datetime.date(2026, 7, 6), 'phone__4': '(254)954-1289', 'city__4': 'Roscoeview', 'email__4': 'Lucio_Hettinger@annie.ca', 'first_name__4': 'Chelsey', 'last_name__5': 'Dennis Schulist', 'customer_id__5': 'C006', 'registration_date__5': datetime.date(2026, 7, 6), 'phone__5': '1-477-935-8478 x6430', 'city__5': 'South Christy', 'email__5': 'Karley_Dach@jasper.info', 'first_name__5': 'Mrs.', 'last_name__6': 'Weissnat', 'customer_id__6': 'C007', 'registration_date__6': datetime.date(2026, 7, 6), 'phone__6': '210.067.6132', 'city__6': 'Howemouth', 'email__6': 'Telly.Hoeger@billy.biz', 'first_name__6': 'Kurtis', 'last_name__7': 'Runolfsdottir V', 'customer_id__7': 'C008', 'registration_date__7': datetime.date(2026, 7, 6), 'phone__7': '586.493.6943 x140', 'city__7': 'Aliyaview', 'email__7': 'Sherwood@rosamond.me', 'first_name__7': 'Nicholas', 'last_name__8': 'Reichert', 'customer_id__8': 'C009', 'registration_date__8': datetime.date(2026, 7, 6), 'phone__8': '(775)976-6794 x41206', 'city__8': 'Bartholomebury', 'email__8': 'Chaim_McDermott@dana.io', 'first_name__8': 'Glenna', 'last_name__9': 'DuBuque', 'customer_id__9': 'C010', 'registration_date__9': datetime.date(2026, 7, 6), 'phone__9': '024-648-3804', 'city__9': 'Lebsackbury', 'email__9': 'Rey.Padberg@karina.biz', 'first_name__9': 'Clementina'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(20)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\load\loader.py", line 141, in run_loader
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, phone, city, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(phone__0)s, %(city__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(phone__9)s, %(city__9)s, %(registration_date__9)s)]
+[parameters: {'last_name__0': 'Graham', 'customer_id__0': 'C001', 'registration_date__0': datetime.date(2026, 7, 6), 'phone__0': '1-770-736-8031 x56442', 'city__0': 'Gwenborough', 'email__0': 'Sincere@april.biz', 'first_name__0': 'Leanne', 'last_name__1': 'Howell', 'customer_id__1': 'C002', 'registration_date__1': datetime.date(2026, 7, 6), 'phone__1': '010-692-6593 x09125', 'city__1': 'Wisokyburgh', 'email__1': 'Shanna@melissa.tv', 'first_name__1': 'Ervin', 'last_name__2': 'Bauch', 'customer_id__2': 'C003', 'registration_date__2': datetime.date(2026, 7, 6), 'phone__2': '1-463-123-4447', 'city__2': 'McKenziehaven', 'email__2': 'Nathan@yesenia.net', 'first_name__2': 'Clementine', 'last_name__3': 'Lebsack', 'customer_id__3': 'C004', 'registration_date__3': datetime.date(2026, 7, 6), 'phone__3': '493-170-9623 x156', 'city__3': 'South Elvis', 'email__3': 'Julianne.OConner@kory.org', 'first_name__3': 'Patricia', 'last_name__4': 'Dietrich', 'customer_id__4': 'C005', 'registration_date__4': datetime.date(2026, 7, 6), 'phone__4': '(254)954-1289', 'city__4': 'Roscoeview', 'email__4': 'Lucio_Hettinger@annie.ca', 'first_name__4': 'Chelsey', 'last_name__5': 'Dennis Schulist', 'customer_id__5': 'C006', 'registration_date__5': datetime.date(2026, 7, 6), 'phone__5': '1-477-935-8478 x6430', 'city__5': 'South Christy', 'email__5': 'Karley_Dach@jasper.info', 'first_name__5': 'Mrs.', 'last_name__6': 'Weissnat', 'customer_id__6': 'C007', 'registration_date__6': datetime.date(2026, 7, 6), 'phone__6': '210.067.6132', 'city__6': 'Howemouth', 'email__6': 'Telly.Hoeger@billy.biz', 'first_name__6': 'Kurtis', 'last_name__7': 'Runolfsdottir V', 'customer_id__7': 'C008', 'registration_date__7': datetime.date(2026, 7, 6), 'phone__7': '586.493.6943 x140', 'city__7': 'Aliyaview', 'email__7': 'Sherwood@rosamond.me', 'first_name__7': 'Nicholas', 'last_name__8': 'Reichert', 'customer_id__8': 'C009', 'registration_date__8': datetime.date(2026, 7, 6), 'phone__8': '(775)976-6794 x41206', 'city__8': 'Bartholomebury', 'email__8': 'Chaim_McDermott@dana.io', 'first_name__8': 'Glenna', 'last_name__9': 'DuBuque', 'customer_id__9': 'C010', 'registration_date__9': datetime.date(2026, 7, 6), 'phone__9': '024-648-3804', 'city__9': 'Lebsackbury', 'email__9': 'Rey.Padberg@karina.biz', 'first_name__9': 'Clementina'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-07-06 22:20:59,323 - INFO - Loading phase completed
+2026-07-06 22:20:59,324 - INFO - ETL Pipeline Completed Successfully
+2026-07-06 22:56:09,255 - INFO - ETL Pipeline Started
+2026-07-06 22:56:09,256 - INFO - Extraction phase started
+2026-07-06 22:56:13,214 - INFO - Extraction phase completed
+2026-07-06 22:56:13,214 - INFO - Transformation phase started
+2026-07-06 22:56:13,403 - INFO - Loading phase started
+2026-07-06 22:56:13,469 - ERROR - Database Error: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, phone, city, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(phone__0)s, %(city__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(phone__9)s, %(city__9)s, %(registration_date__9)s)]
+[parameters: {'last_name__0': 'Graham', 'registration_date__0': datetime.date(2026, 7, 6), 'email__0': 'Sincere@april.biz', 'first_name__0': 'Leanne', 'phone__0': '1-770-736-8031 x56442', 'city__0': 'Gwenborough', 'customer_id__0': 'C001', 'last_name__1': 'Howell', 'registration_date__1': datetime.date(2026, 7, 6), 'email__1': 'Shanna@melissa.tv', 'first_name__1': 'Ervin', 'phone__1': '010-692-6593 x09125', 'city__1': 'Wisokyburgh', 'customer_id__1': 'C002', 'last_name__2': 'Bauch', 'registration_date__2': datetime.date(2026, 7, 6), 'email__2': 'Nathan@yesenia.net', 'first_name__2': 'Clementine', 'phone__2': '1-463-123-4447', 'city__2': 'McKenziehaven', 'customer_id__2': 'C003', 'last_name__3': 'Lebsack', 'registration_date__3': datetime.date(2026, 7, 6), 'email__3': 'Julianne.OConner@kory.org', 'first_name__3': 'Patricia', 'phone__3': '493-170-9623 x156', 'city__3': 'South Elvis', 'customer_id__3': 'C004', 'last_name__4': 'Dietrich', 'registration_date__4': datetime.date(2026, 7, 6), 'email__4': 'Lucio_Hettinger@annie.ca', 'first_name__4': 'Chelsey', 'phone__4': '(254)954-1289', 'city__4': 'Roscoeview', 'customer_id__4': 'C005', 'last_name__5': 'Dennis Schulist', 'registration_date__5': datetime.date(2026, 7, 6), 'email__5': 'Karley_Dach@jasper.info', 'first_name__5': 'Mrs.', 'phone__5': '1-477-935-8478 x6430', 'city__5': 'South Christy', 'customer_id__5': 'C006', 'last_name__6': 'Weissnat', 'registration_date__6': datetime.date(2026, 7, 6), 'email__6': 'Telly.Hoeger@billy.biz', 'first_name__6': 'Kurtis', 'phone__6': '210.067.6132', 'city__6': 'Howemouth', 'customer_id__6': 'C007', 'last_name__7': 'Runolfsdottir V', 'registration_date__7': datetime.date(2026, 7, 6), 'email__7': 'Sherwood@rosamond.me', 'first_name__7': 'Nicholas', 'phone__7': '586.493.6943 x140', 'city__7': 'Aliyaview', 'customer_id__7': 'C008', 'last_name__8': 'Reichert', 'registration_date__8': datetime.date(2026, 7, 6), 'email__8': 'Chaim_McDermott@dana.io', 'first_name__8': 'Glenna', 'phone__8': '(775)976-6794 x41206', 'city__8': 'Bartholomebury', 'customer_id__8': 'C009', 'last_name__9': 'DuBuque', 'registration_date__9': datetime.date(2026, 7, 6), 'email__9': 'Rey.Padberg@karina.biz', 'first_name__9': 'Clementina', 'phone__9': '024-648-3804', 'city__9': 'Lebsackbury', 'customer_id__9': 'C010'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(20)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\load\loader.py", line 142, in run_loader
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, phone, city, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(phone__0)s, %(city__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(phone__9)s, %(city__9)s, %(registration_date__9)s)]
+[parameters: {'last_name__0': 'Graham', 'registration_date__0': datetime.date(2026, 7, 6), 'email__0': 'Sincere@april.biz', 'first_name__0': 'Leanne', 'phone__0': '1-770-736-8031 x56442', 'city__0': 'Gwenborough', 'customer_id__0': 'C001', 'last_name__1': 'Howell', 'registration_date__1': datetime.date(2026, 7, 6), 'email__1': 'Shanna@melissa.tv', 'first_name__1': 'Ervin', 'phone__1': '010-692-6593 x09125', 'city__1': 'Wisokyburgh', 'customer_id__1': 'C002', 'last_name__2': 'Bauch', 'registration_date__2': datetime.date(2026, 7, 6), 'email__2': 'Nathan@yesenia.net', 'first_name__2': 'Clementine', 'phone__2': '1-463-123-4447', 'city__2': 'McKenziehaven', 'customer_id__2': 'C003', 'last_name__3': 'Lebsack', 'registration_date__3': datetime.date(2026, 7, 6), 'email__3': 'Julianne.OConner@kory.org', 'first_name__3': 'Patricia', 'phone__3': '493-170-9623 x156', 'city__3': 'South Elvis', 'customer_id__3': 'C004', 'last_name__4': 'Dietrich', 'registration_date__4': datetime.date(2026, 7, 6), 'email__4': 'Lucio_Hettinger@annie.ca', 'first_name__4': 'Chelsey', 'phone__4': '(254)954-1289', 'city__4': 'Roscoeview', 'customer_id__4': 'C005', 'last_name__5': 'Dennis Schulist', 'registration_date__5': datetime.date(2026, 7, 6), 'email__5': 'Karley_Dach@jasper.info', 'first_name__5': 'Mrs.', 'phone__5': '1-477-935-8478 x6430', 'city__5': 'South Christy', 'customer_id__5': 'C006', 'last_name__6': 'Weissnat', 'registration_date__6': datetime.date(2026, 7, 6), 'email__6': 'Telly.Hoeger@billy.biz', 'first_name__6': 'Kurtis', 'phone__6': '210.067.6132', 'city__6': 'Howemouth', 'customer_id__6': 'C007', 'last_name__7': 'Runolfsdottir V', 'registration_date__7': datetime.date(2026, 7, 6), 'email__7': 'Sherwood@rosamond.me', 'first_name__7': 'Nicholas', 'phone__7': '586.493.6943 x140', 'city__7': 'Aliyaview', 'customer_id__7': 'C008', 'last_name__8': 'Reichert', 'registration_date__8': datetime.date(2026, 7, 6), 'email__8': 'Chaim_McDermott@dana.io', 'first_name__8': 'Glenna', 'phone__8': '(775)976-6794 x41206', 'city__8': 'Bartholomebury', 'customer_id__8': 'C009', 'last_name__9': 'DuBuque', 'registration_date__9': datetime.date(2026, 7, 6), 'email__9': 'Rey.Padberg@karina.biz', 'first_name__9': 'Clementina', 'phone__9': '024-648-3804', 'city__9': 'Lebsackbury', 'customer_id__9': 'C010'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-07-06 22:56:13,501 - ERROR - Pipeline Failed : (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, phone, city, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(phone__0)s, %(city__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(phone__9)s, %(city__9)s, %(registration_date__9)s)]
+[parameters: {'last_name__0': 'Graham', 'registration_date__0': datetime.date(2026, 7, 6), 'email__0': 'Sincere@april.biz', 'first_name__0': 'Leanne', 'phone__0': '1-770-736-8031 x56442', 'city__0': 'Gwenborough', 'customer_id__0': 'C001', 'last_name__1': 'Howell', 'registration_date__1': datetime.date(2026, 7, 6), 'email__1': 'Shanna@melissa.tv', 'first_name__1': 'Ervin', 'phone__1': '010-692-6593 x09125', 'city__1': 'Wisokyburgh', 'customer_id__1': 'C002', 'last_name__2': 'Bauch', 'registration_date__2': datetime.date(2026, 7, 6), 'email__2': 'Nathan@yesenia.net', 'first_name__2': 'Clementine', 'phone__2': '1-463-123-4447', 'city__2': 'McKenziehaven', 'customer_id__2': 'C003', 'last_name__3': 'Lebsack', 'registration_date__3': datetime.date(2026, 7, 6), 'email__3': 'Julianne.OConner@kory.org', 'first_name__3': 'Patricia', 'phone__3': '493-170-9623 x156', 'city__3': 'South Elvis', 'customer_id__3': 'C004', 'last_name__4': 'Dietrich', 'registration_date__4': datetime.date(2026, 7, 6), 'email__4': 'Lucio_Hettinger@annie.ca', 'first_name__4': 'Chelsey', 'phone__4': '(254)954-1289', 'city__4': 'Roscoeview', 'customer_id__4': 'C005', 'last_name__5': 'Dennis Schulist', 'registration_date__5': datetime.date(2026, 7, 6), 'email__5': 'Karley_Dach@jasper.info', 'first_name__5': 'Mrs.', 'phone__5': '1-477-935-8478 x6430', 'city__5': 'South Christy', 'customer_id__5': 'C006', 'last_name__6': 'Weissnat', 'registration_date__6': datetime.date(2026, 7, 6), 'email__6': 'Telly.Hoeger@billy.biz', 'first_name__6': 'Kurtis', 'phone__6': '210.067.6132', 'city__6': 'Howemouth', 'customer_id__6': 'C007', 'last_name__7': 'Runolfsdottir V', 'registration_date__7': datetime.date(2026, 7, 6), 'email__7': 'Sherwood@rosamond.me', 'first_name__7': 'Nicholas', 'phone__7': '586.493.6943 x140', 'city__7': 'Aliyaview', 'customer_id__7': 'C008', 'last_name__8': 'Reichert', 'registration_date__8': datetime.date(2026, 7, 6), 'email__8': 'Chaim_McDermott@dana.io', 'first_name__8': 'Glenna', 'phone__8': '(775)976-6794 x41206', 'city__8': 'Bartholomebury', 'customer_id__8': 'C009', 'last_name__9': 'DuBuque', 'registration_date__9': datetime.date(2026, 7, 6), 'email__9': 'Rey.Padberg@karina.biz', 'first_name__9': 'Clementina', 'phone__9': '024-648-3804', 'city__9': 'Lebsackbury', 'customer_id__9': 'C010'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(20)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\main.py", line 77, in main
+    load()
+    ~~~~^^
+  File "D:\enterprise_etl_pipeline\main.py", line 34, in load
+    customers_loaded, payments_loaded, tickets_loaded = run_loader()
+                                                        ~~~~~~~~~~^^
+  File "D:\enterprise_etl_pipeline\load\loader.py", line 142, in run_loader
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, phone, city, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(phone__0)s, %(city__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(phone__9)s, %(city__9)s, %(registration_date__9)s)]
+[parameters: {'last_name__0': 'Graham', 'registration_date__0': datetime.date(2026, 7, 6), 'email__0': 'Sincere@april.biz', 'first_name__0': 'Leanne', 'phone__0': '1-770-736-8031 x56442', 'city__0': 'Gwenborough', 'customer_id__0': 'C001', 'last_name__1': 'Howell', 'registration_date__1': datetime.date(2026, 7, 6), 'email__1': 'Shanna@melissa.tv', 'first_name__1': 'Ervin', 'phone__1': '010-692-6593 x09125', 'city__1': 'Wisokyburgh', 'customer_id__1': 'C002', 'last_name__2': 'Bauch', 'registration_date__2': datetime.date(2026, 7, 6), 'email__2': 'Nathan@yesenia.net', 'first_name__2': 'Clementine', 'phone__2': '1-463-123-4447', 'city__2': 'McKenziehaven', 'customer_id__2': 'C003', 'last_name__3': 'Lebsack', 'registration_date__3': datetime.date(2026, 7, 6), 'email__3': 'Julianne.OConner@kory.org', 'first_name__3': 'Patricia', 'phone__3': '493-170-9623 x156', 'city__3': 'South Elvis', 'customer_id__3': 'C004', 'last_name__4': 'Dietrich', 'registration_date__4': datetime.date(2026, 7, 6), 'email__4': 'Lucio_Hettinger@annie.ca', 'first_name__4': 'Chelsey', 'phone__4': '(254)954-1289', 'city__4': 'Roscoeview', 'customer_id__4': 'C005', 'last_name__5': 'Dennis Schulist', 'registration_date__5': datetime.date(2026, 7, 6), 'email__5': 'Karley_Dach@jasper.info', 'first_name__5': 'Mrs.', 'phone__5': '1-477-935-8478 x6430', 'city__5': 'South Christy', 'customer_id__5': 'C006', 'last_name__6': 'Weissnat', 'registration_date__6': datetime.date(2026, 7, 6), 'email__6': 'Telly.Hoeger@billy.biz', 'first_name__6': 'Kurtis', 'phone__6': '210.067.6132', 'city__6': 'Howemouth', 'customer_id__6': 'C007', 'last_name__7': 'Runolfsdottir V', 'registration_date__7': datetime.date(2026, 7, 6), 'email__7': 'Sherwood@rosamond.me', 'first_name__7': 'Nicholas', 'phone__7': '586.493.6943 x140', 'city__7': 'Aliyaview', 'customer_id__7': 'C008', 'last_name__8': 'Reichert', 'registration_date__8': datetime.date(2026, 7, 6), 'email__8': 'Chaim_McDermott@dana.io', 'first_name__8': 'Glenna', 'phone__8': '(775)976-6794 x41206', 'city__8': 'Bartholomebury', 'customer_id__8': 'C009', 'last_name__9': 'DuBuque', 'registration_date__9': datetime.date(2026, 7, 6), 'email__9': 'Rey.Padberg@karina.biz', 'first_name__9': 'Clementina', 'phone__9': '024-648-3804', 'city__9': 'Lebsackbury', 'customer_id__9': 'C010'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-07-06 22:58:58,707 - INFO - ETL Pipeline Started
+2026-07-06 22:58:58,708 - INFO - Extraction phase started
+2026-07-06 22:59:02,288 - INFO - Extraction phase completed
+2026-07-06 22:59:02,289 - INFO - Transformation phase started
+2026-07-06 22:59:02,437 - INFO - Loading phase started
+2026-07-06 22:59:02,492 - ERROR - Database Error: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, phone, city, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(phone__0)s, %(city__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(phone__9)s, %(city__9)s, %(registration_date__9)s)]
+[parameters: {'last_name__0': 'Graham', 'registration_date__0': datetime.date(2026, 7, 6), 'phone__0': '1-770-736-8031 x56442', 'city__0': 'Gwenborough', 'first_name__0': 'Leanne', 'customer_id__0': 'C001', 'email__0': 'Sincere@april.biz', 'last_name__1': 'Howell', 'registration_date__1': datetime.date(2026, 7, 6), 'phone__1': '010-692-6593 x09125', 'city__1': 'Wisokyburgh', 'first_name__1': 'Ervin', 'customer_id__1': 'C002', 'email__1': 'Shanna@melissa.tv', 'last_name__2': 'Bauch', 'registration_date__2': datetime.date(2026, 7, 6), 'phone__2': '1-463-123-4447', 'city__2': 'McKenziehaven', 'first_name__2': 'Clementine', 'customer_id__2': 'C003', 'email__2': 'Nathan@yesenia.net', 'last_name__3': 'Lebsack', 'registration_date__3': datetime.date(2026, 7, 6), 'phone__3': '493-170-9623 x156', 'city__3': 'South Elvis', 'first_name__3': 'Patricia', 'customer_id__3': 'C004', 'email__3': 'Julianne.OConner@kory.org', 'last_name__4': 'Dietrich', 'registration_date__4': datetime.date(2026, 7, 6), 'phone__4': '(254)954-1289', 'city__4': 'Roscoeview', 'first_name__4': 'Chelsey', 'customer_id__4': 'C005', 'email__4': 'Lucio_Hettinger@annie.ca', 'last_name__5': 'Dennis Schulist', 'registration_date__5': datetime.date(2026, 7, 6), 'phone__5': '1-477-935-8478 x6430', 'city__5': 'South Christy', 'first_name__5': 'Mrs.', 'customer_id__5': 'C006', 'email__5': 'Karley_Dach@jasper.info', 'last_name__6': 'Weissnat', 'registration_date__6': datetime.date(2026, 7, 6), 'phone__6': '210.067.6132', 'city__6': 'Howemouth', 'first_name__6': 'Kurtis', 'customer_id__6': 'C007', 'email__6': 'Telly.Hoeger@billy.biz', 'last_name__7': 'Runolfsdottir V', 'registration_date__7': datetime.date(2026, 7, 6), 'phone__7': '586.493.6943 x140', 'city__7': 'Aliyaview', 'first_name__7': 'Nicholas', 'customer_id__7': 'C008', 'email__7': 'Sherwood@rosamond.me', 'last_name__8': 'Reichert', 'registration_date__8': datetime.date(2026, 7, 6), 'phone__8': '(775)976-6794 x41206', 'city__8': 'Bartholomebury', 'first_name__8': 'Glenna', 'customer_id__8': 'C009', 'email__8': 'Chaim_McDermott@dana.io', 'last_name__9': 'DuBuque', 'registration_date__9': datetime.date(2026, 7, 6), 'phone__9': '024-648-3804', 'city__9': 'Lebsackbury', 'first_name__9': 'Clementina', 'customer_id__9': 'C010', 'email__9': 'Rey.Padberg@karina.biz'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(20)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\load\loader.py", line 142, in run_loader
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, phone, city, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(phone__0)s, %(city__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(phone__9)s, %(city__9)s, %(registration_date__9)s)]
+[parameters: {'last_name__0': 'Graham', 'registration_date__0': datetime.date(2026, 7, 6), 'phone__0': '1-770-736-8031 x56442', 'city__0': 'Gwenborough', 'first_name__0': 'Leanne', 'customer_id__0': 'C001', 'email__0': 'Sincere@april.biz', 'last_name__1': 'Howell', 'registration_date__1': datetime.date(2026, 7, 6), 'phone__1': '010-692-6593 x09125', 'city__1': 'Wisokyburgh', 'first_name__1': 'Ervin', 'customer_id__1': 'C002', 'email__1': 'Shanna@melissa.tv', 'last_name__2': 'Bauch', 'registration_date__2': datetime.date(2026, 7, 6), 'phone__2': '1-463-123-4447', 'city__2': 'McKenziehaven', 'first_name__2': 'Clementine', 'customer_id__2': 'C003', 'email__2': 'Nathan@yesenia.net', 'last_name__3': 'Lebsack', 'registration_date__3': datetime.date(2026, 7, 6), 'phone__3': '493-170-9623 x156', 'city__3': 'South Elvis', 'first_name__3': 'Patricia', 'customer_id__3': 'C004', 'email__3': 'Julianne.OConner@kory.org', 'last_name__4': 'Dietrich', 'registration_date__4': datetime.date(2026, 7, 6), 'phone__4': '(254)954-1289', 'city__4': 'Roscoeview', 'first_name__4': 'Chelsey', 'customer_id__4': 'C005', 'email__4': 'Lucio_Hettinger@annie.ca', 'last_name__5': 'Dennis Schulist', 'registration_date__5': datetime.date(2026, 7, 6), 'phone__5': '1-477-935-8478 x6430', 'city__5': 'South Christy', 'first_name__5': 'Mrs.', 'customer_id__5': 'C006', 'email__5': 'Karley_Dach@jasper.info', 'last_name__6': 'Weissnat', 'registration_date__6': datetime.date(2026, 7, 6), 'phone__6': '210.067.6132', 'city__6': 'Howemouth', 'first_name__6': 'Kurtis', 'customer_id__6': 'C007', 'email__6': 'Telly.Hoeger@billy.biz', 'last_name__7': 'Runolfsdottir V', 'registration_date__7': datetime.date(2026, 7, 6), 'phone__7': '586.493.6943 x140', 'city__7': 'Aliyaview', 'first_name__7': 'Nicholas', 'customer_id__7': 'C008', 'email__7': 'Sherwood@rosamond.me', 'last_name__8': 'Reichert', 'registration_date__8': datetime.date(2026, 7, 6), 'phone__8': '(775)976-6794 x41206', 'city__8': 'Bartholomebury', 'first_name__8': 'Glenna', 'customer_id__8': 'C009', 'email__8': 'Chaim_McDermott@dana.io', 'last_name__9': 'DuBuque', 'registration_date__9': datetime.date(2026, 7, 6), 'phone__9': '024-648-3804', 'city__9': 'Lebsackbury', 'first_name__9': 'Clementina', 'customer_id__9': 'C010', 'email__9': 'Rey.Padberg@karina.biz'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-07-06 22:59:02,511 - ERROR - Pipeline Failed : (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, phone, city, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(phone__0)s, %(city__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(phone__9)s, %(city__9)s, %(registration_date__9)s)]
+[parameters: {'last_name__0': 'Graham', 'registration_date__0': datetime.date(2026, 7, 6), 'phone__0': '1-770-736-8031 x56442', 'city__0': 'Gwenborough', 'first_name__0': 'Leanne', 'customer_id__0': 'C001', 'email__0': 'Sincere@april.biz', 'last_name__1': 'Howell', 'registration_date__1': datetime.date(2026, 7, 6), 'phone__1': '010-692-6593 x09125', 'city__1': 'Wisokyburgh', 'first_name__1': 'Ervin', 'customer_id__1': 'C002', 'email__1': 'Shanna@melissa.tv', 'last_name__2': 'Bauch', 'registration_date__2': datetime.date(2026, 7, 6), 'phone__2': '1-463-123-4447', 'city__2': 'McKenziehaven', 'first_name__2': 'Clementine', 'customer_id__2': 'C003', 'email__2': 'Nathan@yesenia.net', 'last_name__3': 'Lebsack', 'registration_date__3': datetime.date(2026, 7, 6), 'phone__3': '493-170-9623 x156', 'city__3': 'South Elvis', 'first_name__3': 'Patricia', 'customer_id__3': 'C004', 'email__3': 'Julianne.OConner@kory.org', 'last_name__4': 'Dietrich', 'registration_date__4': datetime.date(2026, 7, 6), 'phone__4': '(254)954-1289', 'city__4': 'Roscoeview', 'first_name__4': 'Chelsey', 'customer_id__4': 'C005', 'email__4': 'Lucio_Hettinger@annie.ca', 'last_name__5': 'Dennis Schulist', 'registration_date__5': datetime.date(2026, 7, 6), 'phone__5': '1-477-935-8478 x6430', 'city__5': 'South Christy', 'first_name__5': 'Mrs.', 'customer_id__5': 'C006', 'email__5': 'Karley_Dach@jasper.info', 'last_name__6': 'Weissnat', 'registration_date__6': datetime.date(2026, 7, 6), 'phone__6': '210.067.6132', 'city__6': 'Howemouth', 'first_name__6': 'Kurtis', 'customer_id__6': 'C007', 'email__6': 'Telly.Hoeger@billy.biz', 'last_name__7': 'Runolfsdottir V', 'registration_date__7': datetime.date(2026, 7, 6), 'phone__7': '586.493.6943 x140', 'city__7': 'Aliyaview', 'first_name__7': 'Nicholas', 'customer_id__7': 'C008', 'email__7': 'Sherwood@rosamond.me', 'last_name__8': 'Reichert', 'registration_date__8': datetime.date(2026, 7, 6), 'phone__8': '(775)976-6794 x41206', 'city__8': 'Bartholomebury', 'first_name__8': 'Glenna', 'customer_id__8': 'C009', 'email__8': 'Chaim_McDermott@dana.io', 'last_name__9': 'DuBuque', 'registration_date__9': datetime.date(2026, 7, 6), 'phone__9': '024-648-3804', 'city__9': 'Lebsackbury', 'first_name__9': 'Clementina', 'customer_id__9': 'C010', 'email__9': 'Rey.Padberg@karina.biz'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(20)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\main.py", line 77, in main
+    load()
+    ~~~~^^
+  File "D:\enterprise_etl_pipeline\main.py", line 34, in load
+    customers_loaded, payments_loaded, tickets_loaded = run_loader()
+                                                        ~~~~~~~~~~^^
+  File "D:\enterprise_etl_pipeline\load\loader.py", line 142, in run_loader
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, phone, city, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(phone__0)s, %(city__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(phone__9)s, %(city__9)s, %(registration_date__9)s)]
+[parameters: {'last_name__0': 'Graham', 'registration_date__0': datetime.date(2026, 7, 6), 'phone__0': '1-770-736-8031 x56442', 'city__0': 'Gwenborough', 'first_name__0': 'Leanne', 'customer_id__0': 'C001', 'email__0': 'Sincere@april.biz', 'last_name__1': 'Howell', 'registration_date__1': datetime.date(2026, 7, 6), 'phone__1': '010-692-6593 x09125', 'city__1': 'Wisokyburgh', 'first_name__1': 'Ervin', 'customer_id__1': 'C002', 'email__1': 'Shanna@melissa.tv', 'last_name__2': 'Bauch', 'registration_date__2': datetime.date(2026, 7, 6), 'phone__2': '1-463-123-4447', 'city__2': 'McKenziehaven', 'first_name__2': 'Clementine', 'customer_id__2': 'C003', 'email__2': 'Nathan@yesenia.net', 'last_name__3': 'Lebsack', 'registration_date__3': datetime.date(2026, 7, 6), 'phone__3': '493-170-9623 x156', 'city__3': 'South Elvis', 'first_name__3': 'Patricia', 'customer_id__3': 'C004', 'email__3': 'Julianne.OConner@kory.org', 'last_name__4': 'Dietrich', 'registration_date__4': datetime.date(2026, 7, 6), 'phone__4': '(254)954-1289', 'city__4': 'Roscoeview', 'first_name__4': 'Chelsey', 'customer_id__4': 'C005', 'email__4': 'Lucio_Hettinger@annie.ca', 'last_name__5': 'Dennis Schulist', 'registration_date__5': datetime.date(2026, 7, 6), 'phone__5': '1-477-935-8478 x6430', 'city__5': 'South Christy', 'first_name__5': 'Mrs.', 'customer_id__5': 'C006', 'email__5': 'Karley_Dach@jasper.info', 'last_name__6': 'Weissnat', 'registration_date__6': datetime.date(2026, 7, 6), 'phone__6': '210.067.6132', 'city__6': 'Howemouth', 'first_name__6': 'Kurtis', 'customer_id__6': 'C007', 'email__6': 'Telly.Hoeger@billy.biz', 'last_name__7': 'Runolfsdottir V', 'registration_date__7': datetime.date(2026, 7, 6), 'phone__7': '586.493.6943 x140', 'city__7': 'Aliyaview', 'first_name__7': 'Nicholas', 'customer_id__7': 'C008', 'email__7': 'Sherwood@rosamond.me', 'last_name__8': 'Reichert', 'registration_date__8': datetime.date(2026, 7, 6), 'phone__8': '(775)976-6794 x41206', 'city__8': 'Bartholomebury', 'first_name__8': 'Glenna', 'customer_id__8': 'C009', 'email__8': 'Chaim_McDermott@dana.io', 'last_name__9': 'DuBuque', 'registration_date__9': datetime.date(2026, 7, 6), 'phone__9': '024-648-3804', 'city__9': 'Lebsackbury', 'first_name__9': 'Clementina', 'customer_id__9': 'C010', 'email__9': 'Rey.Padberg@karina.biz'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-07-06 23:14:04,620 - INFO - ETL Pipeline Started
+2026-07-06 23:14:04,621 - INFO - Extraction phase started
+2026-07-06 23:14:07,955 - INFO - Extraction phase completed
+2026-07-06 23:14:07,955 - INFO - Transformation phase started
+2026-07-06 23:14:08,086 - INFO - Loading phase started
+2026-07-06 23:14:08,137 - ERROR - Database Error: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, city, phone, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(city__0)s, %(phone__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(city__9)s, %(phone__9)s, %(registration_date__9)s)]
+[parameters: {'first_name__0': 'Leanne', 'phone__0': '1-770-736-8031 x56442', 'customer_id__0': 'C001', 'registration_date__0': datetime.date(2026, 7, 6), 'city__0': 'Gwenborough', 'email__0': 'Sincere@april.biz', 'last_name__0': 'Graham', 'first_name__1': 'Ervin', 'phone__1': '010-692-6593 x09125', 'customer_id__1': 'C002', 'registration_date__1': datetime.date(2026, 7, 6), 'city__1': 'Wisokyburgh', 'email__1': 'Shanna@melissa.tv', 'last_name__1': 'Howell', 'first_name__2': 'Clementine', 'phone__2': '1-463-123-4447', 'customer_id__2': 'C003', 'registration_date__2': datetime.date(2026, 7, 6), 'city__2': 'McKenziehaven', 'email__2': 'Nathan@yesenia.net', 'last_name__2': 'Bauch', 'first_name__3': 'Patricia', 'phone__3': '493-170-9623 x156', 'customer_id__3': 'C004', 'registration_date__3': datetime.date(2026, 7, 6), 'city__3': 'South Elvis', 'email__3': 'Julianne.OConner@kory.org', 'last_name__3': 'Lebsack', 'first_name__4': 'Chelsey', 'phone__4': '(254)954-1289', 'customer_id__4': 'C005', 'registration_date__4': datetime.date(2026, 7, 6), 'city__4': 'Roscoeview', 'email__4': 'Lucio_Hettinger@annie.ca', 'last_name__4': 'Dietrich', 'first_name__5': 'Mrs.', 'phone__5': '1-477-935-8478 x6430', 'customer_id__5': 'C006', 'registration_date__5': datetime.date(2026, 7, 6), 'city__5': 'South Christy', 'email__5': 'Karley_Dach@jasper.info', 'last_name__5': 'Dennis Schulist', 'first_name__6': 'Kurtis', 'phone__6': '210.067.6132', 'customer_id__6': 'C007', 'registration_date__6': datetime.date(2026, 7, 6), 'city__6': 'Howemouth', 'email__6': 'Telly.Hoeger@billy.biz', 'last_name__6': 'Weissnat', 'first_name__7': 'Nicholas', 'phone__7': '586.493.6943 x140', 'customer_id__7': 'C008', 'registration_date__7': datetime.date(2026, 7, 6), 'city__7': 'Aliyaview', 'email__7': 'Sherwood@rosamond.me', 'last_name__7': 'Runolfsdottir V', 'first_name__8': 'Glenna', 'phone__8': '(775)976-6794 x41206', 'customer_id__8': 'C009', 'registration_date__8': datetime.date(2026, 7, 6), 'city__8': 'Bartholomebury', 'email__8': 'Chaim_McDermott@dana.io', 'last_name__8': 'Reichert', 'first_name__9': 'Clementina', 'phone__9': '024-648-3804', 'customer_id__9': 'C010', 'registration_date__9': datetime.date(2026, 7, 6), 'city__9': 'Lebsackbury', 'email__9': 'Rey.Padberg@karina.biz', 'last_name__9': 'DuBuque'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(20)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\load\loader.py", line 142, in run_loader
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, city, phone, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(city__0)s, %(phone__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(city__9)s, %(phone__9)s, %(registration_date__9)s)]
+[parameters: {'first_name__0': 'Leanne', 'phone__0': '1-770-736-8031 x56442', 'customer_id__0': 'C001', 'registration_date__0': datetime.date(2026, 7, 6), 'city__0': 'Gwenborough', 'email__0': 'Sincere@april.biz', 'last_name__0': 'Graham', 'first_name__1': 'Ervin', 'phone__1': '010-692-6593 x09125', 'customer_id__1': 'C002', 'registration_date__1': datetime.date(2026, 7, 6), 'city__1': 'Wisokyburgh', 'email__1': 'Shanna@melissa.tv', 'last_name__1': 'Howell', 'first_name__2': 'Clementine', 'phone__2': '1-463-123-4447', 'customer_id__2': 'C003', 'registration_date__2': datetime.date(2026, 7, 6), 'city__2': 'McKenziehaven', 'email__2': 'Nathan@yesenia.net', 'last_name__2': 'Bauch', 'first_name__3': 'Patricia', 'phone__3': '493-170-9623 x156', 'customer_id__3': 'C004', 'registration_date__3': datetime.date(2026, 7, 6), 'city__3': 'South Elvis', 'email__3': 'Julianne.OConner@kory.org', 'last_name__3': 'Lebsack', 'first_name__4': 'Chelsey', 'phone__4': '(254)954-1289', 'customer_id__4': 'C005', 'registration_date__4': datetime.date(2026, 7, 6), 'city__4': 'Roscoeview', 'email__4': 'Lucio_Hettinger@annie.ca', 'last_name__4': 'Dietrich', 'first_name__5': 'Mrs.', 'phone__5': '1-477-935-8478 x6430', 'customer_id__5': 'C006', 'registration_date__5': datetime.date(2026, 7, 6), 'city__5': 'South Christy', 'email__5': 'Karley_Dach@jasper.info', 'last_name__5': 'Dennis Schulist', 'first_name__6': 'Kurtis', 'phone__6': '210.067.6132', 'customer_id__6': 'C007', 'registration_date__6': datetime.date(2026, 7, 6), 'city__6': 'Howemouth', 'email__6': 'Telly.Hoeger@billy.biz', 'last_name__6': 'Weissnat', 'first_name__7': 'Nicholas', 'phone__7': '586.493.6943 x140', 'customer_id__7': 'C008', 'registration_date__7': datetime.date(2026, 7, 6), 'city__7': 'Aliyaview', 'email__7': 'Sherwood@rosamond.me', 'last_name__7': 'Runolfsdottir V', 'first_name__8': 'Glenna', 'phone__8': '(775)976-6794 x41206', 'customer_id__8': 'C009', 'registration_date__8': datetime.date(2026, 7, 6), 'city__8': 'Bartholomebury', 'email__8': 'Chaim_McDermott@dana.io', 'last_name__8': 'Reichert', 'first_name__9': 'Clementina', 'phone__9': '024-648-3804', 'customer_id__9': 'C010', 'registration_date__9': datetime.date(2026, 7, 6), 'city__9': 'Lebsackbury', 'email__9': 'Rey.Padberg@karina.biz', 'last_name__9': 'DuBuque'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-07-06 23:14:08,157 - ERROR - Pipeline Failed : (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, city, phone, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(city__0)s, %(phone__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(city__9)s, %(phone__9)s, %(registration_date__9)s)]
+[parameters: {'first_name__0': 'Leanne', 'phone__0': '1-770-736-8031 x56442', 'customer_id__0': 'C001', 'registration_date__0': datetime.date(2026, 7, 6), 'city__0': 'Gwenborough', 'email__0': 'Sincere@april.biz', 'last_name__0': 'Graham', 'first_name__1': 'Ervin', 'phone__1': '010-692-6593 x09125', 'customer_id__1': 'C002', 'registration_date__1': datetime.date(2026, 7, 6), 'city__1': 'Wisokyburgh', 'email__1': 'Shanna@melissa.tv', 'last_name__1': 'Howell', 'first_name__2': 'Clementine', 'phone__2': '1-463-123-4447', 'customer_id__2': 'C003', 'registration_date__2': datetime.date(2026, 7, 6), 'city__2': 'McKenziehaven', 'email__2': 'Nathan@yesenia.net', 'last_name__2': 'Bauch', 'first_name__3': 'Patricia', 'phone__3': '493-170-9623 x156', 'customer_id__3': 'C004', 'registration_date__3': datetime.date(2026, 7, 6), 'city__3': 'South Elvis', 'email__3': 'Julianne.OConner@kory.org', 'last_name__3': 'Lebsack', 'first_name__4': 'Chelsey', 'phone__4': '(254)954-1289', 'customer_id__4': 'C005', 'registration_date__4': datetime.date(2026, 7, 6), 'city__4': 'Roscoeview', 'email__4': 'Lucio_Hettinger@annie.ca', 'last_name__4': 'Dietrich', 'first_name__5': 'Mrs.', 'phone__5': '1-477-935-8478 x6430', 'customer_id__5': 'C006', 'registration_date__5': datetime.date(2026, 7, 6), 'city__5': 'South Christy', 'email__5': 'Karley_Dach@jasper.info', 'last_name__5': 'Dennis Schulist', 'first_name__6': 'Kurtis', 'phone__6': '210.067.6132', 'customer_id__6': 'C007', 'registration_date__6': datetime.date(2026, 7, 6), 'city__6': 'Howemouth', 'email__6': 'Telly.Hoeger@billy.biz', 'last_name__6': 'Weissnat', 'first_name__7': 'Nicholas', 'phone__7': '586.493.6943 x140', 'customer_id__7': 'C008', 'registration_date__7': datetime.date(2026, 7, 6), 'city__7': 'Aliyaview', 'email__7': 'Sherwood@rosamond.me', 'last_name__7': 'Runolfsdottir V', 'first_name__8': 'Glenna', 'phone__8': '(775)976-6794 x41206', 'customer_id__8': 'C009', 'registration_date__8': datetime.date(2026, 7, 6), 'city__8': 'Bartholomebury', 'email__8': 'Chaim_McDermott@dana.io', 'last_name__8': 'Reichert', 'first_name__9': 'Clementina', 'phone__9': '024-648-3804', 'customer_id__9': 'C010', 'registration_date__9': datetime.date(2026, 7, 6), 'city__9': 'Lebsackbury', 'email__9': 'Rey.Padberg@karina.biz', 'last_name__9': 'DuBuque'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.StringDataRightTruncation: value too long for type character varying(20)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\main.py", line 77, in main
+    load()
+    ~~~~^^
+  File "D:\enterprise_etl_pipeline\main.py", line 34, in load
+    customers_loaded, payments_loaded, tickets_loaded = run_loader()
+                                                        ~~~~~~~~~~^^
+  File "D:\enterprise_etl_pipeline\load\loader.py", line 142, in run_loader
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(20)
+
+[SQL: INSERT INTO customers (customer_id, first_name, last_name, email, city, phone, registration_date) VALUES (%(customer_id__0)s, %(first_name__0)s, %(last_name__0)s, %(email__0)s, %(city__0)s, %(phone__0)s, %(registration_date__0)s), (%(customer_id__1)s ... 1013 characters truncated ... irst_name__9)s, %(last_name__9)s, %(email__9)s, %(city__9)s, %(phone__9)s, %(registration_date__9)s)]
+[parameters: {'first_name__0': 'Leanne', 'phone__0': '1-770-736-8031 x56442', 'customer_id__0': 'C001', 'registration_date__0': datetime.date(2026, 7, 6), 'city__0': 'Gwenborough', 'email__0': 'Sincere@april.biz', 'last_name__0': 'Graham', 'first_name__1': 'Ervin', 'phone__1': '010-692-6593 x09125', 'customer_id__1': 'C002', 'registration_date__1': datetime.date(2026, 7, 6), 'city__1': 'Wisokyburgh', 'email__1': 'Shanna@melissa.tv', 'last_name__1': 'Howell', 'first_name__2': 'Clementine', 'phone__2': '1-463-123-4447', 'customer_id__2': 'C003', 'registration_date__2': datetime.date(2026, 7, 6), 'city__2': 'McKenziehaven', 'email__2': 'Nathan@yesenia.net', 'last_name__2': 'Bauch', 'first_name__3': 'Patricia', 'phone__3': '493-170-9623 x156', 'customer_id__3': 'C004', 'registration_date__3': datetime.date(2026, 7, 6), 'city__3': 'South Elvis', 'email__3': 'Julianne.OConner@kory.org', 'last_name__3': 'Lebsack', 'first_name__4': 'Chelsey', 'phone__4': '(254)954-1289', 'customer_id__4': 'C005', 'registration_date__4': datetime.date(2026, 7, 6), 'city__4': 'Roscoeview', 'email__4': 'Lucio_Hettinger@annie.ca', 'last_name__4': 'Dietrich', 'first_name__5': 'Mrs.', 'phone__5': '1-477-935-8478 x6430', 'customer_id__5': 'C006', 'registration_date__5': datetime.date(2026, 7, 6), 'city__5': 'South Christy', 'email__5': 'Karley_Dach@jasper.info', 'last_name__5': 'Dennis Schulist', 'first_name__6': 'Kurtis', 'phone__6': '210.067.6132', 'customer_id__6': 'C007', 'registration_date__6': datetime.date(2026, 7, 6), 'city__6': 'Howemouth', 'email__6': 'Telly.Hoeger@billy.biz', 'last_name__6': 'Weissnat', 'first_name__7': 'Nicholas', 'phone__7': '586.493.6943 x140', 'customer_id__7': 'C008', 'registration_date__7': datetime.date(2026, 7, 6), 'city__7': 'Aliyaview', 'email__7': 'Sherwood@rosamond.me', 'last_name__7': 'Runolfsdottir V', 'first_name__8': 'Glenna', 'phone__8': '(775)976-6794 x41206', 'customer_id__8': 'C009', 'registration_date__8': datetime.date(2026, 7, 6), 'city__8': 'Bartholomebury', 'email__8': 'Chaim_McDermott@dana.io', 'last_name__8': 'Reichert', 'first_name__9': 'Clementina', 'phone__9': '024-648-3804', 'customer_id__9': 'C010', 'registration_date__9': datetime.date(2026, 7, 6), 'city__9': 'Lebsackbury', 'email__9': 'Rey.Padberg@karina.biz', 'last_name__9': 'DuBuque'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-07-06 23:21:07,150 - INFO - ETL Pipeline Started
+2026-07-06 23:21:07,152 - INFO - Extraction phase started
+2026-07-06 23:21:10,804 - INFO - Extraction phase completed
+2026-07-06 23:21:10,804 - INFO - Transformation phase started
+2026-07-06 23:21:10,953 - INFO - Loading phase started
+2026-07-06 23:21:11,254 - ERROR - Database Error: (psycopg2.errors.ForeignKeyViolation) insert or update on table "payments" violates foreign key constraint "payments_customer_id_fkey"
+DETAIL:  Key (customer_id)=(C011) is not present in table "customers".
+
+[SQL: INSERT INTO payments (payment_id, customer_id, ticket_id, amount, payment_method, payment_status, payment_date) VALUES (%(payment_id__0)s, %(customer_id__0)s, %(ticket_id__0)s, %(amount__0)s, %(payment_method__0)s, %(payment_status__0)s, %(payment_da ... 4137 characters truncated ... cket_id__29)s, %(amount__29)s, %(payment_method__29)s, %(payment_status__29)s, %(payment_date__29)s)]
+[parameters: {'ticket_id__0': 'T001', 'payment_method__0': 'Credit Card', 'customer_id__0': 'C001', 'payment_date__0': datetime.date(2026, 7, 6), 'payment_status__0': 'Success', 'amount__0': 11510.81, 'payment_id__0': 'P001', 'ticket_id__1': 'T002', 'payment_method__1': 'Credit Card', 'customer_id__1': 'C002', 'payment_date__1': datetime.date(2026, 7, 6), 'payment_status__1': 'Success', 'amount__1': 125.7, 'payment_id__1': 'P002', 'ticket_id__2': 'T003', 'payment_method__2': 'Credit Card', 'customer_id__2': 'C003', 'payment_date__2': datetime.date(2026, 7, 6), 'payment_status__2': 'Success', 'amount__2': 1625.77, 'payment_id__2': 'P003', 'ticket_id__3': 'T004', 'payment_method__3': 'Credit Card', 'customer_id__3': 'C004', 'payment_date__3': datetime.date(2026, 7, 6), 'payment_status__3': 'Success', 'amount__3': 636.81, 'payment_id__3': 'P004', 'ticket_id__4': 'T005', 'payment_method__4': 'Credit Card', 'customer_id__4': 'C005', 'payment_date__4': datetime.date(2026, 7, 6), 'payment_status__4': 'Success', 'amount__4': 1205.8, 'payment_id__4': 'P005', 'ticket_id__5': 'T006', 'payment_method__5': 'Credit Card', 'customer_id__5': 'C006', 'payment_date__5': datetime.date(2026, 7, 6), 'payment_status__5': 'Success', 'amount__5': 46641.06, 'payment_id__5': 'P006', 'ticket_id__6': 'T007', 'payment_method__6': 'Credit Card', 'customer_id__6': 'C007', 'payment_date__6': datetime.date(2026, 7, 6), 'payment_status__6': 'Success', 'amount__6': 1103.65, 'payment_id__6': 'P007', 'ticket_id__7': 'T008' ... 110 parameters truncated ... 'payment_id__22': 'P023', 'ticket_id__23': 'T024', 'payment_method__23': 'Credit Card', 'customer_id__23': 'C024', 'payment_date__23': datetime.date(2026, 7, 6), 'payment_status__23': 'Success', 'amount__23': 26780.04, 'payment_id__23': 'P024', 'ticket_id__24': 'T025', 'payment_method__24': 'Credit Card', 'customer_id__24': 'C025', 'payment_date__24': datetime.date(2026, 7, 6), 'payment_status__24': 'Success', 'amount__24': 1070.83, 'payment_id__24': 'P025', 'ticket_id__25': 'T026', 'payment_method__25': 'Credit Card', 'customer_id__25': 'C026', 'payment_date__25': datetime.date(2026, 7, 6), 'payment_status__25': 'Success', 'amount__25': 1021.64, 'payment_id__25': 'P026', 'ticket_id__26': 'T027', 'payment_method__26': 'Credit Card', 'customer_id__26': 'C027', 'payment_date__26': datetime.date(2026, 7, 6), 'payment_status__26': 'Success', 'amount__26': 100496.36, 'payment_id__26': 'P027', 'ticket_id__27': 'T028', 'payment_method__27': 'Credit Card', 'customer_id__27': 'C028', 'payment_date__27': datetime.date(2026, 7, 6), 'payment_status__27': 'Success', 'amount__27': 5531.37, 'payment_id__27': 'P028', 'ticket_id__28': 'T029', 'payment_method__28': 'Credit Card', 'customer_id__28': 'C029', 'payment_date__28': datetime.date(2026, 7, 6), 'payment_status__28': 'Success', 'amount__28': 2077.88, 'payment_id__28': 'P029', 'ticket_id__29': 'T030', 'payment_method__29': 'Credit Card', 'customer_id__29': 'C030', 'payment_date__29': datetime.date(2026, 7, 6), 'payment_status__29': 'Success', 'amount__29': 155507.16, 'payment_id__29': 'P030'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.ForeignKeyViolation: insert or update on table "payments" violates foreign key constraint "payments_customer_id_fkey"
+DETAIL:  Key (customer_id)=(C011) is not present in table "customers".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\load\loader.py", line 148, in run_loader
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.ForeignKeyViolation) insert or update on table "payments" violates foreign key constraint "payments_customer_id_fkey"
+DETAIL:  Key (customer_id)=(C011) is not present in table "customers".
+
+[SQL: INSERT INTO payments (payment_id, customer_id, ticket_id, amount, payment_method, payment_status, payment_date) VALUES (%(payment_id__0)s, %(customer_id__0)s, %(ticket_id__0)s, %(amount__0)s, %(payment_method__0)s, %(payment_status__0)s, %(payment_da ... 4137 characters truncated ... cket_id__29)s, %(amount__29)s, %(payment_method__29)s, %(payment_status__29)s, %(payment_date__29)s)]
+[parameters: {'ticket_id__0': 'T001', 'payment_method__0': 'Credit Card', 'customer_id__0': 'C001', 'payment_date__0': datetime.date(2026, 7, 6), 'payment_status__0': 'Success', 'amount__0': 11510.81, 'payment_id__0': 'P001', 'ticket_id__1': 'T002', 'payment_method__1': 'Credit Card', 'customer_id__1': 'C002', 'payment_date__1': datetime.date(2026, 7, 6), 'payment_status__1': 'Success', 'amount__1': 125.7, 'payment_id__1': 'P002', 'ticket_id__2': 'T003', 'payment_method__2': 'Credit Card', 'customer_id__2': 'C003', 'payment_date__2': datetime.date(2026, 7, 6), 'payment_status__2': 'Success', 'amount__2': 1625.77, 'payment_id__2': 'P003', 'ticket_id__3': 'T004', 'payment_method__3': 'Credit Card', 'customer_id__3': 'C004', 'payment_date__3': datetime.date(2026, 7, 6), 'payment_status__3': 'Success', 'amount__3': 636.81, 'payment_id__3': 'P004', 'ticket_id__4': 'T005', 'payment_method__4': 'Credit Card', 'customer_id__4': 'C005', 'payment_date__4': datetime.date(2026, 7, 6), 'payment_status__4': 'Success', 'amount__4': 1205.8, 'payment_id__4': 'P005', 'ticket_id__5': 'T006', 'payment_method__5': 'Credit Card', 'customer_id__5': 'C006', 'payment_date__5': datetime.date(2026, 7, 6), 'payment_status__5': 'Success', 'amount__5': 46641.06, 'payment_id__5': 'P006', 'ticket_id__6': 'T007', 'payment_method__6': 'Credit Card', 'customer_id__6': 'C007', 'payment_date__6': datetime.date(2026, 7, 6), 'payment_status__6': 'Success', 'amount__6': 1103.65, 'payment_id__6': 'P007', 'ticket_id__7': 'T008' ... 110 parameters truncated ... 'payment_id__22': 'P023', 'ticket_id__23': 'T024', 'payment_method__23': 'Credit Card', 'customer_id__23': 'C024', 'payment_date__23': datetime.date(2026, 7, 6), 'payment_status__23': 'Success', 'amount__23': 26780.04, 'payment_id__23': 'P024', 'ticket_id__24': 'T025', 'payment_method__24': 'Credit Card', 'customer_id__24': 'C025', 'payment_date__24': datetime.date(2026, 7, 6), 'payment_status__24': 'Success', 'amount__24': 1070.83, 'payment_id__24': 'P025', 'ticket_id__25': 'T026', 'payment_method__25': 'Credit Card', 'customer_id__25': 'C026', 'payment_date__25': datetime.date(2026, 7, 6), 'payment_status__25': 'Success', 'amount__25': 1021.64, 'payment_id__25': 'P026', 'ticket_id__26': 'T027', 'payment_method__26': 'Credit Card', 'customer_id__26': 'C027', 'payment_date__26': datetime.date(2026, 7, 6), 'payment_status__26': 'Success', 'amount__26': 100496.36, 'payment_id__26': 'P027', 'ticket_id__27': 'T028', 'payment_method__27': 'Credit Card', 'customer_id__27': 'C028', 'payment_date__27': datetime.date(2026, 7, 6), 'payment_status__27': 'Success', 'amount__27': 5531.37, 'payment_id__27': 'P028', 'ticket_id__28': 'T029', 'payment_method__28': 'Credit Card', 'customer_id__28': 'C029', 'payment_date__28': datetime.date(2026, 7, 6), 'payment_status__28': 'Success', 'amount__28': 2077.88, 'payment_id__28': 'P029', 'ticket_id__29': 'T030', 'payment_method__29': 'Credit Card', 'customer_id__29': 'C030', 'payment_date__29': datetime.date(2026, 7, 6), 'payment_status__29': 'Success', 'amount__29': 155507.16, 'payment_id__29': 'P030'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-07-06 23:21:11,274 - ERROR - Pipeline Failed : (psycopg2.errors.ForeignKeyViolation) insert or update on table "payments" violates foreign key constraint "payments_customer_id_fkey"
+DETAIL:  Key (customer_id)=(C011) is not present in table "customers".
+
+[SQL: INSERT INTO payments (payment_id, customer_id, ticket_id, amount, payment_method, payment_status, payment_date) VALUES (%(payment_id__0)s, %(customer_id__0)s, %(ticket_id__0)s, %(amount__0)s, %(payment_method__0)s, %(payment_status__0)s, %(payment_da ... 4137 characters truncated ... cket_id__29)s, %(amount__29)s, %(payment_method__29)s, %(payment_status__29)s, %(payment_date__29)s)]
+[parameters: {'ticket_id__0': 'T001', 'payment_method__0': 'Credit Card', 'customer_id__0': 'C001', 'payment_date__0': datetime.date(2026, 7, 6), 'payment_status__0': 'Success', 'amount__0': 11510.81, 'payment_id__0': 'P001', 'ticket_id__1': 'T002', 'payment_method__1': 'Credit Card', 'customer_id__1': 'C002', 'payment_date__1': datetime.date(2026, 7, 6), 'payment_status__1': 'Success', 'amount__1': 125.7, 'payment_id__1': 'P002', 'ticket_id__2': 'T003', 'payment_method__2': 'Credit Card', 'customer_id__2': 'C003', 'payment_date__2': datetime.date(2026, 7, 6), 'payment_status__2': 'Success', 'amount__2': 1625.77, 'payment_id__2': 'P003', 'ticket_id__3': 'T004', 'payment_method__3': 'Credit Card', 'customer_id__3': 'C004', 'payment_date__3': datetime.date(2026, 7, 6), 'payment_status__3': 'Success', 'amount__3': 636.81, 'payment_id__3': 'P004', 'ticket_id__4': 'T005', 'payment_method__4': 'Credit Card', 'customer_id__4': 'C005', 'payment_date__4': datetime.date(2026, 7, 6), 'payment_status__4': 'Success', 'amount__4': 1205.8, 'payment_id__4': 'P005', 'ticket_id__5': 'T006', 'payment_method__5': 'Credit Card', 'customer_id__5': 'C006', 'payment_date__5': datetime.date(2026, 7, 6), 'payment_status__5': 'Success', 'amount__5': 46641.06, 'payment_id__5': 'P006', 'ticket_id__6': 'T007', 'payment_method__6': 'Credit Card', 'customer_id__6': 'C007', 'payment_date__6': datetime.date(2026, 7, 6), 'payment_status__6': 'Success', 'amount__6': 1103.65, 'payment_id__6': 'P007', 'ticket_id__7': 'T008' ... 110 parameters truncated ... 'payment_id__22': 'P023', 'ticket_id__23': 'T024', 'payment_method__23': 'Credit Card', 'customer_id__23': 'C024', 'payment_date__23': datetime.date(2026, 7, 6), 'payment_status__23': 'Success', 'amount__23': 26780.04, 'payment_id__23': 'P024', 'ticket_id__24': 'T025', 'payment_method__24': 'Credit Card', 'customer_id__24': 'C025', 'payment_date__24': datetime.date(2026, 7, 6), 'payment_status__24': 'Success', 'amount__24': 1070.83, 'payment_id__24': 'P025', 'ticket_id__25': 'T026', 'payment_method__25': 'Credit Card', 'customer_id__25': 'C026', 'payment_date__25': datetime.date(2026, 7, 6), 'payment_status__25': 'Success', 'amount__25': 1021.64, 'payment_id__25': 'P026', 'ticket_id__26': 'T027', 'payment_method__26': 'Credit Card', 'customer_id__26': 'C027', 'payment_date__26': datetime.date(2026, 7, 6), 'payment_status__26': 'Success', 'amount__26': 100496.36, 'payment_id__26': 'P027', 'ticket_id__27': 'T028', 'payment_method__27': 'Credit Card', 'customer_id__27': 'C028', 'payment_date__27': datetime.date(2026, 7, 6), 'payment_status__27': 'Success', 'amount__27': 5531.37, 'payment_id__27': 'P028', 'ticket_id__28': 'T029', 'payment_method__28': 'Credit Card', 'customer_id__28': 'C029', 'payment_date__28': datetime.date(2026, 7, 6), 'payment_status__28': 'Success', 'amount__28': 2077.88, 'payment_id__28': 'P029', 'ticket_id__29': 'T030', 'payment_method__29': 'Credit Card', 'customer_id__29': 'C030', 'payment_date__29': datetime.date(2026, 7, 6), 'payment_status__29': 'Success', 'amount__29': 155507.16, 'payment_id__29': 'P030'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.ForeignKeyViolation: insert or update on table "payments" violates foreign key constraint "payments_customer_id_fkey"
+DETAIL:  Key (customer_id)=(C011) is not present in table "customers".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\main.py", line 77, in main
+    load()
+    ~~~~^^
+  File "D:\enterprise_etl_pipeline\main.py", line 34, in load
+    customers_loaded, payments_loaded, tickets_loaded = run_loader()
+                                                        ~~~~~~~~~~^^
+  File "D:\enterprise_etl_pipeline\load\loader.py", line 148, in run_loader
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.ForeignKeyViolation) insert or update on table "payments" violates foreign key constraint "payments_customer_id_fkey"
+DETAIL:  Key (customer_id)=(C011) is not present in table "customers".
+
+[SQL: INSERT INTO payments (payment_id, customer_id, ticket_id, amount, payment_method, payment_status, payment_date) VALUES (%(payment_id__0)s, %(customer_id__0)s, %(ticket_id__0)s, %(amount__0)s, %(payment_method__0)s, %(payment_status__0)s, %(payment_da ... 4137 characters truncated ... cket_id__29)s, %(amount__29)s, %(payment_method__29)s, %(payment_status__29)s, %(payment_date__29)s)]
+[parameters: {'ticket_id__0': 'T001', 'payment_method__0': 'Credit Card', 'customer_id__0': 'C001', 'payment_date__0': datetime.date(2026, 7, 6), 'payment_status__0': 'Success', 'amount__0': 11510.81, 'payment_id__0': 'P001', 'ticket_id__1': 'T002', 'payment_method__1': 'Credit Card', 'customer_id__1': 'C002', 'payment_date__1': datetime.date(2026, 7, 6), 'payment_status__1': 'Success', 'amount__1': 125.7, 'payment_id__1': 'P002', 'ticket_id__2': 'T003', 'payment_method__2': 'Credit Card', 'customer_id__2': 'C003', 'payment_date__2': datetime.date(2026, 7, 6), 'payment_status__2': 'Success', 'amount__2': 1625.77, 'payment_id__2': 'P003', 'ticket_id__3': 'T004', 'payment_method__3': 'Credit Card', 'customer_id__3': 'C004', 'payment_date__3': datetime.date(2026, 7, 6), 'payment_status__3': 'Success', 'amount__3': 636.81, 'payment_id__3': 'P004', 'ticket_id__4': 'T005', 'payment_method__4': 'Credit Card', 'customer_id__4': 'C005', 'payment_date__4': datetime.date(2026, 7, 6), 'payment_status__4': 'Success', 'amount__4': 1205.8, 'payment_id__4': 'P005', 'ticket_id__5': 'T006', 'payment_method__5': 'Credit Card', 'customer_id__5': 'C006', 'payment_date__5': datetime.date(2026, 7, 6), 'payment_status__5': 'Success', 'amount__5': 46641.06, 'payment_id__5': 'P006', 'ticket_id__6': 'T007', 'payment_method__6': 'Credit Card', 'customer_id__6': 'C007', 'payment_date__6': datetime.date(2026, 7, 6), 'payment_status__6': 'Success', 'amount__6': 1103.65, 'payment_id__6': 'P007', 'ticket_id__7': 'T008' ... 110 parameters truncated ... 'payment_id__22': 'P023', 'ticket_id__23': 'T024', 'payment_method__23': 'Credit Card', 'customer_id__23': 'C024', 'payment_date__23': datetime.date(2026, 7, 6), 'payment_status__23': 'Success', 'amount__23': 26780.04, 'payment_id__23': 'P024', 'ticket_id__24': 'T025', 'payment_method__24': 'Credit Card', 'customer_id__24': 'C025', 'payment_date__24': datetime.date(2026, 7, 6), 'payment_status__24': 'Success', 'amount__24': 1070.83, 'payment_id__24': 'P025', 'ticket_id__25': 'T026', 'payment_method__25': 'Credit Card', 'customer_id__25': 'C026', 'payment_date__25': datetime.date(2026, 7, 6), 'payment_status__25': 'Success', 'amount__25': 1021.64, 'payment_id__25': 'P026', 'ticket_id__26': 'T027', 'payment_method__26': 'Credit Card', 'customer_id__26': 'C027', 'payment_date__26': datetime.date(2026, 7, 6), 'payment_status__26': 'Success', 'amount__26': 100496.36, 'payment_id__26': 'P027', 'ticket_id__27': 'T028', 'payment_method__27': 'Credit Card', 'customer_id__27': 'C028', 'payment_date__27': datetime.date(2026, 7, 6), 'payment_status__27': 'Success', 'amount__27': 5531.37, 'payment_id__27': 'P028', 'ticket_id__28': 'T029', 'payment_method__28': 'Credit Card', 'customer_id__28': 'C029', 'payment_date__28': datetime.date(2026, 7, 6), 'payment_status__28': 'Success', 'amount__28': 2077.88, 'payment_id__28': 'P029', 'ticket_id__29': 'T030', 'payment_method__29': 'Credit Card', 'customer_id__29': 'C030', 'payment_date__29': datetime.date(2026, 7, 6), 'payment_status__29': 'Success', 'amount__29': 155507.16, 'payment_id__29': 'P030'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)

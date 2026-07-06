@@ -12,11 +12,11 @@ class Customer(Base):
     __tablename__ = "customers"
 
     customer_id = Column(String, primary_key=True)
-    first_name = Column(String(100), nullable=False)
-    last_name = Column(String(100), nullable=False)
-    email = Column(String(150), unique=True, nullable=False)
-    phone = Column(String(20))
-    city = Column(String(100))
+    first_name = Column(String(255))
+    last_name = Column(String(255))
+    email = Column(String(255))
+    city = Column(String(255))
+    phone = Column(String(50))
     registration_date = Column(Date)
 
 
@@ -65,6 +65,10 @@ class Payment(Base):
 # -------------------------
 # Create Tables
 # -------------------------
+# Delete existing tables
+Base.metadata.drop_all(bind=engine)
+
+# Create tables again with the new schema
 Base.metadata.create_all(bind=engine)
 
-print("✓ PostgreSQL Tables Created Successfully")
+print("✓ PostgreSQL Tables Recreated Successfully")

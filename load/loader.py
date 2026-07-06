@@ -5,6 +5,7 @@ from load.database import SessionLocal
 from load.models import Customer, Payment, Ticket
 from config.logger import logger
 
+
 def load_customers(session):
 
     df = pd.read_csv("data/processed/customers.csv")
@@ -139,21 +140,28 @@ def run_loader():
 
         customers = load_customers(session)
         session.commit()
+
         tickets = load_tickets(session)
         session.commit()
-        payments = load_payments(session)
 
+        payments = load_payments(session)
         session.commit()
 
         return customers, payments, tickets
 
-    except SQLAlchemyError as e:
+    except Exception as e:
 
         session.rollback()
 
+        print("\n" + "=" * 60)
+        print("DATABASE ERROR")
+        print("=" * 60)
+        print(e)
+        print("=" * 60)
+
         logger.exception(f"Database Error: {e}")
 
-        return 0, 0, 0
+        raise
 
     finally:
 
