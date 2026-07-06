@@ -1,26 +1,37 @@
 import pandas as pd
+import os
+
 
 def clean_customers(input_file, output_file):
-    # Load JSON data
+
     df = pd.read_json(input_file)
 
-    # Remove duplicate records
-    df = df.drop_duplicates()
+    processed = pd.DataFrame()
 
-    # Handle missing values
-    df = df.fillna("Unknown")
-
-    # Standardize text columns
-    df["first_name"] = df["first_name"].str.title()
-    df["last_name"] = df["last_name"].str.title()
-    df["city"] = df["city"].str.title()
-
-    # Convert registration date
-    df["registration_date"] = pd.to_datetime(
-        df["registration_date"]
+    processed["customer_id"] = df["id"].apply(
+        lambda x: f"C{x:03d}"
     )
 
-    # Save processed file
-    df.to_csv(output_file, index=False)
+    processed["first_name"] = df["name"].apply(
+        lambda x: x.split()[0]
+    )
 
-    print(f"Customers processed: {output_file}")
+    processed["last_name"] = df["name"].apply(
+        lambda x: " ".join(x.split()[1:])
+    )
+
+    processed["email"] = df["email"]
+
+    processed["phone"] = df["phone"]
+
+    processed["city"] = df["address"].apply(
+        lambda x: x["city"]
+    )
+
+    processed["registration_date"] = pd.Timestamp.today().normalize()
+
+    os.makedirs("data/processed", exist_ok=True)
+
+    processed.to_csv(output_file, index=False)
+
+    print(f"Customers processed : {len(processed)}")

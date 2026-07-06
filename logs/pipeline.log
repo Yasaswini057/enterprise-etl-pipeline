@@ -230,3 +230,59 @@ Traceback (most recent call last):
   File "pandas/_libs/hashtable_class_helper.pxi", line 7873, in pandas._libs.hashtable.PyObjectHashTable.factorize
   File "pandas/_libs/hashtable_class_helper.pxi", line 7783, in pandas._libs.hashtable.PyObjectHashTable._unique
 TypeError: unhashable type: 'dict'
+2026-07-06 21:48:28,309 - INFO - ETL Pipeline Started
+2026-07-06 21:48:28,313 - INFO - Extraction phase started
+2026-07-06 21:48:32,720 - INFO - Extraction phase completed
+2026-07-06 21:48:32,721 - INFO - Transformation phase started
+2026-07-06 21:48:32,803 - ERROR - Pipeline Failed : unhashable type: 'dict'
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\main.py", line 76, in main
+    transform()
+    ~~~~~~~~~^^
+  File "D:\enterprise_etl_pipeline\main.py", line 25, in transform
+    customers, payments, tickets = run_transformations()
+                                   ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\enterprise_etl_pipeline\transform\transformer.py", line 10, in run_transformations
+    clean_customers(
+    ~~~~~~~~~~~~~~~^
+        "data/raw/customers.json",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "data/processed/customers.csv"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\enterprise_etl_pipeline\transform\clean_customers.py", line 8, in clean_customers
+    df = df.drop_duplicates()
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 6840, in drop_duplicates
+    result = self[-self.duplicated(subset, keep=keep)]
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 6980, in duplicated
+    labels, shape = map(list, zip(*map(f, vals)))
+                              ~~~^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 6948, in f
+    labels, shape = algorithms.factorize(vals, size_hint=len(self))
+                    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\algorithms.py", line 795, in factorize
+    codes, uniques = factorize_array(
+                     ~~~~~~~~~~~~~~~^
+        values,
+        ^^^^^^^
+        use_na_sentinel=use_na_sentinel,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        size_hint=size_hint,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\algorithms.py", line 595, in factorize_array
+    uniques, codes = table.factorize(
+                     ~~~~~~~~~~~~~~~^
+        values,
+        ^^^^^^^
+    ...<3 lines>...
+        ignore_na=use_na_sentinel,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7293, in pandas._libs.hashtable.PyObjectHashTable.factorize
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7203, in pandas._libs.hashtable.PyObjectHashTable._unique
+TypeError: unhashable type: 'dict'

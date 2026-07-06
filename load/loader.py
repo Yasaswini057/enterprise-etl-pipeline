@@ -3,7 +3,7 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from load.database import SessionLocal
 from load.models import Customer, Payment, Ticket
-
+from config.logger import logger
 
 def load_customers(session):
 
@@ -151,7 +151,7 @@ def run_loader():
 
         session.rollback()
 
-        print("Database Error :", e)
+        logger.exception(f"Database Error: {e}")
 
         return 0, 0, 0
 
