@@ -1,27 +1,32 @@
 import pandas as pd
+import os
+from datetime import datetime
+
 
 def clean_payments(input_file, output_file):
-    # Load JSON data
-    df = pd.read_json(input_file)
 
-    # Remove duplicates
-    df = df.drop_duplicates()
+    raw = pd.read_json(input_file)
 
-    # Handle missing values
-    df = df.fillna("Unknown")
+    carts = raw["carts"]
 
-    # Standardize payment method
-    df["payment_method"] = df["payment_method"].str.title()
+    records = []
 
-    # Standardize payment status
-    df["payment_status"] = df["payment_status"].str.title()
+    for cart in carts:
 
-    # Convert date column
-    df["payment_date"] = pd.to_datetime(
-        df["payment_date"]
-    )
+        records.append({
+            "payment_id": f"P{cart['id']:03d}",
+            "customer_id": f"C{cart['userId']:03d}",
+            "ticket_id": f"T{cart['id']:03d}",
+            "amount": cart["discountedTotal"],
+            "payment_method": "Credit Card",
+            "payment_status": "Success",
+            "payment_date": datetime.today().date()
+        })
 
-    # Save CSV
+    df = pd.DataFrame(records)
+
+    os.makedirs("data/processed", exist_ok=True)
+
     df.to_csv(output_file, index=False)
 
-    print(f"Payments processed: {output_file}")
+    print(f"Payments processed : {len(df)}")
