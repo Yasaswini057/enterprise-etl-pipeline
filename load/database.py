@@ -46,15 +46,18 @@ def get_db():
     finally:
         db.close()
 
+from sqlalchemy import text
 
 def test_connection():
-    """
-    Test PostgreSQL connection.
-    """
     try:
         connection = engine.connect()
+
+        result = connection.execute(text("SELECT current_database();"))
+        print(result.fetchone())
+
         print("✓ PostgreSQL Connected Successfully")
         connection.close()
+
     except Exception as e:
         print("✗ Database Connection Failed")
         print(e)
