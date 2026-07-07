@@ -1,138 +1,155 @@
 # Enterprise ETL Pipeline
 
-## Project Overview
-This project extracts data from multiple sources, transforms and cleans the data, and loads it into a centralized database.
+## Overview
 
-## ETL Workflow
+Enterprise ETL Pipeline is a Python-based data engineering project that extracts data from multiple APIs, transforms and cleans the data, and loads it into a PostgreSQL database using SQLAlchemy ORM.
 
-Salesforce / Stripe / Zendesk
-          ↓
-      Extract
-          ↓
-     Transform
-          ↓
-        Load
-          ↓
-   SQLite Database
-
-## Technologies Used
-- Python language
-- Apache Airflow
-- SQLite
-- GitHub
-
-## Project Structure
-- extract/      -> Extraction Module
-- transform/    -> Transformation Module
-- load/         -> Loading Module
-- airflow/      -> DAG Workflow
-- docs/         -> Documentation
-- logs/         -> Log Files
-
-## Team Members
-
-
-Member 1 - Integration & Airflow
-Member 2 - Extraction
-Member 3 - Transformation
-Member 4 - Database
-Member 5 - Testing & Documentation
-
-## Project Flow
-
-Extract → Transform → Load
-
-## Technologies
-
-Python
-Pandas
-PostgreSQL
-SQLAlchemy
-Airflow
-Docker
-GitHub
-
-## Project Workflow
-
-1. Extract data from APIs
-2. Transform and clean data
-3. Load data into PostgreSQL
-4. Generate reports and dashboards
-
-## Folder Structure
-
-config/
-extract/
-transform/
-load/
-tests/
-airflow/
-docs/
-docker/
-requirements/
+This project demonstrates a complete Extract, Transform, Load (ETL) workflow commonly used in enterprise data engineering.
 
 ---
 
-## Daily Progress Log
+## Features
 
-### Day 5 – Member 3 (Data Transformation)
+- Extracts data from multiple REST APIs
+- Cleans and transforms raw JSON data
+- Converts JSON to CSV
+- Loads data into PostgreSQL
+- Uses SQLAlchemy ORM
+- Foreign key relationships
+- Modular project structure
+- Logging support
+- Environment variables using `.env`
+- Error handling
+- Automatic table creation
 
-#### Tasks Completed
-- Pulled latest repository updates and synchronized local branch.
-- Reviewed raw JSON datasets provided by the Data Extraction module.
-- Implemented customer data transformation logic in `clean_customers.py`.
-- Implemented payment data transformation logic in `clean_payments.py`.
-- Implemented ticket data transformation logic in `clean_tickets.py`.
-- Developed transformation workflow in `transformer.py`.
-- Added data cleaning operations:
-  - Duplicate record removal
-  - Missing value handling
-  - Text standardization
-  - Date format conversion
-- Generated processed CSV outputs from raw JSON data.
-- Verified successful execution of the transformation pipeline.
+---
 
-#### Output Files Generated
-- `data/processed/customers.csv`
-- `data/processed/payments.csv`
-- `data/processed/tickets.csv`
+## Technologies Used
 
-#### Current Status
-Data Transformation module completed and integrated with the ETL workflow. Processed datasets are ready for the Database & Loading module.
+- Python
+- PostgreSQL
+- SQLAlchemy
+- Pandas
+- Requests
+- python-dotenv
+- JSON
+- CSV
 
-#### Next Steps
-- Support integration testing with Member 4 (Database & Loading).
-- Verify processed data compatibility with PostgreSQL schema.
-- Assist in end-to-end ETL pipeline testing.
+---
 
-- Member 1: Team Lead, Airflow, Integration
-- Member 2: Extraction
-- Member 3: Transformation
-- Member 4: Loading & Database
-- Member 5: Testing & Documentation
+## Project Workflow
 
-## Project Statistics
+```
+Extract
+   ↓
+Transform
+   ↓
+Load
+   ↓
+PostgreSQL Database
+```
 
-- APIs Used: 3
-- JSON Files Generated: 3
-- CSV Files Generated: 3
-- Database: SQLite
-- ETL Stages: 3
-- Logging Enabled
-- Execution Time Displayed
+---
 
-## Workflow
+## Data Sources
 
-Salesforce API
-Stripe API
-Zendesk API
-        ↓
-    Extraction
-        ↓
-      JSON Files
-        ↓
-   Transformation
-        ↓
-      CSV Files
-        ↓
- SQLite Database
+### Customers
+https://jsonplaceholder.typicode.com/users
+
+### Payments
+https://dummyjson.com/carts
+
+### Tickets
+https://dummyjson.com/posts
+
+---
+
+## Database Tables
+
+- Customers
+- Tickets
+- Payments
+
+---
+
+## Folder Structure
+
+```
+enterprise_etl_pipeline/
+
+extract/
+transform/
+load/
+config/
+data/
+logs/
+reports/
+main.py
+requirements.txt
+README.md
+```
+
+---
+
+## How to Run
+
+Clone the repository
+
+```
+git clone <repository-url>
+```
+
+Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+Configure `.env`
+
+```
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=etl_warehouse
+DB_USER=postgres
+DB_PASSWORD=your_password
+```
+
+Run the project
+
+```
+python main.py
+```
+
+---
+
+## Sample Output
+
+```
+Customers Loaded : 10
+
+Payments Loaded : 30
+
+Tickets Loaded : 30
+
+ETL PIPELINE COMPLETED SUCCESSFULLY
+```
+
+---
+
+## Future Enhancements
+
+- Apache Airflow Integration
+- Docker Support
+- AWS Deployment
+- Power BI Dashboard
+- Incremental Data Loading
+- Data Validation Framework
+
+---
+
+## Author
+
+**Medisetti Yasaswini**
+
+Python Development Internship Project
