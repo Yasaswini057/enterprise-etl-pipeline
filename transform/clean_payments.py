@@ -15,7 +15,7 @@ def clean_payments(input_file, output_file):
 
         records.append({
             "payment_id": f"P{cart['id']:03d}",
-            "customer_id": f"C{cart['userId']:03d}",
+            "customer_id": f"C{((cart['userId'] - 1) % 10) + 1:03d}",
             "ticket_id": f"T{cart['id']:03d}",
             "amount": cart["discountedTotal"],
             "payment_method": "Credit Card",
