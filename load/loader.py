@@ -159,19 +159,6 @@ def run_loader():
         payments = load_payments(session)
         session.commit()
 
-        total = customers + payments + tickets
-
-        print("\nLoading Summary")
-        print("-----------------------------------")
-        print("✓ Connected to PostgreSQL Database")
-        print(f"✓ Customers Loaded : {customers}")
-        print(f"✓ Payments Loaded  : {payments}")
-        print(f"✓ Tickets Loaded   : {tickets}")
-        print("-----------------------------------")
-        print(f"✓ Total Records Loaded : {total}")
-        print("-----------------------------------")
-        print("Loading Phase Completed")
-
         return customers, payments, tickets
 
     except SQLAlchemyError as e:
@@ -193,9 +180,6 @@ def run_loader():
         session.close()
 
 
-# -------------------------
-# Run Loader
-# -------------------------
 if __name__ == "__main__":
 
     c, p, t = run_loader()

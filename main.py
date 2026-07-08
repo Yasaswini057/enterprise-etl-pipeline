@@ -9,41 +9,52 @@ import time
 
 
 def extract():
+
     logger.info("Extraction phase started")
+
     print("\n[1/3] Starting Extraction Phase...")
 
     run_extraction()
 
     print("Extraction Phase Completed")
+
     logger.info("Extraction phase completed")
 
 
 def transform():
+
     logger.info("Transformation phase started")
+
     print("\n[2/3] Starting Transformation Phase...")
 
-    customers, payments, tickets = run_transformations()
+    run_transformations()
 
-print("Transformation Phase Completed")
+    print("Transformation Phase Completed")
+
+    logger.info("Transformation phase completed")
 
 
 def load():
+
     logger.info("Loading phase started")
+
     print("\n[3/3] Starting Loading Phase...")
 
     customers_loaded, payments_loaded, tickets_loaded = run_loader()
 
-    print("\nLoading Summary")
-    print("-" * 35)
+    total = customers_loaded + payments_loaded + tickets_loaded
 
+    print("\nLoading Summary")
+    print("-----------------------------------")
     print("✓ Connected to PostgreSQL Database")
     print(f"✓ Customers Loaded : {customers_loaded}")
     print(f"✓ Payments Loaded  : {payments_loaded}")
     print(f"✓ Tickets Loaded   : {tickets_loaded}")
-
-    print("-" * 35)
-
+    print("-----------------------------------")
+    print(f"✓ Total Records Loaded : {total}")
+    print("-----------------------------------")
     print("Loading Phase Completed")
+
     logger.info("Loading phase completed")
 
 
@@ -73,6 +84,7 @@ def main():
     print(" Load")
 
     print("=" * 65)
+
     try:
 
         extract()
