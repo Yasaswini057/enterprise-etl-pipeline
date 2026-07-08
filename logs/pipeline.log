@@ -1669,3 +1669,11 @@ DETAIL:  Key (customer_id)=(C011) is not present in table "customers".
 2026-07-08 19:31:15,570 - INFO - Loading phase started
 2026-07-08 19:31:15,876 - INFO - Loading phase completed
 2026-07-08 19:31:15,877 - INFO - ETL Pipeline Completed Successfully
+2026-07-08 21:04:23,957 - INFO - ETL Pipeline Started
+2026-07-08 21:04:23,959 - INFO - Extraction phase started
+2026-07-08 21:04:27,571 - INFO - Extraction phase completed
+2026-07-08 21:04:27,571 - INFO - Transformation phase started
+2026-07-08 21:04:27,752 - INFO - Transformation phase completed
+2026-07-08 21:04:27,752 - INFO - Loading phase started
+2026-07-08 21:04:28,034 - INFO - Loading phase completed
+2026-07-08 21:04:28,035 - INFO - ETL Pipeline Completed Successfully
