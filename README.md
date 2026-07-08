@@ -148,8 +148,5 @@ ETL PIPELINE COMPLETED SUCCESSFULLY
 
 ---
 
-## Author
-
-**Medisetti Yasaswini**
 
 Python Development Internship Project

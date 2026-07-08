@@ -6,6 +6,9 @@ from load.models import Customer, Payment, Ticket
 from config.logger import logger
 
 
+# -------------------------
+# Load Customers
+# -------------------------
 def load_customers(session):
 
     df = pd.read_csv("data/processed/customers.csv")
@@ -48,6 +51,9 @@ def load_customers(session):
     return count
 
 
+# -------------------------
+# Load Tickets
+# -------------------------
 def load_tickets(session):
 
     df = pd.read_csv("data/processed/tickets.csv")
@@ -90,6 +96,9 @@ def load_tickets(session):
     return count
 
 
+# -------------------------
+# Load Payments
+# -------------------------
 def load_payments(session):
 
     df = pd.read_csv("data/processed/payments.csv")
@@ -132,6 +141,9 @@ def load_payments(session):
     return count
 
 
+# -------------------------
+# Main Loader
+# -------------------------
 def run_loader():
 
     session = SessionLocal()
@@ -147,9 +159,22 @@ def run_loader():
         payments = load_payments(session)
         session.commit()
 
+        total = customers + payments + tickets
+
+        print("\nLoading Summary")
+        print("-----------------------------------")
+        print("✓ Connected to PostgreSQL Database")
+        print(f"✓ Customers Loaded : {customers}")
+        print(f"✓ Payments Loaded  : {payments}")
+        print(f"✓ Tickets Loaded   : {tickets}")
+        print("-----------------------------------")
+        print(f"✓ Total Records Loaded : {total}")
+        print("-----------------------------------")
+        print("Loading Phase Completed")
+
         return customers, payments, tickets
 
-    except Exception as e:
+    except SQLAlchemyError as e:
 
         session.rollback()
 
@@ -168,10 +193,16 @@ def run_loader():
         session.close()
 
 
+# -------------------------
+# Run Loader
+# -------------------------
 if __name__ == "__main__":
 
     c, p, t = run_loader()
 
-    print("Customers Loaded :", c)
-    print("Payments Loaded  :", p)
-    print("Tickets Loaded   :", t)
+    print("\nFinal Summary")
+    print("-----------------------------------")
+    print(f"Customers Loaded : {c}")
+    print(f"Payments Loaded  : {p}")
+    print(f"Tickets Loaded   : {t}")
+    print("-----------------------------------")

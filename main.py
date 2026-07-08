@@ -53,23 +53,26 @@ def main():
 
     logger.info("ETL Pipeline Started")
 
-    print("=" * 60)
-    print(f"        {PROJECT_NAME}")
-    print("=" * 60)
+    print("=" * 65)
+    print("           ENTERPRISE ETL PIPELINE")
+    print("=" * 65)
 
-    print("Data Sources:")
-    print(" • Salesforce API")
-    print(" • Stripe API")
-    print(" • Zendesk API")
+    print("Data Sources")
+    print(" ✓ Salesforce API")
+    print(" ✓ Stripe API")
+    print(" ✓ Zendesk API")
 
-    print("\nDatabase:")
-    print(" • PostgreSQL")
+    print("\nDatabase")
+    print(" ✓ PostgreSQL")
 
-    print("\nWorkflow:")
-    print(" Extract -> Transform -> Load")
+    print("\nWorkflow")
+    print(" Extract")
+    print("     ↓")
+    print(" Transform")
+    print("     ↓")
+    print(" Load")
 
-    print("=" * 60)
-
+    print("=" * 65)
     try:
 
         extract()
