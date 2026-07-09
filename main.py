@@ -99,7 +99,7 @@ def main():
         print(f"Execution Time : {execution_time} seconds")
         print("=" * 60)
 
-        logger.info("ETL Pipeline Completed Successfully")
+      
 
     except Exception as e:
 
