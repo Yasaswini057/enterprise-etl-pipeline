@@ -1685,3 +1685,12 @@ DETAIL:  Key (customer_id)=(C011) is not present in table "customers".
 2026-07-08 21:37:27,299 - INFO - Loading phase started
 2026-07-08 21:37:27,676 - INFO - Loading phase completed
 2026-07-08 21:37:27,677 - INFO - ETL Pipeline Completed Successfully
+2026-07-12 23:07:36,089 - INFO - ETL Pipeline Started
+2026-07-12 23:07:36,097 - INFO - Extraction phase started
+2026-07-12 23:07:39,163 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/payment_intents?limit=10
+2026-07-12 23:07:40,619 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/payment_intents?limit=10 response_code=200
+2026-07-12 23:07:42,551 - INFO - Extraction phase completed
+2026-07-12 23:07:42,551 - INFO - Transformation phase started
+2026-07-12 23:07:42,963 - INFO - Transformation phase completed
+2026-07-12 23:07:42,963 - INFO - Loading phase started
+2026-07-12 23:07:43,196 - INFO - Loading phase completed

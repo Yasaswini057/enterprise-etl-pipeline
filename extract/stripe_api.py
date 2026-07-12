@@ -1,10 +1,26 @@
-from extract.api_client import APIClient
+import os
+import stripe
+from dotenv import load_dotenv
 
-client = APIClient()
+load_dotenv()
+
+stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
+
 
 def fetch_payments():
-    url = "https://dummyjson.com/carts"
 
-    data = client.get_data(url)
+    payments = stripe.PaymentIntent.list(limit=10)
 
-    return data
+    payment_list = []
+
+    for payment in payments.data:
+
+        payment_list.append({
+            "payment_id": payment.id,
+            "amount": payment.amount / 100,
+            "currency": payment.currency,
+            "status": payment.status,
+            "created": payment.created
+        })
+
+    return payment_list

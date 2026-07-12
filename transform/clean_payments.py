@@ -1,32 +1,38 @@
-import pandas as pd
 import os
+import pandas as pd
 from datetime import datetime
 
 
 def clean_payments(input_file, output_file):
 
-    raw = pd.read_json(input_file)
-
-    carts = raw["carts"]
+    df = pd.read_json(input_file)
 
     records = []
 
-    for cart in carts:
+    for _, payment in df.iterrows():
 
         records.append({
-            "payment_id": f"P{cart['id']:03d}",
-            "customer_id": f"C{((cart['userId'] - 1) % 10) + 1:03d}",
-            "ticket_id": f"T{cart['id']:03d}",
-            "amount": cart["discountedTotal"],
-            "payment_method": "Credit Card",
-            "payment_status": "Success",
+
+            "payment_id": payment["payment_id"],
+
+            "customer_id": "C001",
+
+            "ticket_id": "T001",
+
+            "amount": payment["amount"],
+
+            "payment_method": "Card",
+
+            "payment_status": payment["status"],
+
             "payment_date": datetime.today().date()
+
         })
 
-    df = pd.DataFrame(records)
+    payments = pd.DataFrame(records)
 
     os.makedirs("data/processed", exist_ok=True)
 
-    df.to_csv(output_file, index=False)
+    payments.to_csv(output_file, index=False)
 
-    print(f"Payments processed : {len(df)}")
+    print(f"Payments processed : {len(payments)}")

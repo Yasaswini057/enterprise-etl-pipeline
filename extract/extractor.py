@@ -32,7 +32,7 @@ def run_extraction():
     print("-" * 35)
 
     customer_count = len(customers)
-    payment_count = len(payments.get("carts", []))
+    payment_count = len(payments)
     ticket_count = len(tickets.get("posts", []))
 
     print(f"Customers Extracted : {customer_count}")
