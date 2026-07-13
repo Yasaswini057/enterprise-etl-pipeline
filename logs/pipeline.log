@@ -1694,3 +1694,51 @@ DETAIL:  Key (customer_id)=(C011) is not present in table "customers".
 2026-07-12 23:07:42,963 - INFO - Transformation phase completed
 2026-07-12 23:07:42,963 - INFO - Loading phase started
 2026-07-12 23:07:43,196 - INFO - Loading phase completed
+2026-07-12 23:36:25,606 - INFO - ETL Pipeline Started
+2026-07-12 23:36:25,609 - INFO - Extraction phase started
+2026-07-12 23:36:28,252 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/payment_intents?limit=10
+2026-07-12 23:36:30,117 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/payment_intents?limit=10 response_code=200
+2026-07-12 23:36:31,746 - INFO - Extraction phase completed
+2026-07-12 23:36:31,746 - INFO - Transformation phase started
+2026-07-12 23:36:31,955 - INFO - Transformation phase completed
+2026-07-12 23:36:31,955 - INFO - Loading phase started
+2026-07-12 23:36:32,138 - INFO - Loading phase completed
+2026-07-13 20:49:38,551 - INFO - ETL Pipeline Started
+2026-07-13 20:49:38,554 - INFO - Extraction phase started
+2026-07-13 20:49:41,560 - ERROR - Pipeline Failed : Authentication failed (code: INVALID_LOGIN): Invalid username, password, security token; or user locked out.
+Traceback (most recent call last):
+  File "D:\enterprise_etl_pipeline\main.py", line 90, in main
+    extract()
+    ~~~~~~~^^
+  File "D:\enterprise_etl_pipeline\main.py", line 17, in extract
+    run_extraction()
+    ~~~~~~~~~~~~~~^^
+  File "D:\enterprise_etl_pipeline\extract\extractor.py", line 14, in run_extraction
+    customers = fetch_customers()
+  File "D:\enterprise_etl_pipeline\extract\salesforce_api.py", line 13, in fetch_customers
+    sf = Salesforce(
+        username=os.getenv("SF_USERNAME"),
+    ...<2 lines>...
+        domain="login"      # Change to "test" if login fails
+    )
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\simple_salesforce\api.py", line 153, in __init__
+    self._refresh_session()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\simple_salesforce\api.py", line 307, in _refresh_session
+    self.session_id, self.sf_instance = self._salesforce_login_partial()
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\simple_salesforce\login.py", line 249, in SalesforceLogin
+    return soap_login(soap_url, login_soap_request_body,
+                      login_soap_request_headers, proxies, session)
+  File "C:\Users\yasas\AppData\Local\Programs\Python\Python313\Lib\site-packages\simple_salesforce\login.py", line 275, in soap_login
+    raise SalesforceAuthenticationFailed(except_code, except_msg)
+simple_salesforce.exceptions.SalesforceAuthenticationFailed: Authentication failed (code: INVALID_LOGIN): Invalid username, password, security token; or user locked out.
+2026-07-13 20:51:04,540 - INFO - ETL Pipeline Started
+2026-07-13 20:51:04,542 - INFO - Extraction phase started
+2026-07-13 20:51:18,300 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/payment_intents?limit=10
+2026-07-13 20:51:20,123 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/payment_intents?limit=10 response_code=200
+2026-07-13 20:51:32,469 - INFO - Extraction phase completed
+2026-07-13 20:51:32,469 - INFO - Transformation phase started
+2026-07-13 20:51:32,656 - INFO - Transformation phase completed
+2026-07-13 20:51:32,656 - INFO - Loading phase started
+2026-07-13 20:51:32,833 - INFO - Loading phase completed
