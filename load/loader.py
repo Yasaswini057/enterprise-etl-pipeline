@@ -10,6 +10,7 @@ from config.logger import logger
 # Load Customers
 # -------------------------
 def load_customers(session):
+    """Insert or update customer rows from the existing processed CSV file."""
 
     df = pd.read_csv("data/processed/customers.csv")
 
@@ -55,6 +56,7 @@ def load_customers(session):
 # Load Tickets
 # -------------------------
 def load_tickets(session):
+    """Insert or update ticket rows from the existing processed CSV file."""
 
     df = pd.read_csv("data/processed/tickets.csv")
 
@@ -100,6 +102,7 @@ def load_tickets(session):
 # Load Payments
 # -------------------------
 def load_payments(session):
+    """Insert or update payment rows from the existing processed CSV file."""
 
     df = pd.read_csv("data/processed/payments.csv")
 
@@ -145,6 +148,7 @@ def load_payments(session):
 # Main Loader
 # -------------------------
 def run_loader():
+    """Load processed datasets using the established transaction sequence."""
 
     session = SessionLocal()
 

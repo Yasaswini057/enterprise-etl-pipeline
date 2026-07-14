@@ -6,6 +6,7 @@ load_dotenv()
 
 
 def get_access_token():
+    """Request and return the configured Salesforce OAuth access token details."""
     url = "https://login.salesforce.com/services/oauth2/token"
 
     payload = {

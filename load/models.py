@@ -63,12 +63,10 @@ class Payment(Base):
 
 
 # -------------------------
-# Create Tables
+# Database Initialization
 # -------------------------
-# Delete existing tables
-Base.metadata.drop_all(bind=engine)
-
-# Create tables again with the new schema
+# Create tables only when they are missing. This preserves loaded ETL records
+# for pgAdmin demonstrations and keeps the existing schema unchanged.
 Base.metadata.create_all(bind=engine)
 
 print("✓ PostgreSQL Tables Recreated Successfully")

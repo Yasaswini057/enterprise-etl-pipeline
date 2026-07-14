@@ -6,6 +6,7 @@ from transform.clean_tickets import clean_tickets
 
 
 def run_transformations():
+    """Transform all raw datasets and retain the existing summary output."""
 
     clean_customers(
         "data/raw/customers.json",

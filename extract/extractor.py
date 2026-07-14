@@ -7,6 +7,7 @@ from extract.zendesk_api import fetch_tickets
 
 
 def run_extraction():
+    """Extract source records and persist the existing raw JSON files."""
     # Create raw data folder if it doesn't exist
     os.makedirs("data/raw", exist_ok=True)
 

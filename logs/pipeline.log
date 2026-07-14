@@ -1742,3 +1742,30 @@ simple_salesforce.exceptions.SalesforceAuthenticationFailed: Authentication fail
 2026-07-13 20:51:32,656 - INFO - Transformation phase completed
 2026-07-13 20:51:32,656 - INFO - Loading phase started
 2026-07-13 20:51:32,833 - INFO - Loading phase completed
+2026-07-14 21:06:16,293 - INFO - Enterprise ETL pipeline started.
+2026-07-14 21:06:16,296 - INFO - Extraction phase started
+2026-07-14 21:06:19,872 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/payment_intents?limit=10
+2026-07-14 21:06:22,863 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/payment_intents?limit=10 response_code=200
+2026-07-14 21:06:24,443 - INFO - Extraction phase completed
+2026-07-14 21:06:24,443 - INFO - Transformation phase started
+2026-07-14 21:06:24,877 - INFO - Transformation phase completed
+2026-07-14 21:06:24,877 - INFO - Loading phase started
+2026-07-14 21:06:25,192 - INFO - Loading phase completed
+2026-07-14 21:57:48,252 - INFO - Enterprise ETL pipeline started.
+2026-07-14 21:57:48,254 - INFO - Extraction phase started
+2026-07-14 21:57:50,850 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/payment_intents?limit=10
+2026-07-14 21:57:52,762 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/payment_intents?limit=10 response_code=200
+2026-07-14 21:57:54,416 - INFO - Extraction phase completed
+2026-07-14 21:57:54,416 - INFO - Transformation phase started
+2026-07-14 21:57:54,571 - INFO - Transformation phase completed
+2026-07-14 21:57:54,571 - INFO - Loading phase started
+2026-07-14 21:57:54,757 - INFO - Loading phase completed
+2026-07-14 22:29:16,482 - INFO - Enterprise ETL pipeline started.
+2026-07-14 22:29:16,483 - INFO - Extraction phase started
+2026-07-14 22:29:24,707 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/payment_intents?limit=10
+2026-07-14 22:29:27,509 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/payment_intents?limit=10 response_code=200
+2026-07-14 22:29:29,219 - INFO - Extraction phase completed
+2026-07-14 22:29:29,220 - INFO - Transformation phase started
+2026-07-14 22:29:29,426 - INFO - Transformation phase completed
+2026-07-14 22:29:29,426 - INFO - Loading phase started
+2026-07-14 22:29:29,743 - INFO - Loading phase completed

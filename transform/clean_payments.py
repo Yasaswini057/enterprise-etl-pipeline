@@ -4,6 +4,7 @@ from datetime import datetime
 
 
 def clean_payments(input_file, output_file):
+    """Convert raw payment JSON into the established processed CSV schema."""
 
     df = pd.read_json(input_file)
 

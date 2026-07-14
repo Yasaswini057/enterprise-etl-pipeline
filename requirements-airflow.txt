@@ -1,0 +1,6 @@
+# ETL runtime dependencies installed into the isolated Airflow image.
+pandas==2.3.3
+psycopg2-binary==2.9.12
+python-dotenv==1.2.2
+requests==2.34.2
+stripe==15.3.0

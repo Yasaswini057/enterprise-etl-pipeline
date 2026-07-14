@@ -3,6 +3,7 @@ import os
 
 
 def clean_customers(input_file, output_file):
+    """Convert raw customer JSON into the established processed CSV schema."""
 
     df = pd.read_json(input_file)
 

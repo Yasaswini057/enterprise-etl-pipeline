@@ -5,6 +5,9 @@ from sqlalchemy import text
 
 
 def generate_dashboard():
+    """Generate the existing database record-count dashboard image."""
+
+    # TODO: Replace this static visualization with a production dashboard.
 
     os.makedirs("dashboard", exist_ok=True)
 

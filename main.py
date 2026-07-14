@@ -1,14 +1,15 @@
 from config.logger import logger
-from config.settings import PROJECT_NAME
-
 from extract.extractor import run_extraction
 from transform.transformer import run_transformations
 from load.loader import run_loader
 
 import time
 
+# TODO: Add supported Airflow scheduling and Docker deployment in a future release.
+
 
 def extract():
+    """Run the extraction phase without changing its existing console output."""
 
     logger.info("Extraction phase started")
 
@@ -22,6 +23,7 @@ def extract():
 
 
 def transform():
+    """Run the transformation phase without changing its existing console output."""
 
     logger.info("Transformation phase started")
 
@@ -35,6 +37,7 @@ def transform():
 
 
 def load():
+    """Run the loading phase and display the existing loading summary."""
 
     logger.info("Loading phase started")
 
@@ -59,10 +62,11 @@ def load():
 
 
 def main():
+    """Execute the configured extract, transform, and load workflow."""
 
     start_time = time.time()
 
-    logger.info("ETL Pipeline Started")
+    logger.info("Enterprise ETL pipeline started.")
 
     print("=" * 65)
     print("           ENTERPRISE ETL PIPELINE")
@@ -103,7 +107,7 @@ def main():
 
     except Exception as e:
 
-        logger.exception(f"Pipeline Failed : {e}")
+        logger.exception("Enterprise ETL pipeline failed: %s", e)
 
         print("\n" + "=" * 60)
         print("ETL PIPELINE FAILED")

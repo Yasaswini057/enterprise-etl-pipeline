@@ -5,6 +5,7 @@ from datetime import datetime
 
 
 def clean_tickets(input_file, output_file):
+    """Convert raw ticket JSON into the established processed CSV schema."""
 
     raw = pd.read_json(input_file)
 

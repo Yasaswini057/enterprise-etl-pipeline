@@ -50,6 +50,7 @@ def get_db():
 from sqlalchemy import text
 
 def test_connection():
+    """Test the configured PostgreSQL connection and display its existing result."""
     try:
         connection = engine.connect()
 
