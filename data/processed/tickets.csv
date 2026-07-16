@@ -1,31 +1,1471 @@
 ticket_id,customer_id,issue_type,description,status,priority,created_date
-T001,C001,His mother had always taught him,His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.,Open,Low,2026-07-14
-T002,C001,He was an expert but not in a discipline,He was an expert but not in a discipline that anyone could fully appreciate. He knew how to hold the cone just right so that the soft server ice-cream fell into it at the precise angle to form a perfect cone each and every time. It had taken years to perfect and he could now do it without even putting any thought behind it.,Resolved,High,2026-07-14
-T003,C006,Dave watched as the forest burned up on ,"Dave watched as the forest burned up on the hill, only a few miles from her house. The car had been hastily packed and Marta was inside trying to round up the last of the pets. Dave went through his mental list of the most important papers and documents that they couldn't leave behind. He scolded himself for not having prepared these better in advance and hoped that he had remembered everything that was needed. He continued to wait for Marta to appear with the pets, but she still was nowhere to be seen.",Resolved,High,2026-07-14
-T004,C007,All he wanted was a candy bar.,"All he wanted was a candy bar. It didn't seem like a difficult request to comprehend, but the clerk remained frozen and didn't seem to want to honor the request. It might have had something to do with the gun pointed at his face.",Resolved,High,2026-07-14
-T005,C001,Hopes and dreams were dashed that day.,"Hopes and dreams were dashed that day. It should have been expected, but it still came as a shock. The warning signs had been ignored in favor of the possibility, however remote, that it could actually happen. That possibility had grown from hope to an undeniable belief it must be destiny. That was until it wasn't and the hopes and dreams came crashing down.",Open,Medium,2026-07-14
-T006,C008,Dave wasn't exactly sure how he had ende,"Dave wasn't exactly sure how he had ended up in this predicament. He ran through all the events that had lead to this current situation and it still didn't make sense. He wanted to spend some time to try and make sense of it all, but he had higher priorities at the moment. The first was how to get out of his current situation of being naked in a tree with snow falling all around and no way for him to get down.",Open,High,2026-07-14
-T007,C010,This is important to remember.,"This is important to remember. Love isn't like pie. You don't need to divide it among all your friends and loved ones. No matter how much love you give, you can always give more. It doesn't run out, so don't try to hold back giving it as if it may one day run out. Give it freely and as much as you want.",In Progress,Low,2026-07-14
-T008,C007,One can cook on and with an open fire.,"One can cook on and with an open fire. These are some of the ways to cook with fire outside. Cooking meat using a spit is a great way to evenly cook meat. In order to keep meat from burning, it's best to slowly rotate it.",Open,Medium,2026-07-14
-T009,C002,There are different types of secrets.,"There are different types of secrets. She had held onto plenty of them during her life, but this one was different. She found herself holding onto the worst type. It was the type of secret that could gnaw away at your insides if you didn't tell someone about it, but it could end up getting you killed if you did.",Open,Low,2026-07-14
-T010,C004,They rushed out the door.,"They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind. Everything was thrown into the car and they sped off. Thirty minutes later they were safe and that was when it dawned on them that they had forgotten the most important thing of all.",Resolved,Low,2026-07-14
-T011,C003,It wasn't quite yet time to panic.,"It wasn't quite yet time to panic. There was still time to salvage the situation. At least that is what she was telling himself. The reality was that it was time to panic and there wasn't time to salvage the situation, but he continued to delude himself into believing there was.",In Progress,Medium,2026-07-14
-T012,C002,She was aware that things could go wrong,"She was aware that things could go wrong. In fact, she had trained her entire life in anticipation that things would go wrong one day. She had quiet confidence as she started to see that this was the day that all her training would be worthwhile and useful. At this point, she had no idea just how wrong everything would go that day.",In Progress,High,2026-07-14
-T013,C009,She wanted rainbow hair.,"She wanted rainbow hair. That's what she told the hairdresser. It should be deep rainbow colors, too. She wasn't interested in pastel rainbow hair. She wanted it deep and vibrant so there was no doubt that she had done this on purpose.",In Progress,High,2026-07-14
-T014,C010,The paper was blank.,"The paper was blank. It shouldn't have been. There should have been writing on the paper, at least a paragraph if not more. The fact that the writing wasn't there was frustrating. Actually, it was even more than frustrating. It was downright distressing.",Resolved,Medium,2026-07-14
-T015,C001,"The trees, therefore, must be such old","The trees, therefore, must be such old and primitive techniques that they thought nothing of them, deeming them so inconsequential that even savages like us would know of them and not be suspicious. At that, they probably didn't have too much time after they detected us orbiting and intending to land. And if that were true, there could be only one place where their civilization was hidden.",In Progress,High,2026-07-14
-T016,C009,There was only one way to do things in t,"There was only one way to do things in the Statton house. That one way was to do exactly what the father, Charlie, demanded. He made the decisions and everyone else followed without question. That was until today.",Open,Medium,2026-07-14
-T017,C010,She was in a hurry.,"She was in a hurry. Not the standard hurry when you're in a rush to get someplace, but a frantic hurry. The type of hurry where a few seconds could mean life or death. She raced down the road ignoring speed limits and weaving between cars. She was only a few minutes away when traffic came to a dead standstill on the road ahead.",Resolved,High,2026-07-14
-T018,C007,She had a terrible habit o comparing her,"She had a terrible habit o comparing her life to others. She realized that their life experiences were completely different than her own and that she saw only what they wanted her to see, but that didn't matter. She still compared herself and yearned for what she thought they had and she didn't.",In Progress,High,2026-07-14
-T019,C003,The rain and wind abruptly stopped.,"The rain and wind abruptly stopped, but the sky still had the gray swirls of storms in the distance. Dave knew this feeling all too well. The calm before the storm. He only had a limited amount of time before all Hell broke loose, but he stopped to admire the calmness. Maybe it would be different this time, he thought, with the knowledge deep within that it wouldn't.",Open,High,2026-07-14
-T020,C002,He couldn't remember exactly where he ha,"He couldn't remember exactly where he had read it, but he was sure that he had. The fact that she didn't believe him was quite frustrating as he began to search the Internet to find the article. It wasn't as if it was something that seemed impossible. Yet she insisted on always seeing the source whenever he stated a fact.",Open,Low,2026-07-14
-T021,C006,He wandered down the stairs and into the,"He wandered down the stairs and into the basement. The damp, musty smell of un-use hung in the air. A single, small window let in a glimmer of light, but this simply made the shadows in the basement deeper. He inhaled deeply and looked around at a mess that had been accumulating for over 25 years. He was positive that this was the place he wanted to live.",In Progress,Medium,2026-07-14
-T022,C003,She has seen this scene before.,"She has seen this scene before. It had come to her in dreams many times before. She had to pinch herself to make sure it wasn't a dream again. As her fingers squeezed against her arm, she felt the pain. It was this pain that immediately woke her up.",Open,Medium,2026-07-14
-T023,C006,It's an unfortunate reality that we don',"It's an unfortunate reality that we don't teach people how to make money (beyond getting a 9 to 5 job) as part of our education system. The truth is there are a lot of different, legitimate ways to make money. That doesn't mean they are easy and that you won't have to work hard to succeed, but it does mean that if you're willing to open your mind a bit you don't have to be stuck in an office from 9 to 5 for the next fifty years o your life.",Open,Medium,2026-07-14
-T024,C004,The robot clicked disapprovingly.,"The robot clicked disapprovingly, gurgled briefly inside its cubical interior and extruded a pony glass of brownish liquid. ""Sir, you will undoubtedly end up in a drunkard's grave, dead of hepatic cirrhosis,"" it informed me virtuously as it returned my ID card. I glared as I pushed the glass across the table.",In Progress,Medium,2026-07-14
-T025,C008,It went through such rapid contortions,"It went through such rapid contortions that the little bear was forced to change his hold on it so many times he became confused in the darkness, and could not, for the life of him, tell whether he held the sheep right side up, or upside down. But that point was decided for him a moment later by the animal itself, who, with a sudden twist, jabbed its horns so hard into his lowest ribs that he gave a grunt of anger and disgust.",Resolved,High,2026-07-14
-T026,C006,She patiently waited for his number to b,"She patiently waited for his number to be called. She had no desire to be there, but her mom had insisted that she go. She's resisted at first, but over time she realized it was simply easier to appease her and go. Mom tended to be that way. She would keep insisting until you wore down and did what she wanted. So, here she sat, patiently waiting for her number to be called.",Resolved,Low,2026-07-14
-T027,C005,Ten more steps.,"If he could take ten more steps it would be over, but his legs wouldn't move. He tried to will them to work, but they wouldn't listen to his brain. Ten more steps and it would be over but it didn't appear he would be able to do it.",Open,High,2026-07-14
-T028,C009,He had three simple rules by which he li,"He had three simple rules by which he lived. The first was to never eat blue food. There was nothing in nature that was edible that was blue. People often asked about blueberries, but everyone knows those are actually purple. He understood it was one of the stranger rules to live by, but it had served him well thus far in the 50+ years of his life.",Resolved,Medium,2026-07-14
-T029,C004,The chair sat in the corner where it had,The chair sat in the corner where it had been for over 25 years. The only difference was there was someone actually sitting in it. How long had it been since someone had done that? Ten years or more he imagined. Yet there was no denying the presence in the chair now.,Open,Medium,2026-07-14
-T030,C007,Things aren't going well at all,Things aren't going well at all with mom today. She is just a limp noodle and wants to sleep all the time. I sure hope that things get better soon.,In Progress,Medium,2026-07-14
+T001,C001,Copilot Chat: All previous session histo,"GitHub issue #324959
+Status: open
+Created: 2026-07-08T15:37:06Z
+Updated: 2026-07-16T13:25:43Z
+
+<!-- ⚠️⚠️ Do Not Delete This! bug_report_template ⚠️⚠️ -->
+<!-- Please read our Rules of Conduct: https://opensource.microsoft.com/codeofconduct/ -->
+<!-- 🕮 Read our guide about submitting issues: https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions -->
+<!-- 🔎 Search existing issues to avoid creating duplicates. -->
+<!-- 🧪 Test using the latest Insiders build to see if your issue has already been fixed: https://code.visualstudio.com/insiders/ -->
+<!-- 💡 Instead of creating your report here, use 'Report Issue' from the 'Help' menu in VS Code to pre-fill useful information. -->
+<!-- 🔧 Launch with `code --disable-extensions` to check. -->
+Does this issue occur when all extensions are disabled?: Yes/No
+
+<!-- 🪓 If you answered No above, use 'Help: Start Extension Bisect' from Command Palette to try to identify the cause. -->
+<!-- 📣 Issues caused by an extension need to be reported directly to the extension publisher. The 'Help > Report Issue' dialog can assist with this. -->
+- VS Code Version: 1.127.0 (Universal)
+- OS Version: macOS 26.5.1 (25F80)
+
+Steps to Reproduce:
+
+## Bug Description
+
+After upgrading VS Code, all previous Copilot Chat session history is completely
+gone from the Chat History panel. No warning, no migration, no recovery option.
+
+## Root Cause (Observed)
+
+The Copilot Chat extension changed its chat session storage format from `.json` to
+`.jsonl` between versions. Sessions in the old `.json` format still exist on disk at:
+
+~/Library/Application Support/Code/User/workspaceStorage/<hash>/chatSessions/<uuid>.json
+
+...but the new extension silently ignores them. They are never read, migrated, or
+displayed in the UI.
+
+Related: #307761 (chat history not loading from .jsonl files — different root cause, closed as not planned)
+
+## Steps to Reproduce
+
+1. Use VS Code Copilot Chat for multiple sessions across several workspaces
+2. Upgrade VS Code to a version that changed the session format to `.jsonl`
+3. Open VS Code and check the Chat History panel
+4. All prior sessions are gone
+
+## Expected Behavior
+
+One of:
+- The extension **migrates** existing `.json` session files to `.jsonl` on first run after upgrade
+- The extension **reads both formats** for backward compatibility
+- Users are shown a **warning** before upgrading and offered an export/backup option
+
+## Actual Behavior
+
+Previous chat sessions vanish silently. No warning, no migration, no recovery UI.
+Months of conversation context (debugging sessions, architectural decisions, code
+explanations) is permanently lost.
+
+## Impact
+
+- Sessions represent significant complex work context that cannot easily be reconstructed
+- The change was made without any migration path, user notice, or changelog callout
+
+## Environment
+
+- OS: macOS 26.5.1 (25F80)
+- Old format: `.json` (files still present on disk, confirmed)
+- New format: `.jsonl`
+
+## Requested Fix
+
+Add a one-time startup migration that converts `.json` chat sessions to `.jsonl`,
+or at minimum add a ""Restore legacy sessions"" command to the Command Palette.",Resolved,High,2026-07-16
+T002,C002,Renderer crash (EMFILE / Too many open f,"GitHub issue #326149
+Status: open
+Created: 2026-07-16T12:22:23Z
+Updated: 2026-07-16T13:23:25Z
+
+### Does this issue occur when all extensions are disabled?
+Not tested with extensions disabled — root cause identified below is independent of any specific extension.
+
+### Steps to Reproduce
+
+1. Run VS Code on Linux with a systemd-managed user session where `DefaultLimitNOFILESoft=1024` (this is systemd's own default on Ubuntu and most modern distros; hard limit is typically much higher, e.g. `524288`).
+2. Keep a normal multi-window workflow running for a while (several windows, extension hosts, language servers, terminal processes, docker/LSP sockets, etc.) so the process tree's open file descriptor count grows over the session.
+3. Open an additional new window/workspace.
+4. The new renderer process fails to start and VS Code shows: **""The window terminated unexpectedly (reason: 'clean-exit', code: '0')""**.
+
+This reproduced repeatedly (5 times in ~40 minutes) specifically at the moment of creating a *new* window, which is the point where a renderer needs to establish several new Mojo IPC channels at once.
+
+### Root cause (confirmed via Crashpad minidump)
+
+Crashpad captured an actual dump for one of the crashes (`--type=renderer`, `--ozone-platform=wayland`). Extracting readable strings from it shows the real fatal error, which VS Code's main process then logs as an innocuous ""clean-exit, code 0"":
+
+```
+[139697:0100/000000.964368:FATAL:mojo/public/cpp/platform/platform_channel.cc:150] Check failed: . : Too many open files (24)
+```
+
+This is `EMFILE` — the renderer process itself hit its **soft** `RLIMIT_NOFILE` (1024) while trying to create a new Mojo platform channel (socketpair) at startup, even though the **hard** limit was 524288 and plenty of headroom existed system-wide.
+
+Two things make this easy to hit on current VS Code/Electron builds:
+- The renderer's command line has `--enable-features=...,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,...` enabled — these establish extra IPC/GPU channels (and, on Wayland, extra D-Bus portal connections for global shortcuts) earlier and more eagerly during window startup than before, increasing the peak fd count right at the moment a new window is created.
+- VS Code/Electron does not raise its own soft `RLIMIT_NOFILE` toward the process's hard limit at startup (many other Electron/Node apps do call `setrlimit()` early to raise the soft limit to the hard limit when the hard limit allows it).
+
+Because the failure is a hard `CHECK` inside Mojo, the renderer process aborts instantly with exit code 0 and no user-facing error text — the main process just reports `renderer process gone (reason: clean-exit, code: <unknown>)` and shows the generic ""terminated unexpectedly"" dialog, which makes this very hard for users to diagnose without pulling the Crashpad `.dmp` and grepping strings for `FATAL`.
+
+### Why this seems tied to a recent update
+
+The systemd soft limit of 1024 is not new — it's a long-standing Ubuntu/systemd default. What changed for us was the VS Code version: this started happening consistently after updating from 1.125.1 → 1.129.0 (via apt: 1.125.1 → 1.127.0 → 1.128.0 → 1.128.1 → 1.129.0). The `EarlyEstablishGpuChannel`/`EstablishGpuChannelAsync` feature flags visible in the crashed renderer's command line are relatively recent Chromium features bundled with the Electron bump in this range, which plausibly increased the number of fds opened per window at startup, pushing already fd-heavy sessions (multiple windows, extension hosts, language servers, docker) over the 1024 soft-limit ceiling that previously had headroom.
+
+### Suggested fix
+
+- Have the Electron/main process raise its own soft `RLIMIT_NOFILE` toward the hard limit at startup (`setrlimit(RLIMIT_NOFILE, {soft: hard, hard: hard})`) when the hard limit allows it, instead of relying on the OS/session default of 1024. This is a common and safe mitigation used by other high-fd-usage Linux daemons/apps.
+- At minimum, surface the real Mojo/Chromium fatal reason (e.g. ""Too many open files"") in the ""terminated unexpectedly"" dialog instead of the opaque `clean-exit` reason, so users aren't stuck reverse-engineering Crashpad dumps to find an `EMFILE`.
+
+### Environment
+
+- VS Code version: 1.129.0 (commit `125df4672b8a6a34975303c6b0baa124e560a4f7`), previously reproduced across 1.127.0/1.128.0/1.128.1 as well
+- OS: Ubuntu 26.04 LTS, Linux kernel (Wayland session, `--ozone-platform=wayland`)
+- `ulimit -n` for the affected session: soft `1024`, hard `524288` (systemd `DefaultLimitNOFILESoft=1024` — distro default, not customized)
+- Workaround that resolved it for us: raising `DefaultLimitNOFILESoft` via a systemd user-manager drop-in (`/etc/systemd/user.conf.d/limits.conf`, `DefaultLimitNOFILE=65536:524288`) followed by a full logout/login. This is an OS-level workaround; VS Code itself doesn't need to rely on the caller having done this.
+",Open,Low,2026-07-16
+T003,C003,Copilot Chat (agent mode): final assista,"GitHub issue #324774
+Status: open
+Created: 2026-07-07T15:09:16Z
+Updated: 2026-07-16T13:22:47Z
+
+
+Type: <b>Bug</b>
+
+# Bug Report — Copilot Chat: final assistant message intermittently dropped after tool calls
+
+## Summary
+In GitHub Copilot Chat (agent mode), the **final assistant message of a turn is intermittently not rendered** in the chat view. The turn's preamble text and tool-invocation lines render, then the message-control buttons (retry/copy/thumbs) appear — but the assistant's concluding text (summaries, tables, results) never displays. The work itself completes on the backend (files are written, commits made, memory updated); only the closing rendered text is lost.
+
+## Environment
+- **VS Code:** 1.128.0-insider
+- **GitHub Copilot Chat extension:** 0.56.2026070703 (issue also observed on 0.56.2026070103 earlier in the same session)
+- **Model:** Claude Opus 4.8 (agent mode)
+- **OS:** Windows
+- **Chat session id:** cc9f1423-422d-41c7-a725-c5aa9494c46c
+
+## Impact
+- Users cannot see task results/summaries even though the actions succeeded.
+- Creates false impression the agent ""went silent"" or stalled.
+- Erodes trust; forces manual verification of whether work actually completed.
+
+## Steps to reproduce
+1. In Copilot Chat agent mode, ask for a task that (a) invokes one or more tools (search, file edit, terminal, or memory), then (b) concludes with a substantive text summary (e.g., a table or multi-item list).
+2. Observe the turn: preamble and tool lines render, then the control buttons appear.
+3. Intermittently, the concluding assistant text is missing entirely.
+
+## Actual result
+Final assistant text (summary/table) is not rendered; turn ends on the control buttons.
+
+## Expected result
+The full final assistant message renders and persists in the transcript.
+
+## Frequency / pattern (observed 2026-07-07, single session)
+Confirmed drops: 3. Clean turns: 2.
+
+| Turn | Tool calls before final text? | Final text rendered? |
+|------|-------------------------------|----------------------|
+| ""list hardcoded model versions in agents"" (search) | Yes | **No (dropped)** |
+| Re-delivery of same content | No (text only) | Yes |
+| ""is size the cause?"" reasoning | No (text only) | Yes |
+| Time-bound workaround setup (2 memory writes) | Yes | **No (dropped)** |
+
+**Correlation:** every confirmed drop occurred on a turn that emits final text *after* tool calls in the same turn. The two clean turns were text-only. It is **intermittent** (not every tool-call turn drops), and it is **not content/size dependent** — the identical payload that dropped once rendered perfectly on retry.
+
+## Additional anomalies
+1. **Mid-session extension auto-update + repeated session re-init.** The session debug log records multiple `session_start` events for the *same* session id, and the Copilot version changed mid-session (0.56.2026070103 → 0.56.2026070703). A restart did not resolve the drops, which continue on the stable version.
+2. **Native Todos panel showed a stale count.** On the memory-write turn the Todos panel displayed ""1/2"" complete when both tasks had in fact completed (2/2).
+
+## Evidence to attach
+- Screenshots of the affected turns (preamble present, final text absent, controls shown; Todos panel showing 1/2).
+- Session debug log:
+  `%APPDATA%\Code - Insiders\User\workspaceStorage\22362043cdd10fe935dd5f7a1e081b72\GitHub.copilot-chat\debug-logs\cc9f1423-422d-41c7-a725-c5aa9494c46c\main.jsonl`
+  (contains the repeated `session_start` events and version change).
+
+## Workaround in use
+- Ending each turn with a sentinel line so its absence flags a drop.
+- Preferring text-only turns for substantive summaries (decoupling summaries from tool-call turns).
+- Verifying actual artifact state (files/commits) rather than trusting the Todos panel count.
+
+## Notes
+This is a rendering/streaming/transcript-persistence issue on the client side, not a model generation failure — the backend actions complete and the content is generated; only the final rendered assistant message is lost.
+
+
+VS Code version: Code - Insiders 1.128.0-insider (bff8736385420572b86b407d6ba73bb97961166f, 2026-07-07T03:31:49Z)
+OS version: Windows_NT x64 10.0.26200
+Modes:
+
+<details>
+<summary>System Info</summary>
+
+|Item|Value|
+|---|---|
+|CPUs|13th Gen Intel(R) Core(TM) i7-1365U (12 x 2688)|
+|GPU Status|2d_canvas: enabled<br>GPU0: VENDOR= 0x8086, DEVICE=0xa7a1 [Intel(R) Iris(R) Xe Graphics], DRIVER_VENDOR=Intel, DRIVER_VERSION=32.0.101.6556 *ACTIVE*<br>GPU1: VENDOR= 0x1414, DEVICE=0x008c [Microsoft Basic Render Driver], DRIVER_VERSION=10.0.26100.8521<br>Machine model name: <br>Machine model version: <br>direct_rendering_display_compositor: disabled_off_ok<br>gpu_compositing: enabled<br>multiple_raster_threads: enabled_on<br>opengl: enabled_on<br>rasterization: enabled<br>raw_draw: disabled_off_ok<br>skia_graphite: disabled_off<br>trees_in_viz: disabled_off<br>video_decode: enabled<br>video_encode: enabled<br>webgl: enabled<br>webgpu: enabled<br>webnn: disabled_off|
+|Load (avg)|undefined|
+|Memory (System)|31.66GB (14.77GB free)|
+|Process Argv|--crash-reporter-id 0fd21b64-10d5-4b25-a6a9-aa5d02c2d97e|
+|Screen Reader|no|
+|VM|0%|
+</details><details><summary>Extensions (9)</summary>
+
+Name|Identifier|Author|Version
+---|---|---|---
+Bruno|bruno-api-client.bruno|bruno-api-client|5.0.1
+Python Environment Manager (deprecated)|donjayamanne.python-environment-manager|donjayamanne|1.2.7
+Python Indent|kevinrose.vsc-python-indent|KevinRose|1.21.0
+Python Debugger|ms-python.debugpy|ms-python|2026.6.0
+Python|ms-python.python|ms-python|2026.5.2026061001
+Pylance|ms-python.vscode-pylance|ms-python|2026.2.107
+Python Environments|ms-python.vscode-python-envs|ms-python|1.36.0
+PowerShell|ms-vscode.powershell|ms-vscode|2025.4.0
+Thunder Client|rangav.vscode-thunder-client|rangav|2.41.0
+
+</details><details>
+<summary>A/B Experiments</summary>
+
+```
+vsliv368:30146709
+pythonvspyt551cf:31249598
+nativeloc1:31118317
+dwcopilot:31158714
+dwoutputs:31242946
+copilot_t_ci:31333650
+g012b348:31231168
+pythonrdcb7:31268811
+pythonpcpt1cf:31399617
+6518g693:31302842
+6abeh943:31336334
+envsactivate1:31349248
+editstats-enabled:31346256
+cloudbuttont:31366566
+3efgi100_wstrepl:31403338
+cp_cls_t_966_ss:31526232
+4je02754:31455664
+c3h7c220:31478652
+ge8j1254_inline_auto_hint_haiku:31490507
+38bie571_auto:31478677
+cp_cls_t_1081:31454832
+conptydll_true:31485575
+ia-use-proxy-models-svc:31446143
+e9c30283:31453065
+test_treatment2:31471001
+c9b86496:31447327
+idci7584:31454084
+e3e4d672:31454087
+ei9d7968:31462942
+nes-extended-on:31455475
+de16b994:31458079
+89g7j272:31506658
+hhf17803:31462392
+7e187181:31482583
+i2gc6536:31472020
+52612955:31508042
+h08i8180:31475367
+ddid_t:31478204
+hmra_i5g22:31518061
+bjc72774_agent_sandbox:31538428
+7df3h592:31491241
+cp_cls_t_1082:31535311
+logging_enabled_new:31490725
+jb_cp_cls_t_632:31543129
+32d76977:31503652
+ha629193:31508444
+cdk-lw-on:31524445
+f9bf7985:31541111
+31fi7170_t:31517328
+a1ije391_t:31533808
+api_cot_ctrl:31509853
+g4a0e106:31510899
+41836166:31537719
+prpt_lrg:31513637
+jbcp_cls_pctr_t:31531130
+cp_intellij_t_nes:31533504
+jf4hg949:31526829
+hide-eh-duplicates:31543293
+h561g132:31534507
+replace-eh-with-ah:31545853
+ihg5j128:31534457
+f412h606:31543414
+max-result-200:31544849
+
+```
+
+</details>
+
+<!-- generated by issue reporter -->",Open,Low,2026-07-16
+T004,C004,Duplicate groups and tools appear in the,"GitHub issue #326153
+Status: open
+Created: 2026-07-16T12:48:17Z
+Updated: 2026-07-16T13:02:36Z
+
+<!-- Please search existing issues to avoid creating duplicates -->
+<!-- Please attach logs to help us diagnose your issue -->
+
+版本: 1.129.0 (user setup)
+提交: 125df4672b8a6a34975303c6b0baa124e560a4f7
+日期: 2026-07-15T00:08:44Z
+Electron: 42.6.0
+ElectronBuildId: 14623276
+Chromium: 148.0.7778.280
+Node.js: 24.18.0
+V8: 14.8.178.38-electron.0
+OS: Windows_NT x64 10.0.26200
+
+### Duplicate Tool groups
+This issue has been present since version 1.127.0; it was working fine in version 1.126.0.
+| 1.127.0 ~ 1.129.0 | 1.126.0 |
+| --- | --- |
+| <img width=""605"" height=""465"" alt=""Image"" src=""https://github.com/user-attachments/assets/d1eb37a6-3a68-4cb9-b360-b5a2544351ad"" /> | <img width=""920"" height=""778"" alt=""Image"" src=""https://github.com/user-attachments/assets/c6811cca-05d5-4e16-a6f2-e9dd779c4edd"" /> |
+
+### 'contribLanguageModelToolSets' API proposal is not enabled.
+This was working fine in the previous version. 1.128.1
+```
+[vicanent.gcmp]: Extension 'vicanent.gcmp' CANNOT register language model tools because the 'contribLanguageModelToolSets' API proposal is not enabled.
+```",In Progress,Medium,2026-07-16
+T005,C005,"""languageModelTools"" are duplicated in t","GitHub issue #326152
+Status: open
+Created: 2026-07-16T12:43:09Z
+Updated: 2026-07-16T12:51:48Z
+
+
+Type: <b>Bug</b>
+
+1. Create a new VS Code extension with this minimal package.json:
+```
+{
+  ""name"": ""tool-test"",
+  ""displayName"": ""bar"",
+  ""publisher"": ""foo"",
+  ""version"": ""0.0.1"",
+  ""engines"": { ""vscode"": ""^1.99.0"" },
+  ""main"": ""./src/index.js"",
+  ""contributes"": {
+    ""languageModelTools"": [
+      {
+        ""name"": ""tool_1"",
+        ""displayName"": ""Test Tool 1"",
+        ""toolReferenceName"": ""testTool1"",
+        ""canBeReferencedInPrompt"": true,
+        ""modelDescription"": ""A minimal test tool."",
+        ""inputSchema"": { ""type"": ""object"", ""properties"": {} }
+      }
+    ]
+  }
+}
+```
+
+2. Add a minimal ""src/index.js"" that registers the tool at runtime:
+```
+const vscode = require('vscode');
+function activate(context) {
+  context.subscriptions.push(
+    vscode.lm.registerTool('tool_1', {
+      invoke() {
+        return new vscode.LanguageModelToolResult([new vscode.LanguageModelTextPart('ok')]);
+      }
+    })
+  );
+}
+function deactivate() {}
+module.exports = { activate, deactivate };
+```
+
+3. Launch the Extension Development Host (F5)
+4. Open Copilot Chat and click the tool picker / “Tools” button.
+5. Observe the tool list.
+
+**Expected**
+The tool appears once, grouped under the extension display name OR extensionid to guarantee uniqueness.
+
+**Actual**
+The same tool appears twice:
+- displayName > extension ID > tool
+- displayName > tool
+
+<img width=""1271"" height=""442"" alt=""Image"" src=""https://github.com/user-attachments/assets/2542261b-0755-45f6-bf99-7e8086a90245"" />
+
+
+The duplication persists even after removing ""registerTool"" from code, confirming the issue is contribution only.
+
+**Additional observation**
+The same duplication is visible with the Python extension’s contributed tools and most likely any other extension.  
+Also reproduced on VSCode 1.129.0 (not insider).
+
+VS Code version: Code - Insiders 1.130.0-insider (bc2ac764ddd66802104366c182d490a03253f7e1, 2026-07-15T06:35:32Z)
+OS version: Windows_NT x64 10.0.26100
+Modes:
+
+<details>
+<summary>System Info</summary>
+
+|Item|Value|
+|---|---|
+|CPUs|Intel(R) Core(TM) Ultra 7 155H (22 x 2995)|
+|GPU Status|2d_canvas: enabled<br>GPU0: VENDOR= 0x8086, DEVICE=0x7dd5 [Intel(R) Graphics], DRIVER_VENDOR=Intel, DRIVER_VERSION=32.0.101.8247 *ACTIVE*<br>GPU1: VENDOR= 0x10de, DEVICE=0x28b9 [NVIDIA RTX 1000 Ada Generation Laptop GPU], DRIVER_VERSION=32.0.15.7371<br>GPU2: VENDOR= 0x1414, DEVICE=0x008c [Microsoft Basic Render Driver], DRIVER_VERSION=10.0.26100.8521<br>Machine model name: <br>Machine model version: <br>direct_rendering_display_compositor: disabled_off_ok<br>gpu_compositing: enabled<br>multiple_raster_threads: enabled_on<br>opengl: enabled_on<br>rasterization: enabled<br>raw_draw: disabled_off_ok<br>skia_graphite: disabled_off<br>trees_in_viz: disabled_off<br>video_decode: enabled<br>video_encode: enabled<br>webgl: enabled<br>webgpu: enabled<br>webnn: disabled_off|
+|Load (avg)|undefined|
+|Memory (System)|31.47GB (11.58GB free)|
+|Process Argv||
+|Screen Reader|no|
+|VM|0%|
+</details>Extensions: none<details>
+<summary>A/B Experiments</summary>
+
+```
+vsliv368:30146709
+pythonvspyt551:31249597
+nativeloc1:31118317
+dwcopilot:31158714
+bajee813:31263137
+dwoutputs:31242946
+copilot_t_ci:31333650
+g012b348:31231168
+pythonrdcb7:31268811
+pythonpcpt1:31399616
+6518g693:31302842
+63221493:31336333
+envsactivate1:31349248
+editstats-enabled:31346256
+cloudbuttont:31366566
+3efgi100_wstrepl:31403338
+bj468946:31457056
+ddidt:31398484
+cp_cls_t_966_ss:31526232
+4je02754:31455664
+c3h7c220:31478652
+38bie571_auto:31426784
+cp_cls_c_1081:31454833
+conptydll_true:31485575
+e9c30283:31453065
+test_treatment2:31471001
+46204921:31447328
+capico_axe_098a3278:31551526
+idci7584:31454084
+e3e4d672:31454087
+ei9d7968:31462942
+f860i809:31458078
+89g7j272:31506658
+7e884298:31462391
+7e187181:31482583
+i2gc6536:31472020
+52612955:31508042
+h08i8180:31475367
+23c7c724:31520045
+ddid_c:31478205
+hmra_i5g22:31518061
+bjc72774_agent_sandbox:31538428
+7df3h592:31491241
+cp_cls_t_1082:31535311
+logging_enabled_new:31490725
+jb_cp_cls_t_632:31543129
+32d76977:31503652
+ha629193:31508444
+cdk-lw-on:31524445
+f9bf7985:31541111
+a1ije391_t:31533808
+8hfba999:31537718
+jbcp_cls_pctr_t:31531130
+cp_intellij_t_nes:31548657
+gf14b233:31526830
+hide-eh-duplicates:31543293
+h561g132:31534507
+replace-eh-with-ah:31545853
+ihg5j128:31534457
+f412h606:31543414
+nes-ex-cf-euporie-03:31542847
+rl_cf215966:31548114
+enable_editor_pane_layout:31551200
+52258b4d:31547953
+c7c27ce7:31551212
+
+```
+
+</details>
+
+<!-- generated by issue reporter -->",Open,Medium,2026-07-16
+T006,C006,The window terminated unexpectedly (reas,"GitHub issue #326133
+Status: open
+Created: 2026-07-16T10:26:29Z
+Updated: 2026-07-16T12:51:29Z
+
+<!-- ⚠️⚠️ Do Not Delete This! bug_report_template ⚠️⚠️ -->
+<!-- Please read our Rules of Conduct: https://opensource.microsoft.com/codeofconduct/ -->
+<!-- 🕮 Read our guide about submitting issues: https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions -->
+<!-- 🔎 Search existing issues to avoid creating duplicates. -->
+<!-- 🧪 Test using the latest Insiders build to see if your issue has already been fixed: https://code.visualstudio.com/insiders/ -->
+<!-- 💡 Instead of creating your report here, use 'Report Issue' from the 'Help' menu in VS Code to pre-fill useful information. -->
+<!-- 🔧 Launch with `code --disable-extensions` to check. -->
+Does this issue occur when all extensions are disabled?: Yes/No
+
+<!-- 🪓 If you answered No above, use 'Help: Start Extension Bisect' from Command Palette to try to identify the cause. -->
+<!-- 📣 Issues caused by an extension need to be reported directly to the extension publisher. The 'Help > Report Issue' dialog can assist with this. -->
+- VS Code Version: 1.129.0
+- OS Version: Ubuntu 20.04
+
+Steps to Reproduce:
+
+1. run vscode after update
+
+<img width=""1920"" height=""1080"" alt=""Image"" src=""https://github.com/user-attachments/assets/36b34544-8123-4766-8b77-5aa8fd74acfe"" />
+
+In console I see errors: [372848:0716/133004.136936:ERROR:ui/gl/angle_platform_impl.cc:47] Display.cpp:1097 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1097 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[372848:0716/133004.137209:ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[372848:0716/133004.137269:ERROR:ui/gl/gl_display.cc:638] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+[372848:0716/133004.137378:ERROR:ui/gl/angle_platform_impl.cc:47] Display.cpp:1097 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1097 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[372848:0716/133004.137429:ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[372848:0716/133004.137469:ERROR:ui/gl/gl_display.cc:638] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+[372848:0716/133004.137506:ERROR:ui/gl/gl_display.cc:673] Initialization of all (2) EGL display types failed.
+[372848:0716/133004.137550:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[372848:0716/133004.166037:ERROR:ui/gl/angle_platform_impl.cc:47] Display.cpp:1097 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1097 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[372848:0716/133004.166207:ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[372848:0716/133004.166322:ERROR:ui/gl/gl_display.cc:638] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+[372848:0716/133004.166507:ERROR:ui/gl/angle_platform_impl.cc:47] Display.cpp:1097 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+ERR: Display.cpp:1097 (initialize): ANGLE Display::initialize error 12289: GLX is not present.
+[372848:0716/133004.166583:ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Critical) eglInitialize: GLX is not present.
+[372848:0716/133004.166632:ERROR:ui/gl/gl_display.cc:638] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+[372848:0716/133004.166673:ERROR:ui/gl/gl_display.cc:673] Initialization of all (2) EGL display types failed.
+[372848:0716/133004.166721:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[372848:0716/133004.168526:ERROR:components/viz/service/main/viz_main_impl.cc:190] Exiting GPU process due to errors during initialization
+[372877:0716/133004.231083:ERROR:media/gpu/vaapi/vaapi_wrapper.cc:1680] Installed VAAPI version is too old. min supported version: 1.17 installed version: 1.7
+",Resolved,Low,2026-07-16
+T007,C007,Support writing to the local clipboard f,"GitHub issue #326151
+Status: open
+Created: 2026-07-16T12:37:24Z
+Updated: 2026-07-16T12:46:11Z
+
+<!-- ⚠️⚠️ Do Not Delete This! feature_request_template ⚠️⚠️ -->
+<!-- Please read our Rules of Conduct: https://opensource.microsoft.com/codeofconduct/ -->
+<!-- Please search existing issues to avoid creating duplicates. -->
+
+<!-- Describe the feature you'd like. -->
+## Use Case / Problem Description
+
+I have a Python script running inside a remote Linux Dev Container (connected via Remote - SSH / Dev Containers from a Windows host). The script is executed by a Git pre-commit hook and generates a short string.
+
+I would like this string to be automatically copied to the local Windows clipboard so that the developer can immediately paste it (`Ctrl+V`) in the next step, without manually selecting and copying text from the terminal.
+
+## What I Tried
+
+### 1. OSC 52 Escape Sequences
+
+I enabled:
+
+```json
+""terminal.integrated.enableOsc52"": true
+```
+
+and emitted:
+
+```text
+\033]52;c;<base64>\a
+```
+
+from the Python script.
+
+While this occasionally works in an interactive terminal session, it does not work reliably when executed from a Git pre-commit hook or another non-interactive process launched through VS Code's Source Control workflow. The OSC 52 sequence appears to be swallowed or never forwarded to the local Windows client.
+
+### 2. `vscode.env.clipboard.writeText()`
+
+This API is only available inside the VS Code extension runtime and therefore cannot be used by standalone CLI scripts or Git hooks running inside the container.
+
+### 3. Standard Linux Utilities (`xclip`, `xsel`, `clip.exe`)
+
+- `xclip` and `xsel` require an active X server, which is unavailable in a headless Dev Container.
+- `clip.exe` is a Windows executable and is not accessible from within the remote Linux container.
+
+## Proposed Solution
+
+It would be helpful to support one of the following mechanisms:
+
+### Option A: VS Code CLI Clipboard Command
+
+Provide a command such as:
+
+```bash
+code --clipboard-write ""text""
+```
+
+that securely bridges clipboard operations from the remote environment to the local host, similar to how `code .` can interact with the local VS Code instance.
+
+### Option B: Reliable OSC 52 Forwarding
+
+Ensure that OSC 52 sequences emitted by Git hooks, subprocesses, and other background processes running in the integrated terminal are consistently intercepted and forwarded to the host clipboard.
+
+### Option C: IPC or Environment-Based Bridge
+
+Provide a documented IPC mechanism (socket, command, or environment variable) that allows scripts running inside Dev Containers or Remote SSH sessions to send simple payloads, such as clipboard content, back to the local VS Code client.
+
+## Environment
+
+- **Host OS:** Windows 10/11
+- **Remote Environment:** Linux (Ubuntu) in a Dev Container / Remote SSH session
+- **VS Code Setting:**
+
+```json
+""terminal.integrated.enableOsc52"": true
+```
+
+## Additional Context
+
+Clipboard access from scripts and Git hooks is a common requirement for developer workflows that generate tokens, IDs, migration names, commit metadata, or other short values that need to be pasted immediately into another tool. Currently, there is no supported and reliable mechanism for transferring clipboard data from a remote container back to the local host.",Open,High,2026-07-16
+T008,C008,keybinding alt+cmd+f doesn't work (for l,"GitHub issue #326147
+Status: open
+Created: 2026-07-16T12:09:53Z
+Updated: 2026-07-16T12:37:36Z
+
+
+Type: <b>Bug</b>
+
+Per documentation at https://code.visualstudio.com/docs/editing/userinterface#_advanced-tree-navigation, alt+cmd+f on macOS should open the advanced file search/filter in the Explorer view, this does not work however.
+
+
+VS Code version: Code 1.129.0 (125df4672b8a6a34975303c6b0baa124e560a4f7, 2026-07-15T00:08:44Z)
+OS version: Darwin arm64 25.5.0
+Modes:
+
+<details>
+<summary>System Info</summary>
+
+|Item|Value|
+|---|---|
+|CPUs|Apple M1 Pro (10 x 2400)|
+|GPU Status|2d_canvas: enabled<br>GPU0: VENDOR= 0x106b [Google Inc. (Apple)], DEVICE=0x0000 [ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Version 26.5.2 (Build 25F84))], DRIVER_VENDOR=Apple, DRIVER_VERSION=26.5.2 *ACTIVE*<br>Machine model name: MacBookPro<br>Machine model version: 18.1<br>direct_rendering_display_compositor: disabled_off_ok<br>gpu_compositing: enabled<br>multiple_raster_threads: enabled_on<br>opengl: enabled_on<br>rasterization: enabled<br>raw_draw: disabled_off_ok<br>skia_graphite: enabled_on<br>trees_in_viz: disabled_off<br>video_decode: enabled<br>video_encode: enabled<br>webgl: enabled<br>webgpu: enabled<br>webnn: disabled_off|
+|Load (avg)|4, 3, 2|
+|Memory (System)|32.00GB (2.13GB free)|
+|Process Argv||
+|Screen Reader|no|
+|VM|0%|
+</details><details><summary>Extensions (81)</summary>
+
+Name|Identifier|Author|Version
+---|---|---|---
+CodeSnap|adpyke.codesnap|adpyke|1.3.4
+Bookmarks|alefragnani.bookmarks|alefragnani|14.1.1
+Project Manager|alefragnani.project-manager|alefragnani|13.1.0
+SQLite|alexcvzz.vscode-sqlite|alexcvzz|0.14.1
+TypeScript + Webpack Problem Matchers|amodio.tsl-problem-matcher|amodio|0.6.2
+VSCode Neovim|asvetliakov.vscode-neovim|asvetliakov|1.19.0
+GitHub Markdown Preview|bierner.github-markdown-preview|bierner|0.4.0
+Markdown Checkboxes|bierner.markdown-checkbox|bierner|0.4.0
+Markdown Emoji|bierner.markdown-emoji|bierner|0.3.1
+Markdown Footnotes|bierner.markdown-footnotes|bierner|0.1.1
+Markdown Preview Github Styling|bierner.markdown-preview-github-styles|bierner|2.2.0
+Markdown yaml Preamble|bierner.markdown-yaml-preamble|bierner|0.1.1
+Open Folder Context Menus for VS Code|chrisdias.vscode-opennewinstance|chrisdias|0.0.15
+vscode-jq|dandric.vscode-jq|dandric|1.2.0
+markdownlint|davidanson.vscode-markdownlint|DavidAnson|0.61.2
+JSONPath Extraction|davidmarek.jsonpath-extract|davidmarek|1.2.3
+jq Playground — JSON Filter Notebook|davidnussio.vscode-jq-playground|davidnussio|5.0.7
+ESLint|dbaeumer.vscode-eslint|dbaeumer|3.0.24
+Docker DX|docker.docker|docker|0.18.0
+Git History|donjayamanne.githistory|donjayamanne|0.6.20
+GitLens — Git supercharged|eamodio.gitlens|eamodio|18.3.0
+EditorConfig|editorconfig.editorconfig|EditorConfig|0.18.2
+hadolint|exiasr.hadolint|exiasr|1.1.2
+Code Runner|formulahendry.code-runner|formulahendry|0.12.2
+GitHub Codespaces|github.codespaces|GitHub|1.18.15
+GitHub Repositories|github.remotehub|GitHub|0.64.0
+GitHub Actions|github.vscode-github-actions|github|0.32.3
+GitHub Pull Requests|github.vscode-pull-request-github|GitHub|0.158.0
+Spreadsheet Viewer|grapecity.gc-excelviewer|GrapeCity|4.2.66
+Todo Tree|gruntfuggly.todo-tree|Gruntfuggly|0.0.226
+HashiCorp Terraform|hashicorp.terraform|hashicorp|2.39.4
+Edit CSV|janisdd.vscode-edit-csv|janisdd|0.11.9
+jq Syntax Highlighting|jq-syntax-highlighting.jq-syntax-highlighting|jq-syntax-highlighting|0.0.2
+Python Indent|kevinrose.vsc-python-indent|KevinRose|1.21.0
+Rainbow CSV|mechatroner.rainbow-csv|mechatroner|3.24.1
+Git Graph|mhutchie.git-graph|mhutchie|1.30.0
+direnv|mkhl.direnv|mkhl|0.17.0
+Container Tools|ms-azuretools.vscode-containers|ms-azuretools|2.4.5
+Docker|ms-azuretools.vscode-docker|ms-azuretools|2.0.0
+Kubernetes|ms-kubernetes-tools.vscode-kubernetes-tools|ms-kubernetes-tools|1.4.0
+PostgreSQL|ms-ossdata.vscode-pgsql|ms-ossdata|1.26.0
+Python Debugger|ms-python.debugpy|ms-python|2026.6.0
+Python|ms-python.python|ms-python|2026.4.0
+Pylance|ms-python.vscode-pylance|ms-python|2026.2.1
+Python Environments|ms-python.vscode-python-envs|ms-python|1.36.0
+Data Wrangler|ms-toolsai.datawrangler|ms-toolsai|1.24.2
+Jupyter|ms-toolsai.jupyter|ms-toolsai|2025.9.1
+Jupyter Keymap|ms-toolsai.jupyter-keymap|ms-toolsai|1.1.2
+Jupyter Notebook Renderers|ms-toolsai.jupyter-renderers|ms-toolsai|1.3.0
+Jupyter Cell Tags|ms-toolsai.vscode-jupyter-cell-tags|ms-toolsai|0.1.9
+Jupyter Slide Show|ms-toolsai.vscode-jupyter-slideshow|ms-toolsai|0.1.6
+Dev Containers|ms-vscode-remote.remote-containers|ms-vscode-remote|0.466.0
+Remote - SSH|ms-vscode-remote.remote-ssh|ms-vscode-remote|0.124.0
+Remote - SSH: Editing Configuration Files|ms-vscode-remote.remote-ssh-edit|ms-vscode-remote|0.87.0
+Remote Development|ms-vscode-remote.vscode-remote-extensionpack|ms-vscode-remote|0.26.0
+Hex Editor|ms-vscode.hexeditor|ms-vscode|1.11.1
+Live Preview|ms-vscode.live-server|ms-vscode|0.4.19
+Makefile Tools|ms-vscode.makefile-tools|ms-vscode|0.12.17
+Remote Explorer|ms-vscode.remote-explorer|ms-vscode|0.5.0
+Remote Repositories|ms-vscode.remote-repositories|ms-vscode|0.42.0
+Remote - Tunnels|ms-vscode.remote-server|ms-vscode|1.5.3
+SQLTools|mtxr.sqltools|mtxr|0.28.6
+SQLTools PostgreSQL/Cockroach Driver|mtxr.sqltools-driver-pg|mtxr|0.5.8
+SQLTools SQLite|mtxr.sqltools-driver-sqlite|mtxr|0.5.4
+vscode-just|nefrob.vscode-just-syntax|nefrob|0.10.2
+autoDocstring - Python Docstring Generator|njpwerner.autodocstring|njpwerner|0.6.1
+Python Type Hint|njqdev.vscode-python-typehint|njqdev|1.5.1
+indent-rainbow|oderwat.indent-rainbow|oderwat|8.3.1
+XML|redhat.vscode-xml|redhat|0.29.3
+YAML|redhat.vscode-yaml|redhat|1.24.0
+Code Spell Checker|streetsidesoftware.code-spell-checker|streetsidesoftware|4.5.6
+Even Better TOML|tamasfe.even-better-toml|tamasfe|0.21.2
+open in browser|techer.open-in-browser|techer|2.0.0
+vscode-pdf|tomoki1207.pdf|tomoki1207|1.2.2
+Lorem ipsum|tyriar.lorem-ipsum|Tyriar|1.3.1
+Sort lines|tyriar.sort-lines|Tyriar|1.12.0
+GistPad|vsls-contrib.gistfs|vsls-contrib|0.9.6
+JSON Path|weijunyu.vscode-json-path|weijunyu|2.4.0
+Jinja|wholroyd.jinja|wholroyd|0.0.8
+Markdown All in One|yzhang.markdown-all-in-one|yzhang|3.6.3
+Open in GitHub, Bitbucket, Gitlab, VisualStudio.com !|ziyasal.vscode-open-in-github|ziyasal|1.3.6
+
+</details>
+<!-- generated by issue reporter -->
+
+I was able to get the desired list.find behavior in the files explorer view by creating a keybinding for cmd+f with the attached keybindings.json.. 
+[keybindings.json](https://github.com/user-attachments/files/30087174/keybindings.json)
+```
+// Place your key bindings in this file to override the defaults
+[
+    {
+        ""key"": ""cmd+f"",
+        ""command"": ""list.find"",
+        ""when"": ""filesExplorerFocus && !inputFocus""
+
+    },
+    {
+        ""key"": ""cmd+f"",
+        ""command"": ""actions.find"",
+        ""when"": ""editorFocus || editorIsOpen && !filesExplorerFocus""
+    },
+    {
+        ""key"": ""cmd+f"",
+        ""command"": ""-actions.find"",
+        ""when"": ""editorFocus || editorIsOpen""
+    }
+]
+```
+Attempting to fix the keybinding for alt+cmd+f however did not work.",Open,Low,2026-07-16
+T009,C009,Flaky Smoke Test: Chat Sandbox (darwin) ,"GitHub issue #326122
+Status: open
+Created: 2026-07-16T08:18:33Z
+Updated: 2026-07-16T12:35:50Z
+
+Run: https://dev.azure.com/monacotools/a6d41577-0fa3-498e-af22-257312ff0545/_build/results?buildId=456072
+
+### macOS (Electron)
+- Chat Sandbox (darwin) > runs terminal commands inside the sandbox: 20 failures out of 20",Resolved,High,2026-07-16
+T010,C010,VSCode crashes as soon as it starts with,"GitHub issue #326092
+Status: open
+Created: 2026-07-16T02:04:04Z
+Updated: 2026-07-16T12:33:15Z
+
+<!-- ⚠️⚠️ Do Not Delete This! bug_report_template ⚠️⚠️ -->
+<!-- Please read our Rules of Conduct: https://opensource.microsoft.com/codeofconduct/ -->
+<!-- 🕮 Read our guide about submitting issues: https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions -->
+<!-- 🔎 Search existing issues to avoid creating duplicates. -->
+<!-- 🧪 Test using the latest Insiders build to see if your issue has already been fixed: https://code.visualstudio.com/insiders/ -->
+<!-- 💡 Instead of creating your report here, use 'Report Issue' from the 'Help' menu in VS Code to pre-fill useful information. -->
+<!-- 🔧 Launch with `code --disable-extensions` to check. -->
+Does this issue occur when all extensions are disabled?: Yes/No
+
+<!-- 🪓 If you answered No above, use 'Help: Start Extension Bisect' from Command Palette to try to identify the cause. -->
+<!-- 📣 Issues caused by an extension need to be reported directly to the extension publisher. The 'Help > Report Issue' dialog can assist with this. -->
+- VS Code Version: 1.129.0
+- OS Version: Linux Mint 22.3 Cinnamon
+
+Steps to Reproduce:
+
+1. I just click the VSCode icon and appears that VSCode error with ""The Window terminated unexpectedly (reason: 'clean-exit', code:'0').
+2. I proceed to close or open a new window in VSCode and crashes again and again.
+",Open,Low,2026-07-16
+T011,C001,Preserve option to keep current UI: The ,"GitHub issue #326146
+Status: open
+Created: 2026-07-16T11:46:18Z
+Updated: 2026-07-16T12:26:31Z
+
+The so-called ""modern"" UI (euphemism for trash new UI) looks objectively terrible, and yields an inferior UX (e.g. smaller tabs, more space occupied uselessly, etc.) in every conceivable dimension. It is an unambiguous degradation, much like the new default ""Dark 2026"" theme.
+
+Ideally, please never turn this patently awful design into the default UI; and if you do, preserve the option to switch back to the current UI (for those of us with eyes and the slightest bit of taste).",Resolved,Medium,2026-07-16
+T012,C002,Zephyr - Build Process Hangs on Subseque,"GitHub issue #301063
+Status: open
+Created: 2026-03-12T09:47:49Z
+Updated: 2026-07-16T12:03:19Z
+
+<!-- ⚠️⚠️ Do Not Delete This! bug_report_template ⚠️⚠️ -->
+<!-- Please read our Rules of Conduct: https://opensource.microsoft.com/codeofconduct/ -->
+<!-- 🕮 Read our guide about submitting issues: https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions -->
+<!-- 🔎 Search existing issues to avoid creating duplicates. -->
+<!-- 🧪 Test using the latest Insiders build to see if your issue has already been fixed: https://code.visualstudio.com/insiders/ -->
+<!-- 💡 Instead of creating your report here, use 'Report Issue' from the 'Help' menu in VS Code to pre-fill useful information. -->
+<!-- 🔧 Launch with `code --disable-extensions` to check. -->
+Does this issue occur when all extensions are disabled?: Yes/No
+
+<!-- 🪓 If you answered No above, use 'Help: Start Extension Bisect' from Command Palette to try to identify the cause. -->
+<!-- 📣 Issues caused by an extension need to be reported directly to the extension publisher. The 'Help > Report Issue' dialog can assist with this. -->
+- VS Code Version: 
+- OS Version: 
+
+Steps to Reproduce:
+
+See https://github.com/zephyrproject-rtos/zephyr/issues/72963
+",Open,Medium,2026-07-16
+T013,C003,Copilot Chat 0.43.0: Claude agent mode s,"GitHub issue #308999
+Status: closed
+Created: 2026-04-10T11:58:48Z
+Updated: 2026-07-16T11:57:40Z
+
+Type: **Bug**
+
+## Summary
+
+When running Copilot Chat in **Claude agent mode**, the chat window is silent during any turn that requires tool calls. The VS Code output panel logs a specific error from the claude-agent-sdk: the tool permission hook stream (`hook_6`) closes before the permission decision arrives, aborting the tool call before any response can be generated. This started approximately 27 March 2026 and has been consistently reproducible since.
+
+## Steps to Reproduce
+
+1. Open VS Code (1.115) with GitHub Copilot Chat 0.43.0.
+2. In Copilot Chat, switch to Claude agent mode (e.g. `claude-sonnet-4.6`).
+3. Issue any prompt that requires tool use — file reads, web fetches, shell commands, or git operations.
+4. Observe that the chat window shows no activity and no response while the agent is working.
+5. Open the VS Code output panel and filter to the Copilot Chat output channel.
+
+## Expected Behaviour
+
+The agent narrates progress and shows tool call activity in the chat window throughout the turn. A final response is delivered when the turn completes.
+
+## Actual Behaviour
+
+The chat window is silent throughout. The output panel logs one or more instances of:
+
+```
+[error] claude-agent-sdk stderr: Error in hook callback hook_6: Error: Tool permission stream closed before response received
+    at F58.read (file:///home/ciara/.vscode-server/extensions/github.copilot-chat-0.43.0/dist/cli.js:8246:342)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async file:///home/ciara/.vscode-server/extensions/github.copilot-chat-0.43.0/dist/cli.js:16742:1569
+```
+
+The claude-agent-sdk receives no tool permission response and aborts the tool call. Because the turn never completes, no output is generated for the chat window.
+
+## Session Log Evidence
+
+The Copilot Chat debug log (exported via ""Export All Prompts as JSON"") shows the symptom directly.
+
+**ChatMLCancelation — aborted turn (duration 157 ms, no work done):**
+```json
+{
+  ""id"": ""37bfd4cc"",
+  ""kind"": ""request"",
+  ""type"": ""ChatMLCancelation"",
+  ""name"": ""Claude Copilot Proxy"",
+  ""metadata"": {
+    ""requestType"": ""ChatMessages"",
+    ""model"": ""claude-sonnet-4.6"",
+    ""startTime"": ""2026-04-10T11:35:40.129Z"",
+    ""endTime"": ""2026-04-10T11:35:40.286Z"",
+    ""duration"": 157
+  }
+}
+```
+
+**Multiple empty-response turns in the same session** (ids: `4d5a311f`, `a799007f`, `51c1061c`) — turns where Claude responded with an empty message because the tool call it depended on was never completed.
+
+**Contrast:** Turns where no tool call was needed completed normally and their responses were relayed to the chat window without issue. The failure is specific to the tool permission stage, not to text relay.
+
+## Analysis
+
+The tool permission hook system in the claude-agent-sdk uses a stream (`hook_6`) to deliver the allow/deny decision for each tool call. That stream is closing before the decision arrives. Possible causes:
+
+1. **Timing regression** — the permission decision now arrives after a threshold that causes the read stream to time out or be garbage-collected.
+2. **`use-responses-api` experiment interaction** — two previously closed related issues (#297982, #297879) both had the `use-responses-api` A/B experiment active. If switching from the streaming completions API to the Responses API changes the timing or lifecycle of hook callbacks, this could cause premature stream closure.
+3. **SDK version mismatch** — a version incompatibility between the claude-agent-sdk bundled in `cli.js` and the callback contract expected by the extension host.
+
+The obfuscated symbol `F58.read` at `cli.js:8246:342` is the stream reader for the hook callback; the async dispatch at `cli.js:16742:1569` is the main agent loop awaiting the permission result.
+
+## Onset
+
+The problem began approximately **27 March 2026**, coinciding with the VS Code 1.113 release cycle. VS Code 1.113 introduced bridging of MCP servers to Claude agent sessions and changed session listing to use the official Claude agent SDK API. None of the 1.113–1.115 release notes document a change to tool permission or hook callback handling, suggesting the cause may be a server-side experiment rollout rather than a VS Code binary change.
+
+## Related Issues
+
+- microsoft/vscode#297982 — Copilot Chat incorrectly stating MCP tools unavailable (closed not_planned; had `use-responses-api` experiment active)
+- microsoft/vscode#297879 — Unable to access any available MCP (closed not_planned; had `use-responses-api` experiment active)
+
+## Environment
+
+Extension version: **0.43.0**
+VS Code version: **1.115** (released 2026-04-07)
+OS: **Linux x64** (WSL2, kernel 6.6.87.2-microsoft-standard-WSL2)
+Running in: VS Code Server (remote/Codespace)
+
+<details>
+<summary>System Info</summary>
+
+| Item | Value |
+|---|---|
+| Shell | bash |
+| Remote | VS Code Server on Linux WSL2 |
+| Extension host | github.copilot-chat-0.43.0 |
+| claude-agent-sdk | bundled in dist/cli.js |
+
+</details>
+",Resolved,Medium,2026-07-16
+T014,C004,Status bar: no longer switches color whi,"GitHub issue #325921
+Status: closed
+Created: 2026-07-15T09:41:42Z
+Updated: 2026-07-16T11:57:29Z
+
+## Feedback
+
+> I notice the status bar of the editor no longer switches colors when debugging. I realize I've come to depend on that more in the agent world now that I'm juggling a bunch of different windows 🙂
+
+**Source**: #workbench-refresh-feedback — Connor Peet on 2026-07-14
+**Reactions**: 👍 ×1
+
+---
+
+## Context
+
+With Modern UI enabled, the status bar no longer adopts its debugging color while a debug session is active. This removes a visual cue users rely on to tell which window is actively debugging — especially valuable now that several agent windows can be open at once.
+
+## Acceptance criteria
+
+- [ ] While debugging with Modern UI enabled, the status bar reflects the debugging color state as it does in the classic UI.
+- [ ] The status bar returns to the normal workbench surface color when the debug session ends.
+",Resolved,Medium,2026-07-16
+T015,C005,screenshot_page tool result fails with 4,"GitHub issue #312446
+Status: closed
+Created: 2026-04-24T22:40:27Z
+Updated: 2026-07-16T11:57:21Z
+
+## VS Code Version
+Insiders (commit f2b51f3f64)
+
+## OS
+Windows
+
+## Copilot Chat Extension
+Latest (bundled with Insiders)
+
+## Description
+
+When the agent calls the screenshot_page browser tool (or any tool that returns image data), the extension fails to construct a valid multimodal request payload. The API rejects it with:
+
+`
+400 {""error"":{""code"":""400"",""message"":""Param Incorrect"",""param"":""text is not set"",""type"":""""}}
+`
+
+The error trace points to _provideLanguageModelResponse in xtension.js:
+
+`
+at Dj._provideLanguageModelResponse (c:\Users\xdoomx\AppData\Local\Programs\Microsoft VS Code Insiders\f2b51f3f64\resources\app\extensions\copilot\dist\extension.js:1699:12529)
+`
+
+## Steps to Reproduce
+
+1. Open Copilot Chat (Agent mode)
+2. Ask the agent to take a screenshot of any browser page (e.g., ""screenshot the current page"")
+3. The agent calls screenshot_page
+4. The tool returns image data to the model
+5. The extension fails to wrap the image result with a text part in the multimodal payload
+
+## Expected Behavior
+
+The tool result should be sent as a properly formatted multimodal message containing both the image data and a text part (even an empty or descriptive string), so the API accepts it.
+
+## Actual Behavior
+
+The image is sent without a 	ext field, causing the API to reject the request with a 400 error.
+
+## Root Cause (Likely)
+
+The tool-to-model pipeline for image-returning tools does not include the required 	ext property in the content array. The API requires at least one 	ext part alongside any image part.
+
+## Impact
+
+Any tool that returns image data to the model is broken in agent mode. This includes screenshot_page, iew_image, and potentially custom MCP tools that return images.
+
+## Workaround
+
+Use ead_page (DOM snapshot) instead of screenshot_page for browser inspection. This avoids the image-handling path entirely.",Resolved,Medium,2026-07-16
+T016,C006,Windows: An OS keyring couldn't be ident,"GitHub issue #319730
+Status: closed
+Created: 2026-06-03T13:16:41Z
+Updated: 2026-07-16T11:56:46Z
+
+
+Type: <b>Bug</b>
+
+When I start VSCode (stable or insider) I have the following message poping every startup and when I am connecting remotely to a tunnel.
+
+`An OS keyring couldn't be identified for storing the encryption related data in your current desktop environment.`
+
+It appear for each window opened and I have to re-login to setting sync.
+
+I have resintalled, deleted the Code folder in AppData and tried Insider (same result for all)
+
+Here is the captured log at startup:
+[26060:0603/090347.056:ERROR:components\os_crypt\sync\os_crypt_win.cc:106] Failed to decrypt: Key not valid for use in specified state. (0x8009000B)
+[26060:0603/090347.721:ERROR:components\os_crypt\sync\os_crypt_win.cc:78] Failed to encrypt: The requested operation cannot be completed. The computer must be trusted for delegation and the current user account must be configured to allow delegation. (0x80090345)
+[main 2026-06-03T13:03:48.152Z] PolicyConfiguration#initialize
+[main 2026-06-03T13:03:48.153Z] PolicyConfiguration#updatePolicyDefinitions [
+  'update.mode',
+  'update.channel',
+  'update.enableWindowsBackgroundUpdates',
+  'update.showReleaseNotes',
+  'update.showPostInstallInfo',
+  'update.titleBar',
+  'http.useLocalProxyConfiguration',
+  'http.electronFetch',
+  'http.proxy',
+  'http.proxyStrictSSL',
+  'http.proxyKerberosServicePrincipal',
+  'http.noProxy',
+  'http.proxyAuthorization',
+  'http.proxySupport',
+  'http.systemCertificates',
+  'http.systemCertificatesNode',
+  'http.experimental.systemCertificatesV2',
+  'http.fetchAdditionalSupport',
+  'http.webSocketAdditionalSupport',
+  'http.experimental.networkInterfaceCheckInterval',
+  'telemetry.telemetryLevel',
+  'telemetry.feedback.enabled',
+  'telemetry.enableTelemetry',
+  'extensions.allowed',
+  'chat.agentHost.enabled',
+  'chat.agentHost.otel.enabled',
+  'chat.agentHost.otel.exporterType',
+  'chat.agentHost.otel.otlpEndpoint',
+  'chat.agentHost.otel.captureContent',
+  'chat.agentHost.otel.outfile',
+  'chat.agentHost.otel.dbSpanExporter.enabled'
+]
+[main 2026-06-03T13:03:48.154Z] NativePolicyService#_updatePolicyDefinitions - Found 4 policy definitions
+[main 2026-06-03T13:03:48.171Z] Creating watcher for productName VSCode
+[main 2026-06-03T13:03:48.174Z] NativePolicyService#_onDidPolicyChange - Updated policy values: {}
+[main 2026-06-03T13:03:48.174Z] PolicyConfiguration#update [
+  'update.mode',
+  'telemetry.telemetryLevel',
+  'telemetry.feedback.enabled',
+  'extensions.allowed'
+]
+[main 2026-06-03T13:03:48.174Z] PolicyConfiguration#updatePolicyDefinitions [
+  'chat.agentHost.rubberDuck.enabled',
+  'chat.agentHost.claudeAgent.path'
+]
+[main 2026-06-03T13:03:48.175Z] PolicyConfiguration#update []
+[main 2026-06-03T13:03:48.175Z] [File Watcher (node.js)] Request to start watching: c:\Users\mrogersv\AppData\Roaming\Code\User (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>),c:\Users\mrogersv\AppData\Roaming\Code\User\settings.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[main 2026-06-03T13:03:48.199Z] Starting VS Code
+[main 2026-06-03T13:03:48.199Z] from: c:\Users\mrogersv\AppData\Local\Programs\Microsoft VS Code\6a44c352bd\resources\app
+[main 2026-06-03T13:03:48.199Z] args: {
+  _: [],
+  diff: false,
+  merge: false,
+  add: false,
+  remove: false,
+  goto: false,
+  'new-window': false,
+  'reuse-window': false,
+  agents: false,
+  wait: false,
+  help: false,
+  'list-extensions': false,
+  'show-versions': false,
+  'pre-release': false,
+  'update-extensions': false,
+  version: false,
+  verbose: true,
+  status: false,
+  'prof-startup': false,
+  'no-cached-data': false,
+  'prof-v8-extensions': false,
+  'disable-extensions': false,
+  'disable-lcd-text': false,
+  'disable-gpu': false,
+  'disable-chromium-sandbox': false,
+  sandbox: false,
+  telemetry: false,
+  debugRenderer: false,
+  'enable-smoke-test-driver': false,
+  'skip-sessions-welcome': false,
+  logExtensionHostCommunication: false,
+  'skip-release-notes': false,
+  'skip-welcome': false,
+  'disable-telemetry': false,
+  'disable-updates': false,
+  'share-secrets-with-agents-app': false,
+  transient: false,
+  'use-inmemory-secretstorage': false,
+  'disable-workspace-trust': false,
+  'disable-crash-reporter': false,
+  'crash-reporter-id': '8a41fbea-3d02-4695-a493-5bfbbf77c591',
+  'skip-add-to-recently-opened': false,
+  'open-url': false,
+  'file-write': false,
+  'file-chmod': false,
+  force: false,
+  'do-not-sync': false,
+  'do-not-include-pack-dependencies': false,
+  trace: false,
+  'trace-memory-infra': false,
+  'preserve-env': false,
+  'force-user-env': false,
+  'force-disable-user-env': false,
+  'open-devtools': false,
+  'disable-gpu-sandbox': false,
+  '__enable-file-policy': false,
+  'enable-coi': false,
+  'enable-rdp-display-tracking': false,
+  'disable-layout-restore': false,
+  'disable-experiments': false,
+  'no-proxy-server': false,
+  'no-sandbox': false,
+  nolazy: false,
+  'force-renderer-accessibility': false,
+  'ignore-certificate-errors': false,
+  'allow-insecure-localhost': false,
+  vmodule: '*/components/os_crypt/*=1',
+  'disable-dev-shm-usage': false,
+  'profile-temp': false,
+  logsPath: 'C:\\Users\\mrogersv\\AppData\\Roaming\\Code\\logs\\20260603T090348'
+}
+[main 2026-06-03T13:03:48.199Z] Resolving machine identifier...
+[main 2026-06-03T13:03:48.199Z] Resolving SQM identifier...
+[main 2026-06-03T13:03:48.199Z] Resolving devDevice identifier...
+[main 2026-06-03T13:03:48.199Z] Resolved machine identifier: 68734171973cba70a4764f8bcf05414d8533650c80cf5637846022a51dd316da
+[main 2026-06-03T13:03:48.199Z] Resolved SQM identifier: {0A3BA604-D2AB-45CD-BECE-CF6C04D8E88B}
+[main 2026-06-03T13:03:48.199Z] Resolved devDevice identifier: 0c7a6249-b3b0-4325-89be-249f6a971baf
+[main 2026-06-03T13:03:48.199Z] Main->SharedProcess#connect
+[main 2026-06-03T13:03:48.202Z] PolicyConfiguration#updatePolicyDefinitions [
+  'terminal.integrated.automationProfile.linux',
+  'terminal.integrated.automationProfile.osx',
+  'terminal.integrated.automationProfile.windows',
+  'terminal.integrated.agentHostProfile.linux',
+  'terminal.integrated.agentHostProfile.osx',
+  'terminal.integrated.agentHostProfile.windows',
+  'terminal.integrated.profiles.windows',
+  'terminal.integrated.profiles.osx',
+  'terminal.integrated.profiles.linux',
+  'terminal.integrated.useWslProfiles',
+  'terminal.integrated.inheritEnv',
+  'terminal.integrated.persistentSessionScrollback',
+  'terminal.integrated.showLinkHover',
+  'terminal.integrated.ignoreProcessNames'
+]
+[main 2026-06-03T13:03:48.202Z] PolicyConfiguration#updatePolicyDefinitions [
+  'terminal.integrated.defaultProfile.linux',
+  'terminal.integrated.defaultProfile.osx',
+  'terminal.integrated.defaultProfile.windows'
+]
+[main 2026-06-03T13:03:48.205Z] PolicyConfiguration#update []
+[main 2026-06-03T13:03:48.206Z] PolicyConfiguration#update []
+[main 2026-06-03T13:03:48.210Z] StorageMainService: creating application storage
+[main 2026-06-03T13:03:48.211Z] StorageMainService: creating application shared storage
+[main 2026-06-03T13:03:48.215Z] ElectronURLListener: waiting for window to be ready to handle URLs...
+[main 2026-06-03T13:03:48.215Z] lifecycle (main): phase changed (value: 2)
+[main 2026-06-03T13:03:48.215Z] windowsManager#open
+[main 2026-06-03T13:03:48.216Z] windowsManager#open pathsToOpen [
+  {
+    backupPath: 'C:\\Users\\mrogersv\\AppData\\Roaming\\Code\\Backups\\1780491787973',
+    remoteAuthority: undefined
+  }
+]
+[main 2026-06-03T13:03:48.216Z] windowsManager#doOpenEmpty {
+  restore: true,
+  remoteAuthority: undefined,
+  filesToOpen: undefined,
+  forceNewWindow: true
+}
+
+VS Code version: Code 1.123.0 (6a44c352bd24569c417e530095901b649960f9f8, 2026-06-03T11:29:03+02:00)
+OS version: Windows_NT arm64 10.0.26200
+Modes:
+
+<details>
+<summary>System Info</summary>
+
+|Item|Value|
+|---|---|
+|CPUs|Snapdragon(R) X Elite - X1E78100 - Qualcomm(R) Oryon(TM) CPU (12 x 2976)|
+|GPU Status|2d_canvas: enabled<br>GPU0: VENDOR= 0x4d4f4351, DEVICE=0x36334330 [Qualcomm(R) Adreno(TM) X1-85 GPU], DRIVER_VENDOR=Qualcomm, DRIVER_VERSION=31.0.133.1 *ACTIVE*<br>GPU1: VENDOR= 0x1414, DEVICE=0x008c [Microsoft Basic Render Driver], DRIVER_VERSION=10.0.26100.8328<br>Machine model name: <br>Machine model version: <br>direct_rendering_display_compositor: disabled_off_ok<br>gpu_compositing: enabled<br>multiple_raster_threads: enabled_on<br>opengl: enabled_on<br>rasterization: enabled<br>raw_draw: disabled_off_ok<br>skia_graphite: disabled_off<br>trees_in_viz: disabled_off<br>video_decode: enabled<br>video_encode: enabled<br>webgl: enabled<br>webgpu: enabled<br>webnn: disabled_off|
+|Load (avg)|undefined|
+|Memory (System)|31.56GB (11.99GB free)|
+|Process Argv|--verbose --vmodule=*/components/os_crypt/*=1 --crash-reporter-id 8a41fbea-3d02-4695-a493-5bfbbf77c591|
+|Screen Reader|no|
+|VM|0%|
+</details><details><summary>Extensions (51)</summary>
+
+Name|Identifier|Author|Version
+---|---|---|---
+Claude Code for VS Code|anthropic.claude-code|Anthropic|2.1.161
+Tcl/Tk, iRules, EDA-Tools, Expect LSP/MCP|bitwisecook.tcl-lsp|bitwisecook|1.10.10
+Multiple cursor case preserve|cardinal90.multi-cursor-case-preserve|Cardinal90|1.0.5
+Verible|chipsalliance.verible|chipsalliance|0.0.4053
+Markdown Inline Editor|codesmith.markdown-inline-editor-vscode|CodeSmith|1.23.0
+markdownlint|davidanson.vscode-markdownlint|DavidAnson|0.61.2
+GitLens — Git supercharged|eamodio.gitlens|eamodio|18.0.0
+Filter Lines|earshinov.filter-lines|earshinov|1.1.0
+Environment Modules TCL Language Associator|erikparawell.environment-modules-tcl-associator|ErikParawell|1.0.1
+Extension Pack for Environment Modules|erikparawell.extension-pack-for-environment-modules|ErikParawell|1.0.1
+Copy Relative Path and Line Numbers|ezforo.copy-relative-path-and-line-numbers|ezforo|0.3.1
+Highlight|fabiospampinato.vscode-highlight|fabiospampinato|2.1.0
+Todo+|fabiospampinato.vscode-todo-plus|fabiospampinato|4.19.1
+SystemVerilog-1800-2012|gvekony.systemverilog-1800-2012|gvekony|1.0.27
+Better SystemVerilog Syntax|hankhsu1996.better-systemverilog-syntax|hankhsu1996|1.1.0
+Path Autocomplete|ionutvmi.path-autocomplete|ionutvmi|1.25.0
+Peacock|johnpapa.vscode-peacock|johnpapa|4.2.2
+SVN|johnstoncode.svn-scm|johnstoncode|2.17.0
+Mark Sharp — Markdown Editor|jonathan-yeung.mark-sharp|jonathan-yeung|1.12.1
+Blockman - Highlight Nested Code Blocks|leodevbro.blockman|leodevbro|1.7.8
+Black Formatter|ms-python.black-formatter|ms-python|2026.4.0
+Python Debugger|ms-python.debugpy|ms-python|2026.6.0
+Python|ms-python.python|ms-python|2026.4.0
+Pylance|ms-python.vscode-pylance|ms-python|2026.2.1
+Python Environments|ms-python.vscode-python-envs|ms-python|1.30.0
+Dev Containers|ms-vscode-remote.remote-containers|ms-vscode-remote|0.460.0
+Remote - SSH|ms-vscode-remote.remote-ssh|ms-vscode-remote|0.123.0
+Remote - SSH: Editing Configuration Files|ms-vscode-remote.remote-ssh-edit|ms-vscode-remote|0.87.0
+WSL|ms-vscode-remote.remote-wsl|ms-vscode-remote|0.104.3
+Remote Development|ms-vscode-remote.vscode-remote-extensionpack|ms-vscode-remote|0.26.0
+Hex Editor|ms-vscode.hexeditor|ms-vscode|1.11.1
+Makefile Tools|ms-vscode.makefile-tools|ms-vscode|0.12.17
+Remote Explorer|ms-vscode.remote-explorer|ms-vscode|0.5.0
+Remote - Tunnels|ms-vscode.remote-server|ms-vscode|1.5.3
+tmux-integrated|pcassidy75.tmux-integrated|pcassidy75|0.2.0
+Material Icon Theme|pkief.material-icon-theme|PKief|5.35.0
+QGenie Indexer|qgenie.qgenie-indexer|qgenie|1.0.1
+qgenie-agent|qualcomm.qgenie-agent|qualcomm|3.82.0
+QGenie Code - Assistant|qualcomm.qgenie-assistant|Qualcomm|2.10.0
+QGenie CodeWiki|qualcomm.qgenie-codewiki|qualcomm|0.5.0
+QGenie VSCode Pack|qualcomm.qgenie-pack|qualcomm|1.1.3
+XML|redhat.vscode-xml|redhat|0.29.2
+Markdown Preview Enhanced|shd101wyy.markdown-preview-enhanced|shd101wyy|0.8.27
+File Utils|sleistner.vscode-fileutils|sleistner|3.10.3
+Comment Divider|stackbreak.comment-divider|stackbreak|0.4.0
+Even Better TOML|tamasfe.even-better-toml|tamasfe|0.21.2
+vscode-pdf|tomoki1207.pdf|tomoki1207|1.2.2
+vscode-icons|vscode-icons-team.vscode-icons|vscode-icons-team|12.18.0
+Jinja|wholroyd.jinja|wholroyd|0.0.8
+Markdown All in One|yzhang.markdown-all-in-one|yzhang|3.6.3
+One Dark Pro|zhuangtongfa.material-theme|zhuangtongfa|3.19.0
+
+</details><details>
+<summary>A/B Experiments</summary>
+
+```
+vsliv368cf:30146710
+binariesv615:30325510
+nativeloc1:31344060
+dwcopilot:31170013
+dwoutputs:31242946
+copilot_t_ci:31333650
+e5gg6876:31282496
+pythonrdcb7:31342333
+6518g693:31463988
+aj953862:31281341
+6abeh943:31336334
+envsactivate1:31505457
+cloudbuttont:31379625
+42190218_ostrepl:31403339
+ec5jj548:31422691
+cp_cls_c_966_ss:31454199
+inlinechat_v2_hd992725:31505030
+4je02754:31466945
+c3h7c220:31478652
+cp_cls_c_1081:31454833
+conptydll_true:31498968
+e9c30283:31461165
+test_treatment2:31471001
+46204921:31447328
+idci7584:31464702
+e3e4d672:31494082
+ei9d7968:31496641
+chat:31457767
+7e187181:31503455
+ghj88844:31499326
+ddid_c:31478207
+hmra_i5g22:31518061
+getcmakediagnosticsoff:31489825
+7df3h592:31512476
+cp_cls_t_1082:31516087
+logging_enabled_new:31498466
+j0d79568:31499440
+jb_cp_cls_t_632:31524805
+748c7209:31512887
+32d76977:31512328
+ha629193:31508444
+cdk-lw-on:31524445
+2cfga817_c:31522397
+jh5f2457_c:31515489
+g4a0e106:31517209
+prpt_lrg:31518466
+61138546:31518536
+
+```
+
+</details>
+
+<!-- generated by issue reporter -->",In Progress,Medium,2026-07-16
+T017,C007,Other Models are not showing all,"GitHub issue #324168
+Status: closed
+Created: 2026-07-03T07:32:55Z
+Updated: 2026-07-16T11:56:11Z
+
+
+Type: <b>Bug</b>
+
+For some reason when in CHAT component want to see all Ollama models i dont see it from the dropdown menu i see only one of them but if i click cog icon to open Language models i can see all of the ollama models. so for example i can not see deep-seek-coder:6.7b or quen3-coder:480b-cloud but can see quen 2.5-coder:7b. before few updates of VS Code all works fine
+
+VS Code version: Code 1.127.0 (4fe60c8b1cdac1c4c174f2fb180d0d758272d713, 2026-06-30T10:52:33+02:00)
+OS version: Linux x64 6.19.10-300.fc44.x86_64
+Modes:
+
+<details>
+<summary>System Info</summary>
+
+|Item|Value|
+|---|---|
+|CPUs|Intel(R) Core(TM) i9-9980HK CPU @ 2.40GHz (16 x 4396)|
+|GPU Status|2d_canvas: enabled<br>GPU0: VENDOR= 0x10de, DEVICE=0x1f91, DRIVER_VENDOR=Mesa, DRIVER_VERSION=26.0.3<br>GPU1: VENDOR= 0x8086, DEVICE=0x3e9b, DRIVER_VENDOR=Mesa, DRIVER_VERSION=26.0.3 *ACTIVE*<br>Machine model name: <br>Machine model version: <br>direct_rendering_display_compositor: disabled_off_ok<br>gpu_compositing: enabled<br>multiple_raster_threads: enabled_on<br>opengl: enabled_on<br>rasterization: enabled<br>raw_draw: disabled_off_ok<br>skia_graphite: disabled_off<br>trees_in_viz: disabled_off<br>video_decode: enabled<br>video_encode: disabled_software<br>vulkan: disabled_off<br>webgl: enabled<br>webgpu: enabled<br>webgpu_on_vk_via_gl_interop: disabled_off<br>webnn: disabled_off|
+|Load (avg)|1, 0, 0|
+|Memory (System)|15.37GB (10.70GB free)|
+|Process Argv|--crash-reporter-id 3597f479-fd52-4600-9dd1-88ff07cd0727|
+|Screen Reader|no|
+|VM|0%|
+|DESKTOP_SESSION|xfce|
+|XDG_CURRENT_DESKTOP|XFCE|
+|XDG_SESSION_DESKTOP|xfce|
+|XDG_SESSION_TYPE|x11|
+</details><details><summary>Extensions (14)</summary>
+
+Name|Identifier|Author|Version
+---|---|---|---
+Kotlin|fwcd.kotlin|fwcd|0.2.36
+NVIDIA NIM Provider|hidenobunagai.nvidia-nim-provider|HidenobuNagai|0.2.2
+Kotlin by JetBrains|jetbrains.kotlin-server|JetBrains|0.0.5
+Kilo Code: AI Coding Agent, Copilot, and Autocomplete|kilocode.kilo-code|kilocode|7.3.54
+Kotlin Language|mathiasfrohlich.kotlin|mathiasfrohlich|1.7.1
+Python Debugger|ms-python.debugpy|ms-python|2026.6.0
+Python|ms-python.python|ms-python|2026.4.0
+Pylance|ms-python.vscode-pylance|ms-python|2026.2.1
+Python Environments|ms-python.vscode-python-envs|ms-python|1.36.0
+Ollama|ollama.ollama|Ollama|0.0.2
+Codex – OpenAI’s coding agent|openai.chatgpt|openai|26.5623.101652
+Cline|saoudrizwan.claude-dev|saoudrizwan|4.0.6
+opencode|sst-dev.opencode|sst-dev|0.0.13
+Gradle for Java|vscjava.vscode-gradle|vscjava|3.17.3
+
+</details><details>
+<summary>A/B Experiments</summary>
+
+```
+vsliv368:30146709
+binariesv615:30325510
+nativeloc1:31344060
+dwcopilot:31170013
+dwoutputs:31242946
+copilot_t_ci:31333650
+e5gg6876:31282496
+pythonrdcb7:31342333
+6518g693:31463988
+aj953862:31281341
+6abeh943:31336334
+envsactivate1:31538736
+editstats-enabled:31346257
+gh487529:31544284
+cloudbuttont:31379625
+3efgi100_wstrepl:31403338
+ec5jj548:31422691
+cp_cls_t_966_ss:31526232
+4je02754:31466945
+c3h7c220:31478652
+38bie571_auto:31426784
+cp_cls_c_1081:31454833
+conptydll_true:31498968
+ia-use-proxy-models-svc:31452481
+e9c30283:31461165
+test_treatment2:31471001
+46204921:31447328
+idci7584:31464702
+e3e4d672:31494082
+ei9d7968:31496641
+chat:31457767
+8hig5102:31480529
+89g7j272:31518289
+7e187181:31503455
+i2gc6536:31499202
+52612955:31516516
+ghj88844:31499326
+ec1eg703:31520046
+ddid_c:31478207
+hmra_i5g22:31518061
+ie3bb177:31543534
+7df3h592:31512476
+cp_cls_t_1082:31535311
+logging_enabled_new:31498466
+j0d79568:31499440
+jb_cp_cls_t_632:31543129
+56dj4588:31512888
+32d76977:31512328
+ha629193:31508444
+cdk-lw-on:31524445
+f9bf7985:31543584
+31fi7170_t:31522396
+jh5f2457_c:31540921
+41836166:31537719
+jbcp_cls_pctr_t:31531130
+61138546:31518536
+cp_intellij_t_nes:31533504
+jf4hg949:31526829
+nes-curr-leftover-1500:31538366
+h561g132:31533256
+sessions_3:31532893
+h7dd7680:31543284
+ihg5j128:31534457
+7g2b5551:31542111
+sandbox-ui-on-2:31543161
+nes-ex-cf-euporie-03:31542868
+nes-nc-rv-1k-lc-1k:31544184
+
+```
+
+</details>
+
+<!-- generated by issue reporter -->",Open,Low,2026-07-16
+T018,C008,Forwarded app ports running on codespace,"GitHub issue #324739
+Status: closed
+Created: 2026-07-07T11:41:22Z
+Updated: 2026-07-16T11:56:06Z
+
+Hello,
+
+Since yesterday afternoon, I'm unable to access any of my react - vite app forwarded ports. They all hit 404 error even though I declare them public. Even the port used by prisma studio on localhost is unreachable.
+
+I didn't change anything in the codespace or proxy configuration, it just stopped working by 3pm (West Europe Time), and the problem continued today.
+
+I had to setup a new codespace with my current repository since the previous one got corrupted and stopped loading the proper NodeJs image I was working with before (declared on .devcontainer.json), it reverted to an older version and would stay like that even after a full rebuild (this has happened a few times with other codespaces, I don't know the reason why) 
+
+Could you please check what is happening?
+Is there some new configuration required to make this work?
+
+Thanks in advance.
+
+Version: 1.127.0
+Commit: 4fe60c8b1cdac1c4c174f2fb180d0d758272d713
+User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 OPR/133.0.0.0
+Embedder: codespaces
+
+<!-- generated by web issue reporter -->",Resolved,Low,2026-07-16
+T019,C009,/compact doesnt seem to work in AH,"GitHub issue #324789
+Status: closed
+Created: 2026-07-07T16:12:11Z
+Updated: 2026-07-16T11:56:03Z
+
+Ref https://github.com/microsoft/vscode/issues/321826#issuecomment-4894924178
+
+
+Running /compact in the agent host doesnt seem to trigger compaction. For example, I triggered compaction manually while context was at 58.3k and after the compaction request completed it should ~70k in the context widget. 
+
+I am unsure if the context widget is no rendering properly or if compaction is actually not triggered properly. Let me know if there are any logs or other info needed to trace this",In Progress,Medium,2026-07-16

@@ -11,7 +11,7 @@ separation between extraction, transformation, configuration, and loading.
 ## Enterprise ETL Architecture
 
 ```text
-Salesforce dummy API   Stripe API   Zendesk dummy API
+Salesforce dummy API   Stripe API   GitHub Issues API
           \                |                /
                            v
                  data/raw/*.json
@@ -78,7 +78,7 @@ enterprise_etl_pipeline/
 | --- | --- | --- |
 | Customers | JSONPlaceholder, through `salesforce_api.py` | Dummy API integration |
 | Payments | Stripe Payment Intents | Real API integration |
-| Tickets | DummyJSON posts, through `zendesk_api.py` | Dummy API integration |
+| Tickets | GitHub Issues API (`microsoft/vscode`) | Real public REST API integration |
 
 ## Current Project Workflow
 
@@ -195,12 +195,11 @@ To stop the Airflow stack while preserving volumes:
 docker compose -f docker-compose-airflow.yml down
 ```
 
-The legacy placeholder file under `airflow/dags/` remains untouched; the
-Docker deployment uses the production DAG in `dags/etl_pipeline_dag.py`.
+The Docker deployment uses the production DAG in `dags/etl_pipeline_dag.py`.
 
 ## Future Enhancements
 
 - Replace the Salesforce dummy API with a production Salesforce REST API.
-- Replace the Zendesk dummy API with a production Zendesk API.
+- Configure `GITHUB_TOKEN` for higher GitHub API rate limits when required.
 - Add a production dashboard and reporting layer.
 - Add CI/CD, automated integration tests, and data-quality validation.

@@ -15,6 +15,8 @@ recorded here.
 - Added opt-in Docker Compose support for the existing `python main.py` run.
 - Added an isolated Docker-based Airflow deployment and an ETL DAG that calls
   the existing phase functions without duplicating their logic.
+- Replaced the placeholder ticket source with the GitHub Issues REST API for
+  `microsoft/vscode`, preserving the existing raw ticket payload contract.
 
 ### Bug Fixes
 
@@ -25,11 +27,11 @@ recorded here.
 
 - Rewrote the README with architecture, workflow, API-status, schema,
   installation, and operational guidance.
-- Documented the current real Stripe integration and the Salesforce/Zendesk
-  dummy integrations accurately.
+- Documented the current real Stripe and GitHub integrations alongside the
+  Salesforce dummy integration.
 - Added Docker and Airflow setup, access, and DAG-trigger instructions.
 
 ### Future Work
 
-- Production Salesforce and Zendesk REST API integrations.
+- Production Salesforce REST API integration.
 - Dashboard, CI/CD, monitoring, and data-quality enhancements.

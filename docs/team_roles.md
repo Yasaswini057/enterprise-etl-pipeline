@@ -11,7 +11,7 @@
 ## Member 2 - Extraction Module
 - Salesforce Data Extraction
 - Stripe Data Extraction
-- Zendesk Data Extraction
+- GitHub Issues Data Extraction
 
 ## Member 3 - Transformation Module
 - Data Cleaning

@@ -3,7 +3,7 @@ import os
 
 from extract.salesforce_api import fetch_customers
 from extract.stripe_api import fetch_payments
-from extract.zendesk_api import fetch_tickets
+from extract.github_issues_api import fetch_tickets
 
 
 def run_extraction():
