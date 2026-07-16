@@ -1780,3 +1780,13 @@ simple_salesforce.exceptions.SalesforceAuthenticationFailed: Authentication fail
 2026-07-16 18:59:21,102 - INFO - Transformation phase completed
 2026-07-16 18:59:21,103 - INFO - Loading phase started
 2026-07-16 18:59:21,502 - INFO - Loading phase completed
+2026-07-16 19:18:52,471 - INFO - Enterprise ETL pipeline started.
+2026-07-16 19:18:52,475 - INFO - Extraction phase started
+2026-07-16 19:18:55,357 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/payment_intents?limit=10
+2026-07-16 19:18:57,022 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/payment_intents?limit=10 response_code=200
+2026-07-16 19:18:58,888 - INFO - Fetched 18 GitHub issues from repository microsoft/vscode.
+2026-07-16 19:18:58,906 - INFO - Extraction phase completed
+2026-07-16 19:18:58,907 - INFO - Transformation phase started
+2026-07-16 19:18:59,474 - INFO - Transformation phase completed
+2026-07-16 19:18:59,474 - INFO - Loading phase started
+2026-07-16 19:18:59,846 - INFO - Loading phase completed
